@@ -1,0 +1,30 @@
+- platform: template
+  sensors:
+    sensacion_termica:
+      friendly_name: "Sensación Térmica"
+      unit_of_measurement: "°C"
+      value_template: >
+        {% set T = (states('sensor.temperatura_interior') | float * 9 / 5) + 32 %}
+        {% set RH = states('sensor.humedad_interior') | float %}
+        {% set simple_HI = 0.5 * (T + 61.0 + ((T-68.0)*1.2) + (RH*0.094)) %}
+        {% if simple_HI >= 80.0 %}
+          {% set HI = -42.379 + 2.04901523*T + 10.14333127*RH - 0.22475541*T*RH - 0.00683783*T*T - 0.05481717*RH*RH + 0.00122874*T*T*RH + 0.00085282*T*RH*RH - 0.00000199*T*T*RH*RH %}
+          
+          {% if RH < 13.0 and T >= 80.0 and T <= 112.0 %}
+            {% set HI = HI - ((13.0 - RH) / 4.0) * ((17.0 - (T - 95.0) | abs) / 17.0) | sqrt %}
+          {% elif RH > 85.0 and T >= 80.0 and T <= 87.0 %}
+            {% set HI = HI + ((RH - 85.0) / 10.0) * ((87.0 - T) / 5.0) %}
+          {% endif %}
+        {% else %}
+          {% set HI = simple_HI %}
+        {% endif %}
+        {{ ((HI - 32) * 5 / 9) | round(1) }}
+
+    confort_termico:
+      friendly_name: "Confort Térmico"
+      unit_of_measurement: "°C"
+      value_template: >
+        {% set tempInC  = states('sensor.temperatura_interior') | float %}
+        {% set humValue = states('sensor.humedad_interior') | float %}
+        {% set confort = tempInC - (0.55 * (1 - 0.01 * humValue) * (tempInC - 14.5)) %}
+        {{ confort | round(2) }}

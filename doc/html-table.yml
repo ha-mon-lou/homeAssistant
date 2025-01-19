@@ -1,0 +1,81 @@
+
+<div class="flex flex-row gap-2 justify-center"> 
+PC-Gaming
+</div>
+
+<div class="flex flex-row gap-2 justify-center"> 
+
+<table class="table-auto">
+    <thead>
+        <tr>
+            <td></td>
+            <td>Minimal-</td>
+            <td>Value</td>
+            <td>-Maximum</td>
+        </tr>
+    </thead>
+
+{% for sensor_base in [
+  "sensor.pc_gaming_intel_core_i7_7700k_load_cpu_core_",
+  "sensor.pc_gaming_intel_core_i7_7700k_temperatures_cpu_core_",  
+  "sensor.pc_gaming_gigabyte_z270_gaming_k3_ite_it8686e_temperatures_temperature_",
+  
+]
+%}
+    
+    <tbody>
+
+  {% for sensor in [
+    "1", 
+    "2", 
+    "3", 
+    "4", 
+    "5", 
+    "6" 
+    ]
+  %}
+
+  {% set max_value = state_attr(sensor_base~sensor, 'maximum_value') | float(0) %}
+  {% set min_value = state_attr(sensor_base~sensor, 'minimal_value') | float(0) %}
+  {% set rango2 = (max_value - min_value) /2 %}
+  {% set umbral = min_value + rango2 %}
+  {% set rango5 = (max_value - min_value) /10 %}
+  {% set umbral5 = min_value + rango5 %}
+  {% set unidades = "" %}
+  {% if ("temperature" in sensor_base)%}
+    {% set unidades = "ºC" %}
+  {% endif %}
+
+
+  {% if states(sensor_base~sensor) !='unknown' %}
+    {% if (states(sensor_base~sensor)|float != min_value) %}
+
+    <tr>
+          {% if (states(sensor_base~sensor)|float > umbral|float) %}
+            {% set clase = "text-red-300" %}
+          {% else %}
+            {% set clase = "text-blue-300" %}
+          {% endif %}
+          {% if (states(sensor_base~sensor)|float < umbral5) %}
+            {% set clase = "text-gray-600" %}
+          {% endif %}
+
+
+          <td class="{{clase}}">{{ state_attr(sensor_base~sensor,"name") }}</td>
+          <td class="text-green-300"> {{ state_attr(sensor_base~sensor, 'minimal_value') }} </td>
+          <td class="{{clase}}"> {{ states(sensor_base~sensor) }} </td>
+          <td class="text-red-700"> {{ state_attr(sensor_base~sensor, 'maximum_value') }} </td>
+          <td class="{{clase}}">{{ unidades}}</td>
+      </tr>
+      {% endif%}
+    {% endif%}
+  {% endfor %}
+
+{% endfor %}
+    </tbody>
+</table>
+
+</div>
+
+
+</div>

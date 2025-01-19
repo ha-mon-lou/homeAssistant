@@ -1,0 +1,29 @@
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+# https://www.home-assistant.io/integrations/bluetooth
+bluetooth:
+
+device_tracker: !include device_tracker.yaml
+automation manual: !include_dir_merge_list myAutomation
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+sensor manual: !include_dir_merge_list mySensors
+sensor: !include sensores.yaml
+climate: !include climate.yaml
+switch: !include_dir_merge_list mySwitch
+
+logger:
+  default: info
+  logs:
+    homeassistant.components.rest: info
+
+lovelace:
+  resources:
+    - url: /local/tailwindcss-template-card/dist/tailwindcss-template-card.js
+      type: module

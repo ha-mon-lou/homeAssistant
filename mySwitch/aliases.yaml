@@ -1,0 +1,11 @@
+- platform: group
+  name: "Alias Shelly Habitacion"
+  unique_id: "alias_shelly_habitacion"
+  entities:
+    - switch.shelly1minig3_34b7dac6f3e4_switch_0
+
+- platform: group
+  name: "Alias Caldera"
+  unique_id: "alias_caldera"
+  entities:
+    - switch.shelly1minig3_3030f9e91908_switch_0

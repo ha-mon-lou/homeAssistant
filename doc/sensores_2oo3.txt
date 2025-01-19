@@ -1,0 +1,53 @@
+  - platform: template
+    sensors:
+      temp_2oo3:
+        friendly_name: "Temperatura 2oo3"
+        device_class: temperature
+        unit_of_measurement: 'ºC'
+        value_template: "
+{%set sensor1='sensor.ble_temperature_a4c13875227d' %}
+{%set sensor2='sensor.ble_temperature_a4c1389e8772' %}
+{%set sensor3='sensor.ble_temperature_a4c238a3726e' %}
+{%set timeout=600 %} {# tiempo límite en segundos #}
+ 
+{# establecemos código -99 si no es un número #}
+{%set sensor1_value = states(sensor1) |float |default(-99,true) %}
+{%set sensor2_value = states(sensor2) |float |default(-99,true) %}
+{%set sensor3_value = states(sensor3) |float |default(-99,true) %}
+ 
+{# calculamos el tiempo transcurrido desde último valor #}
+{%set sensor1_scan=(as_timestamp(now())-as_timestamp(states[sensor1.split('.')[0]][sensor1.split('.')[1]].last_changed)) %}
+{%set sensor2_scan=(as_timestamp(now())-as_timestamp(states[sensor2.split('.')[0]][sensor2.split('.')[1]].last_changed)) %}
+{%set sensor3_scan=(as_timestamp(now())-as_timestamp(states[sensor3.split('.')[0]][sensor3.split('.')[1]].last_changed)) %}
+ 
+{# establecemos si la medida es válida o no #}
+{%set sensor1_valid=(sensor1_value!=-99) and (sensor1_scan<timeout) %}
+{%set sensor2_valid=(sensor1_value!=-99) and (sensor2_scan<timeout) %}
+{%set sensor3_valid=(sensor1_value!=-99) and (sensor3_scan<timeout) %}
+ 
+ 
+{# 3 instrumentos funcionando, calculamos mediana #}
+{% if sensor1_valid and sensor2_valid and sensor3_valid %}
+    {{ max(min(sensor1_value,sensor2_value), min(max(sensor1_value,sensor2_value),sensor3_value)) }}
+ 
+# 2 instrumentos funcionando, calculamos media
+{% elif not sensor1_valid and sensor2_valid and sensor3_valid %}
+    {{ (sensor2_value+sensor3_value)/2 }}
+{% elif sensor1_valid and not sensor2_valid and sensor3_valid %}
+    {{ (sensor1_value+sensor3_value)/2 }}
+{% elif sensor1_valid and sensor2_valid and not sensor3_valid %}
+    {{ (sensor1_value+sensor2_value)/2 }}
+ 
+{# 1 sensor funcionando, elegimos sensor operativo #}
+{% elif sensor1_valid and not sensor2_valid and not sensor3_valid %}
+    {{ sensor1_value }}
+{% elif not sensor1_valid and sensor2_valid and not sensor3_valid %}
+    {{ sensor2_value }}
+{% elif not sensor1_valid and not sensor2_valid and sensor3_valid %}
+    {{ sensor3_value }}
+ 
+{# 3 instrumentos fallando #}
+{% else %}
+    'Fallo'
+     
+{% endif %}"
