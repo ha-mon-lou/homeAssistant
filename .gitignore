@@ -6,4 +6,4 @@
 .storage
 tts
 *.db
-doc/
+/doc/
