@@ -32,7 +32,7 @@
           metadata: {}
           data: {}
           target:
-            device_id: 4212ed74edbdc7e8bd7b75f3ae1a9c4c
+            entity_id: switch.alias_shelly_habitacion
         - delay: 00:00:01
         - action: switch.turn_on
           metadata: {}
@@ -83,7 +83,7 @@
           metadata: {}
           data: {}
           target:
-            entity_id: switch.shelly1minig3_34b7dac6f3e4_switch_0
+            entity_id: switch.alias_shelly_habitacion
         - delay: 00:00:01
         - action: switch.turn_off
           metadata: {}
