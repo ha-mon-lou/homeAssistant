@@ -1,0 +1,21 @@
+- platform: template
+  sensors:
+    temperatura_interior:
+      friendly_name: "Temperatura interior"
+      device_class: temperature
+      unit_of_measurement: '°C'
+      unique_id: "temperatura_interior"
+      value_template: "
+      {# https://www.pacienciadigital.com/redundancia-sensores-home-assistant/ #}
+      {% set sensor1 = 'sensor.shelly_blu_5480_temperature' %}
+      {% set sensor1_value = states(sensor1) |float |default(-99,true) %}
+      {% set sensor1_valid=(sensor1_value!=-99) %}
+      {% if sensor1_valid  %}
+          {{ sensor1_value }}
+      {% else %}
+          'Fallo'        
+      {% endif %}    
+      "
+      icon_template: mdi:thermometer
+      
+

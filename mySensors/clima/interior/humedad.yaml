@@ -1,0 +1,20 @@
+- platform: template
+  sensors:
+    humedad_interior:
+      friendly_name: "Humedad interior"
+      device_class: humidity
+      unit_of_measurement: '%'
+      unique_id: "humedad_interior"
+      value_template: "
+      {# https://www.pacienciadigital.com/redundancia-sensores-home-assistant/ #}
+      {% set sensor1 = 'sensor.shelly_blu_5480_humidity' %}
+      {% set sensor1_value = states(sensor1) |float |default(-99,true) %}
+      {% set sensor1_valid=(sensor1_value!=-99) %}
+      {% if sensor1_valid  %}
+          {{ sensor1_value }}
+      {% else %}
+          'Fallo'        
+      {% endif %}    
+      "
+      icon_template: mdi:water-percent-alert
+

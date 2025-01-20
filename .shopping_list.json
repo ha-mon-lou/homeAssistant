@@ -1,0 +1,27 @@
+[
+  {
+    "name": "ZigBee bridge",
+    "id": "573d7647cab747c0acf7b824cacd7732",
+    "complete": false
+  },
+  {
+    "name": "Sensor temperatura zigbee ",
+    "id": "e7c6aec7e2644a20be86319a720c57e9",
+    "complete": false
+  },
+  {
+    "name": "Shelly 1 mini 3G",
+    "id": "e47e1c136ace44bdba6b21fcc677ae15",
+    "complete": true
+  },
+  {
+    "name": "Mini pc ",
+    "id": "6920225359c24b089c01d657fa5e58bf",
+    "complete": true
+  },
+  {
+    "name": "Sensor temperatura BTE",
+    "id": "7b1a5f90739f4665abcf92c671c5a7f8",
+    "complete": true
+  }
+]
