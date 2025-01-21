@@ -1,11 +1,11 @@
 - platform: template
   sensors:
 
-    loureiro_temperatura_2oo3:
+    custom_temperatura_2oo3:
       friendly_name: "Temperatura 2oo3"
       device_class: temperature
       unit_of_measurement: '°C'
-      unique_id: "loureiro_temperatura_2oo3"
+      unique_id: "custom_temperatura_2oo3"
       value_template: "
       {# https://www.pacienciadigital.com/redundancia-sensores-home-assistant/ #}
       {% set sensor1 = 'sensor.aemet_temperature' %}

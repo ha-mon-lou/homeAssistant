@@ -1,8 +1,8 @@
 - platform: template
   sensors:
-    loureiro_electro_consumo:
+    custom_electro_consumo:
       friendly_name: "Consumo electricidad"
-      unique_id: "loureiro_electro_consumo"
+      unique_id: "custom_electro_consumo"
       unit_of_measurement: "W" # Cambia esto si la unidad no es watts
       value_template: >-
         {% if states('sensor.fj0f_last_registered_consumption') | float(default=0) %}
