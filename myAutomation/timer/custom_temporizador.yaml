@@ -1,7 +1,7 @@
 #
 #
-- id: "custom_temporizador_automation"
-  alias: custom_temporizador_on
+- id: "custom_temporizador_automation_on"
+  alias: Reloj 1 on
   description: ""
   triggers:
     - trigger: state
@@ -18,7 +18,7 @@
   mode: single
 
 - id: "custom_temporizador_automation_off"
-  alias: aire_temporizador_off
+  alias: Reloj 1 off
   description: ""
   trigger:
     - platform: state
