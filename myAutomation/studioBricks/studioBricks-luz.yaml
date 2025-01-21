@@ -25,7 +25,7 @@
           data: {}
           target:
             entity_id: switch.regleta_antela_socket_1
-        - delay: 00:00:10
+        - delay: 00:00:01
         - action: switch.turn_on
           metadata: {}
           data: {}
@@ -57,7 +57,7 @@
           data: {}
           target:
             entity_id: switch.regleta_antela_socket_1
-        - delay: 00:00:10
+        - delay: 00:00:02
         - action: switch.turn_off
           metadata: {}
           data: {}
