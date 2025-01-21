@@ -1,3 +1,6 @@
+#
+# https://homeassistant-notes.notion.site/Proyecto-studioBricks-1819be0e2c178025bfbce68fd774ab8d
+#
 - id: "studioBricks.luz.on"
   alias: StudioBricks luz on
   description: "Al encender luz, secuencia de encendido"

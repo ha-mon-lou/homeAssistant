@@ -1,3 +1,7 @@
+#
+# https://homeassistant-notes.notion.site/Sensores-1819be0e2c1780b28fadcaf9a0e00213
+# https://www.pacienciadigital.com/redundancia-sensores-home-assistant/
+#
 - platform: template
   sensors:
     sensacion_termica:

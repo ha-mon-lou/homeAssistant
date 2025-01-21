@@ -1,3 +1,7 @@
+#
+# https://homeassistant-notes.notion.site/Sensores-1819be0e2c1780b28fadcaf9a0e00213
+# https://www.pacienciadigital.com/redundancia-sensores-home-assistant/
+#
 - platform: template
   sensors:
     temperatura_exterior:
@@ -6,7 +10,6 @@
       unit_of_measurement: '°C'
       unique_id: "temperatura_exterior"
       value_template: "
-      {# https://www.pacienciadigital.com/redundancia-sensores-home-assistant/ #}
       {% set sensor1 = 'sensor.aemet_temperature' %}
       {% set sensor2 = 'sensor.aemet_temperature_feeling' %}
       {% set sensor3 = 'sensor.temperatura_localidad' %}

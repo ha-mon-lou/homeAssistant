@@ -1,3 +1,7 @@
+#
+# https://homeassistant-notes.notion.site/Sensores-1819be0e2c1780b28fadcaf9a0e00213
+# https://www.pacienciadigital.com/redundancia-sensores-home-assistant/
+#
 - platform: template
   sensors:
     humedad_interior:
@@ -6,7 +10,6 @@
       unit_of_measurement: '%'
       unique_id: "humedad_interior"
       value_template: "
-      {# https://www.pacienciadigital.com/redundancia-sensores-home-assistant/ #}
       {% set sensor1 = 'sensor.shelly_blu_5480_humidity' %}
       {% set sensor1_value = states(sensor1) |float |default(-99,true) %}
       {% set sensor1_valid=(sensor1_value!=-99) %}
