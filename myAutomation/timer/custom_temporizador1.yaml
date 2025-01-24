@@ -1,6 +1,6 @@
 #
 #
-- id: "custom_temporizador_automation_on"
+- id: "custom_temporizador1_automation_on"
   alias: Reloj 1 on
   description: ""
   triggers:
@@ -17,7 +17,7 @@
         entity_id: timer.custom_temporizador1
   mode: single
 
-- id: "custom_temporizador_automation_off"
+- id: "custom_temporizador1_automation_off"
   alias: Reloj 1 off
   description: ""
   trigger:
@@ -30,5 +30,5 @@
     - device_id: 2e125cc8a76db2210a51672189f23b01
       domain: mobile_app
       type: notify
-      message: Temporizador off
+      message: Temporizador1 off
   mode: single

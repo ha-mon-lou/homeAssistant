@@ -16,6 +16,8 @@ scene: !include scenes.yaml
 sensor manual: !include_dir_merge_list mySensors
 sensor: !include sensores.yaml
 climate: !include climate.yaml
+schedule dir: !include_dir_merge_list mySchedule
+schedule: !include mySchedule/studiobricks_schedule.yaml
 switch: !include_dir_merge_list mySwitch
 
 logger:
