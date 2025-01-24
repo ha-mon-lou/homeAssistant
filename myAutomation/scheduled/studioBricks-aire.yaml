@@ -16,7 +16,7 @@
           metadata: {}
           data: {}
           target:
-            entity_id: switch.regleta_antela_socket_2
+            entity_id: switch.regleta_antela_socket_2 # aire
   mode: single
 
 - id: "scheduler_studioBricks_desactiva_aire"
