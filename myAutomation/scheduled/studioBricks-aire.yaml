@@ -3,7 +3,7 @@
 #
 - id: "scheduler_studioBricks_activa_aire"
   alias: Scheduler studioBricks activa aire
-  description: ""
+  description: "Activa el aire de la cabina"
   triggers:
     - trigger: state
       entity_id:
@@ -21,7 +21,7 @@
 
 - id: "scheduler_studioBricks_desactiva_aire"
   alias: Scheduler studioBricks desactiva aire
-  description: ""
+  description: "Si el scheduler cambia a off, desactiva el aire si es que no hay luz (se esta usando la cabina)"
   triggers:
     - trigger: state
       entity_id:
