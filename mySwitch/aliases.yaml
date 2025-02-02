@@ -26,5 +26,11 @@
     - switch.enchufe_doble_socket_2
     - switch.enchufe_habitacion_socket_2
     - switch.enchufe_habitacion_socket_1
-    - switch.regleta_antela_socket_3
     - switch.alias_shelly_habitacion
+
+- platform: group
+  name: GRP luces comedor
+  unique_id: "grupo_luces_comedor"
+  entities:
+    - switch.enchufe_doble_socket_1
+    - switch.enchufe_doble_socket_2

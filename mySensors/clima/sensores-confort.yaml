@@ -32,3 +32,12 @@
         {% set humValue = states('sensor.humedad_interior') | float %}
         {% set confort = tempInC - (0.55 * (1 - 0.01 * humValue) * (tempInC - 14.5)) %}
         {{ confort | round(2) }}
+
+    confort_termico_tuya_wifi_1:
+      friendly_name: "Confort Térmico (Tuya 1)"
+      unit_of_measurement: "°C"
+      value_template: >
+        {% set tempInC  = states('sensor.tuya_termometro_wifi_temperature') | float %}
+        {% set humValue = states('sensor.tuya_termometro_wifi_humidity') | float %}
+        {% set confort = tempInC - (0.55 * (1 - 0.01 * humValue) * (tempInC - 14.5)) %}
+        {{ confort | round(2) }}

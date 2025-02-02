@@ -10,3 +10,16 @@
   hot_tolerance: 0.5
   precision: 0.1
   target_temp_step: 0.1
+
+- platform: generic_thermostat
+  name: "Termostato sobre Tuya Wifi"
+  unique_id: "termostato_tuya_wifi"
+  heater: switch.alias_caldera
+  target_sensor: sensor.confort_termico_tuya_wifi_1
+  min_temp: 0
+  max_temp: 24
+  ac_mode: false
+  cold_tolerance: 0.2
+  hot_tolerance: 0.2
+  precision: 0.1
+  target_temp_step: 0.1

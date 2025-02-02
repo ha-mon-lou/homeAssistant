@@ -1,0 +1,19 @@
+secuencia_by_area:
+  alias: secuencia by friendly name
+  fields:
+    my_area:
+      description: "a fiendly name"
+    my_estado:
+      description: "turn_on/turn_off/toggle"
+  sequence:
+    - repeat:
+        for_each: >
+          {{ expand(area_entities(my_area)) 
+            | selectattr('domain', 'equalto', 'switch') 
+            | map(attribute='entity_id') | list }}
+        sequence:
+          - delay: 00:00:01
+          - service: switch.{{my_estado}}
+            target:
+              entity_id: "{{ repeat.item }}"
+  mode: single

@@ -1,0 +1,36 @@
+#
+# https://homeassistant-notes.notion.site/Proyecto-studioBricks-1819be0e2c178025bfbce68fd774ab8d
+#
+- id: "scheduler_lavavajillas_on"
+  alias: Scheduler lavavajillas on
+  triggers:
+    - trigger: state
+      entity_id:
+        - schedule.lavavajillas_schedule
+      to: "on"
+  conditions: []
+  actions:
+    - sequence:
+        - action: switch.turn_on
+          metadata: {}
+          data: {}
+          target:
+            entity_id: switch.zigbee_nous_enchufe_03 # lavavajillas
+  mode: single
+
+- id: "scheduler_lavavajillas_off"
+  alias: Scheduler lavavajillas off
+  triggers:
+    - trigger: state
+      entity_id:
+        - schedule.lavavajillas_schedule
+      to: "off"
+  conditions: []
+  actions:
+    - sequence:
+        - action: switch.turn_off
+          metadata: {}
+          data: {}
+          target:
+            entity_id: switch.zigbee_nous_enchufe_03 # lavavajillas
+  mode: single

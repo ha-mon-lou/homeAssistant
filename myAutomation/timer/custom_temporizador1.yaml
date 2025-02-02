@@ -8,7 +8,6 @@
       entity_id:
         - input_button.custom_temporizador1_toggle
   conditions: []
-
   action:
     - service: timer.start
       data:
