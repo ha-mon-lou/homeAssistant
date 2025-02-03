@@ -28,11 +28,6 @@
           data: {}
           target:
             entity_id: switch.enchufe_doble_socket_1
-        - action: media_player.turn_off
-          metadata: {}
-          data: {}
-          target:
-            entity_id: switch.alias_shelly_habitacion
         - delay: 00:00:01
         - action: switch.turn_on
           metadata: {}
@@ -46,48 +41,4 @@
           target:
             entity_id: switch.enchufe_habitacion_socket_2
         - delay: 00:00:01
-  mode: single
-
-- id: "seq_shutdown"
-  alias: Secuencia de apagado
-  description: ""
-  triggers:
-    - platform: conversation
-      command: desconecta luces
-    - trigger: tag
-      tag_id: 37fcba90-6c4b-41cf-abef-1dea0f1c85b6
-    - trigger: state
-      entity_id:
-        - input_button.shutdown
-  actions:
-    - sequence:
-        - action: switch.turn_off
-          metadata: {}
-          data: {}
-          target:
-            entity_id: switch.enchufe_doble_socket_1
-        - delay: 00:00:01
-        - action: switch.turn_off
-          metadata: {}
-          data: {}
-          target:
-            entity_id: switch.enchufe_doble_socket_2
-        - delay: 00:00:01
-        - action: switch.turn_off
-          metadata: {}
-          data: {}
-          target:
-            entity_id: switch.enchufe_habitacion_socket_1
-        - delay: 00:00:01
-        - action: switch.turn_off
-          metadata: {}
-          data: {}
-          target:
-            entity_id: switch.alias_shelly_habitacion
-        - delay: 00:00:01
-        - action: switch.turn_off
-          metadata: {}
-          data: {}
-          target:
-            entity_id: switch.enchufe_habitacion_socket_2
   mode: single

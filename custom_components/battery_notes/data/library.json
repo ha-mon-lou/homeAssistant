@@ -2703,6 +2703,12 @@
         },
         {
             "manufacturer": "Everspring",
+            "model": "HSP02 / SP103",
+            "battery_type": "AA",
+            "battery_quantity": 3
+        },
+        {
+            "manufacturer": "Everspring",
             "model": "SE812",
             "battery_type": "LR14",
             "battery_quantity": 4
@@ -4470,6 +4476,14 @@
             "manufacturer": "Neo",
             "model": "Alarm (NAS-AB02B2)",
             "battery_type": "CR123A Lithium"
+        },
+        {
+            "manufacturer": "Neo",
+            "model": "NAS-AB02B2",
+            "model_id": "TS0601",
+            "hw_version": "1",
+            "battery_type": "CR123A-3V",
+            "battery_quantity": 2
         },
         {
             "manufacturer": "Neo",

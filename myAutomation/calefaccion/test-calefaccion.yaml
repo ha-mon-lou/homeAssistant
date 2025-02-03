@@ -10,19 +10,8 @@
   conditions: []
   actions:
     - sequence:
-        - service: climate.set_temperature
-          target:
-            entity_id:
-              - climate.termostato_sobre_tuya_wifi
-              - climate.termostato_virtual
+        - action: script.control_calefaccion
           data:
-            temperature: "{{ states('sensor.temperatura_exterior') }}"
-
-        - service: climate.set_hvac_mode
-          target:
-            entity_id:
-              - climate.termostato_sobre_tuya_wifi
-              - climate.termostato_virtual
-          data:
-            hvac_mode: "{{ 'heat' if states('input_boolean.calefaccion_boolean') == 'on' else 'off' }}"
+            mode: "{{ 'heat' if states('input_boolean.calefaccion_boolean') == 'on' else 'off' }}"
+            temperatura: "{{states('sensor.sensacion_termica') if states('input_boolean.calefaccion_boolean') == 'on' else states('sensor.temperatura_exterior') }}"
   mode: single

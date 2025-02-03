@@ -5,7 +5,7 @@
 - platform: template
   sensors:
     humedad_interior:
-      friendly_name: "Humedad interior"
+      friendly_name: "H. interior"
       device_class: humidity
       unit_of_measurement: '%'
       unique_id: "humedad_interior"

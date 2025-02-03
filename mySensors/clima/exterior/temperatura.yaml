@@ -5,46 +5,11 @@
 - platform: template
   sensors:
     temperatura_exterior:
-      friendly_name: "Temperatura exterior"
+      friendly_name: "T. exterior"
       device_class: temperature
-      unit_of_measurement: '°C'
+      unit_of_measurement: "°C"
       unique_id: "temperatura_exterior"
-      value_template: "
-      {% set sensor1 = 'sensor.aemet_temperature' %}
-      {% set sensor2 = 'sensor.aemet_temperature_feeling' %}
-      {% set sensor3 = 'sensor.temperatura_localidad' %}
-      {% set timeout=600 %} {# tiempo límite en segundos #}
-      {# establecemos código -99 si no es un número #}
-      {% set sensor1_value = states(sensor1) |float |default(-99,true) %}
-      {% set sensor2_value = states(sensor2) |float |default(-99,true) %}
-      {% set sensor3_value = states(sensor3) |float |default(-99,true) %}
-      {% set sensor1_valid=(sensor1_value!=-99) %}
-      {% set sensor2_valid=(sensor2_value!=-99) %}
-      {% set sensor3_valid=(sensor3_value!=-99)  %}
-      {# 3 instrumentos funcionando, calculamos mediana #}
-      {% if sensor1_valid and sensor2_valid and sensor3_valid %}
-          {{ max(min(sensor1_value,sensor2_value), min(max(sensor1_value,sensor2_value),sensor3_value)) }}
-      
-      {# 2 instrumentos funcionando, calculamos media
-      {% elif not sensor1_valid and sensor2_valid and sensor3_valid %}
-          {{ (sensor2_value+sensor3_value)/2 }}
-      {% elif sensor1_valid and not sensor2_valid and sensor3_valid %}
-          {{ (sensor1_value+sensor3_value)/2 }}
-      {% elif sensor1_valid and sensor2_valid and not sensor3_valid %}
-          {{ (sensor1_value+sensor2_value)/2 }}
-      
-      {# 1 sensor funcionando, elegimos sensor operativo #}
-      {% elif sensor1_valid and not sensor2_valid and not sensor3_valid %}
-          {{ sensor1_value }}
-      {% elif not sensor1_valid and sensor2_valid and not sensor3_valid %}
-          {{ sensor2_value }}
-      {% elif not sensor1_valid and not sensor2_valid and sensor3_valid %}
-          {{ sensor3_value }}
-      
-      {# 3 instrumentos fallando #}
-      {% else %}
-          'Fallo'        
-      {% endif %}    
-      "
+      value_template: >
+        {% from '2oo3.jinja' import macro_2oo3 %}
+        {{ macro_2oo3('sensor.aemet_temperature','sensor.temperatura_localidad','sensor.aemet_temperature_feeling') }}
       icon_template: mdi:thermometer
-      
