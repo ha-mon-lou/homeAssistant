@@ -1,0 +1,34 @@
+#
+# https://homeassistant-notes.notion.site/Proyecto-studioBricks-1819be0e2c178025bfbce68fd774ab8d
+#
+- id: "scheduler_calefaccion_on"
+  alias: Scheduler lavavajillas on
+  triggers:
+    - trigger: state
+      entity_id:
+        - schedule.calefaccion_schedule
+      to: "on"
+  conditions: []
+  actions:
+    - sequence:
+        - action: script.control_calefaccion
+          data:
+            mode: "heat"
+            temperatura: "{{ states('input_number.nivel_sensacion_termica_ideal') }}"
+  mode: single
+
+- id: "scheduler_calefaccion_off"
+  alias: Scheduler lavavajillas off
+  triggers:
+    - trigger: state
+      entity_id:
+        - schedule.calefaccion_schedule
+      to: "off"
+  conditions: []
+  actions:
+    - sequence:
+        - action: script.control_calefaccion
+          data:
+            mode: "off"
+            temperatura: "{{ states('input_number.nivel_sensacion_termica_ideal') }}"
+  mode: single

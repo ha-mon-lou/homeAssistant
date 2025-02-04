@@ -39,25 +39,47 @@ studiobricks_schedule:
 lavavajillas_schedule:
   name: "lavavajillas schedule"
   monday:
-    - from: "00:15:00"
+    - from: "00:05:00"
       to: "08:00:00"
   tuesday:
-    - from: "00:15:00"
+    - from: "00:05:00"
       to: "08:00:00"
   wednesday:
-    - from: "00:15:00"
+    - from: "00:05:00"
       to: "08:00:00"
   thursday:
-    - from: "00:15:00"
+    - from: "00:05:00"
       to: "08:00:00"
   friday:
-    - from: "00:15:00"
+    - from: "00:05:00"
       to: "08:00:00"
-    - from: "22:36:00"
-      to: "22:46:00"
   saturday:
     - from: "00:05:00"
       to: "23:59:00"
   sunday:
     - from: "00:05:00"
       to: "23:59:00"
+
+calefaccion_schedule:
+  name: "calefaccion schedule"
+  monday:
+    - from: "00:07:30"
+      to: "22:00:00"
+  tuesday:
+    - from: "00:07:30"
+      to: "22:00:00"
+  wednesday:
+    - from: "00:07:30"
+      to: "22:00:00"
+  thursday:
+    - from: "00:07:30"
+      to: "22:00:00"
+  friday:
+    - from: "00:07:30"
+      to: "22:00:00"
+  saturday:
+    - from: "00:08:30"
+      to: "22:00:00"
+  sunday:
+    - from: "00:08:30"
+      to: "22:00:00"
