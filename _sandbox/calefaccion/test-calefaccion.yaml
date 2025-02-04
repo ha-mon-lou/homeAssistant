@@ -13,7 +13,6 @@
         - service: climate.set_temperature
           target:
             entity_id:
-              - climate.termostato_sobre_tuya_wifi
               - climate.termostato_virtual
           data:
             temperature: "{{ states('sensor.temperatura_exterior') }}"
@@ -21,7 +20,6 @@
         - service: climate.set_hvac_mode
           target:
             entity_id:
-              - climate.termostato_sobre_tuya_wifi
               - climate.termostato_virtual
           data:
             hvac_mode: "{{ 'heat' if states('input_boolean.calefaccion_boolean') == 'on' else 'off' }}"

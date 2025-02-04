@@ -10,7 +10,6 @@ control_calefaccion:
       target:
         entity_id:
           - climate.termostato_virtual
-          - climate.termostato_sobre_tuya_wifi
       data:
         temperature: "{{ temperatura }}"
 
@@ -18,7 +17,6 @@ control_calefaccion:
       target:
         entity_id:
           - climate.termostato_virtual
-          - climate.termostato_sobre_tuya_wifi
       data:
         hvac_mode: "{{ mode }}"
   mode: single
