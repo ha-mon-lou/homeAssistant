@@ -20,17 +20,19 @@
 
 - id: "scheduler_lavavajillas_off"
   alias: Scheduler lavavajillas off
-  triggers:
-    - trigger: state
-      entity_id:
-        - schedule.lavavajillas_schedule
+  trigger:
+    - platform: state
+      entity_id: schedule.lavavajillas_schedule
       to: "off"
-  conditions: []
-  actions:
-    - sequence:
-        - action: switch.turn_off
-          metadata: {}
-          data: {}
-          target:
-            entity_id: switch.zigbee_nous_enchufe_03 # lavavajillas
+  condition:
+    # Verifica que el consumo ha estado bajo durante al menos 10 minutos
+    - condition: numeric_state
+      entity_id: sensor.zigbee_nous_enchufe_03_power
+      below: 5 # Umbral de consumo en W
+      for:
+        minutes: 12 # Solo apagará si ha estado en pausa por 12 min
+  action:
+    - service: switch.turn_off
+      target:
+        entity_id: switch.zigbee_nous_enchufe_03
   mode: single
