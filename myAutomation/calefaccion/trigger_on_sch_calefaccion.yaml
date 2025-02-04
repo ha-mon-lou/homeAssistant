@@ -1,8 +1,9 @@
 #
 # https://homeassistant-notes.notion.site/Proyecto-climatizaci-n-1819be0e2c17803f8c00e7a4696264e7
 #
+#
 - id: "scheduler_calefaccion_on"
-  alias: Scheduler lavavajillas on
+  alias: Scheduler calefaccion on
   triggers:
     - trigger: state
       entity_id:
@@ -18,7 +19,7 @@
   mode: single
 
 - id: "scheduler_calefaccion_off"
-  alias: Scheduler lavavajillas off
+  alias: Scheduler calefaccion off
   triggers:
     - trigger: state
       entity_id:
