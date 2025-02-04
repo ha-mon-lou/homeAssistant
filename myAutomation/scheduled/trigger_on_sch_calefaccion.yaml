@@ -1,6 +1,7 @@
 #
 # https://homeassistant-notes.notion.site/Proyecto-climatizaci-n-1819be0e2c17803f8c00e7a4696264e7
 #
+#
 - id: "scheduler_calefaccion_on"
   alias: Scheduler calefaccion on
   triggers:
