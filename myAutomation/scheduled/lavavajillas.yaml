@@ -24,14 +24,10 @@
     - platform: state
       entity_id: schedule.lavavajillas_schedule
       to: "off"
-  condition:
-    # Verifica que el consumo ha estado bajo durante al menos 10 minutos
-    - condition: numeric_state
-      entity_id: sensor.zigbee_nous_enchufe_03_power
-      below: 5 # Umbral de consumo en W
-      for:
-        minutes: 12 # Solo apagará si ha estado en pausa por 12 min
   action:
+    - wait_template: "{{ states('sensor.zigbee_nous_enchufe_03_power')|float < 5 }}"
+      timeout: "00:10:00" # Espera máximo 10 minutos
+      continue_on_timeout: false # No apaga si el consumo no baja
     - service: switch.turn_off
       target:
         entity_id: switch.zigbee_nous_enchufe_03
