@@ -1,0 +1,37 @@
+- id: "vigilancia_grp_luces_habitacion"
+  alias: "Apagar enchufes habitacion si es de día"
+  description: "Cada x minutos revisa el enchufe y lo apaga si es de día"
+  trigger:
+    - platform: time_pattern
+      minutes: "/7"
+  condition:
+    - condition: state
+      entity_id: switch.grp_luces_habitacion
+      state: "on" # Solo actúa si el enchufe está encendido
+    - condition: sun
+      after: sunrise
+      before: sunset
+  action:
+    - service: switch.turn_off
+      target:
+        entity_id: switch.grp_luces_habitacion
+  mode: single
+
+- id: "vigilancia_grp_luces_comedor"
+  alias: "Apagar enchufes comedor si es de día"
+  description: "Cada x minutos revisa el enchufe y lo apaga si es de día"
+  trigger:
+    - platform: time_pattern
+      minutes: "/8"
+  condition:
+    - condition: state
+      entity_id: switch.grp_luces_comedor
+      state: "on" # Solo actúa si el enchufe está encendido
+    - condition: sun
+      after: sunrise
+      before: sunset
+  action:
+    - service: switch.turn_off
+      target:
+        entity_id: switch.grp_luces_comedor
+  mode: single

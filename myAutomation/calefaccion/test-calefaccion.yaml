@@ -13,5 +13,5 @@
         - action: script.control_calefaccion
           data:
             mode: "{{ 'heat' if states('input_boolean.calefaccion_boolean') == 'on' else 'off' }}"
-            temperatura: "{{states('sensor.sensacion_termica') if states('input_boolean.calefaccion_boolean') == 'on' else states('sensor.temperatura_exterior') }}"
+            temperatura: "{{states('input_number.nivel_sensacion_termica_ideal') if states('input_boolean.calefaccion_boolean') == 'on' else states('sensor.temperatura_exterior') }}"
   mode: single

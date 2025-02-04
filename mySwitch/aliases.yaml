@@ -11,6 +11,12 @@
     - switch.shelly1minig3_3030f9e91908_switch_0
 
 - platform: group
+  name: "Alias Calefactor"
+  unique_id: "alias_calefactor"
+  entities:
+    - switch.zigbee_nous_enchufe_01
+
+- platform: group
   name: GRP Luces habitacion
   unique_id: "grupo_luces_habitacion"
   entities:

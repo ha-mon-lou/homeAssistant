@@ -10,6 +10,6 @@
       unit_of_measurement: "°C"
       unique_id: "temperatura_interior"
       value_template: >
-        {% from '2oo3.jinja' import macro_2oo3 %}
-        {{ macro_2oo3('sensor.shelly_blu_5480_temperature','sensor.tuya_termometro_wifi_temperature','sensor.zigbee_sonoff_snzb02_01_temperature') }}
+        {% from '1oo2.jinja' import macro_1oo2 %}
+        {{ macro_1oo2('sensor.shelly_blu_5480_temperature','sensor.zigbee_sonoff_snzb02_01_temperature') }}
       icon_template: mdi:thermometer

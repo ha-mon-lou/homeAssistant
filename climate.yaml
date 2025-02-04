@@ -14,7 +14,7 @@
 - platform: generic_thermostat
   name: "Termostato sobre Tuya Wifi"
   unique_id: "termostato_tuya_wifi"
-  heater: switch.alias_caldera
+  heater: switch.alias_calefactor
   target_sensor: sensor.sensacion_termica_tuya_wifi_1
   min_temp: 0
   max_temp: 26

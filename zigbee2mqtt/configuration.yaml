@@ -77,5 +77,11 @@ devices:
     homeassistant:
       name: zigbee_sonoff_snzb02_01
     optimistic: true
+  '0xa4c138b7c1781a47':
+    friendly_name: zigbee_nous_enchufe_04
+    homeassistant:
+      name: zigbee_nous_enchufe_04
+    optimistic: true
+    description: asignacion pendiente
 availability:
   enabled: true
