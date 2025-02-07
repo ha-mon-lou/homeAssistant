@@ -18,5 +18,5 @@ control_calefaccion:
         entity_id:
           - climate.termostato_virtual
       data:
-        hvac_mode: "{{ mode }}"
+        hvac_mode: "{{ mode | default('off') }}"
   mode: single

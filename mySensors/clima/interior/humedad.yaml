@@ -15,7 +15,7 @@
       {% set sensor1_value = states(sensor1) %}
 
       {% if sensor1_value in ['unavailable', 'unknown', None] %}
-          -99
+          {{ sensor1_value }}
       {% else %}
           {{ sensor1_value | float(default=-99) }}
       {% endif %}

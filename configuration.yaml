@@ -20,6 +20,7 @@ schedule: !include mySchedule/schedulers.yaml
 switch: !include_dir_merge_list mySwitch
 script: !include_dir_merge_named myScripts
 #script: !include scripts.yaml
+recorder: !include recorder.yaml
 
 logger:
   default: info

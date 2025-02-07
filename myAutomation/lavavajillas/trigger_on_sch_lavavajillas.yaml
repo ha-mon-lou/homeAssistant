@@ -15,7 +15,7 @@
           metadata: {}
           data: {}
           target:
-            entity_id: switch.zigbee_nous_enchufe_03 # lavavajillas
+            entity_id: switch.alias_lavavajillas
   mode: single
 
 - id: "scheduler_lavavajillas_off"
@@ -30,5 +30,5 @@
       continue_on_timeout: false # No apaga si el consumo no baja
     - service: switch.turn_off
       target:
-        entity_id: switch.zigbee_nous_enchufe_03
+        entity_id: switch.alias_lavavajillas
   mode: single

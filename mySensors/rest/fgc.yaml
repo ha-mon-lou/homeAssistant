@@ -26,4 +26,4 @@
     {% endfor %}
   json_attributes:
     - coordenadas
-  scan_interval: 120 # Intervalo de actualización en segundos
+  scan_interval: 1200 # Intervalo de actualización en segundos

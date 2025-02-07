@@ -1,35 +1,29 @@
 #
 # https://homeassistant-notes.notion.site/Proyecto-climatizaci-n-1819be0e2c17803f8c00e7a4696264e7
 #
-#
-- id: "scheduler_calefaccion_on"
-  alias: Scheduler calefaccion on
-  triggers:
-    - trigger: state
-      entity_id:
-        - schedule.calefaccion_schedule
+- id: "trigger_on_demanda_de_calefaccion_on"
+  alias: "Activar termostato si hay demanda de calor"
+  trigger:
+    - platform: state
+      entity_id: sensor.demanda_de_calefaccion
       to: "on"
-  conditions: []
-  actions:
+  action:
     - service: climate.set_temperature
       target:
         entity_id: climate.termostato_virtual
       data:
         temperature: "{{ states('input_number.nivel_sensacion_termica_ideal') }}"
-  mode: single
 
-- id: "scheduler_calefaccion_off"
-  alias: Scheduler calefaccion off
-  triggers:
-    - trigger: state
-      entity_id:
-        - schedule.calefaccion_schedule
+- id: "trigger_on_demanda_de_calefaccion_off"
+  alias: "Apagar termostato si no hay demanda de calor"
+  trigger:
+    - platform: state
+      entity_id: sensor.demanda_de_calefaccion
       to: "off"
-  conditions: []
+  action:
   actions:
     - sequence:
         - action: script.control_calefaccion
           data:
             mode: "off"
             temperatura: "{{ states('input_number.nivel_sensacion_termica_ideal') }}"
-  mode: single
