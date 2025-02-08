@@ -3,7 +3,7 @@
 #
 - id: "boton_shelly_1_press_studioBricks_luz"
   alias: Boton shelly H&T (press)
-  description: "Al apretar boton del termometro, se enciende la luz. Otro trigger studioBricks.luz.on sobre la luz encendera el resto"
+  description: "Al apretar boton del shelly H&T, se enciende la luz. Otro trigger studioBricks.luz.on sobre la luz encendera el resto"
   triggers:
     - platform: conversation
       command: caja

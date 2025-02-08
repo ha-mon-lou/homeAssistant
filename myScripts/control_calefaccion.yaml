@@ -2,7 +2,7 @@ control_calefaccion:
   alias: control calefaccion
   fields:
     mode:
-      description: "a fiendly name"
+      description: "Modo de operación (heat, cool, off, etc.)"
     temperatura:
       description: "temperatura deseada"
   sequence:

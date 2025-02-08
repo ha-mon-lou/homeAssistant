@@ -11,6 +11,7 @@ bluetooth:
 device_tracker: !include device_tracker.yaml
 automation manual: !include_dir_merge_list myAutomation
 automation: !include automations.yaml
+group: !include_dir_merge_named myGroup
 scene: !include scenes.yaml
 sensor manual: !include_dir_merge_list mySensors
 sensor: !include sensores.yaml

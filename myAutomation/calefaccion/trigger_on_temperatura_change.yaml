@@ -12,8 +12,8 @@
   conditions: []
   actions:
     - sequence:
-        - action: script.control_calefaccion
+        - action: script.control_calefaccion_advanced
           data:
-            mode: "{{ 'heat' if (states('sensor.temperatura_objetivo_max') | float(0)) > (states('sensor.temperatura_caldera') | float(0)) else 'off'}}"
-            temperatura: "{{ states('sensor.temperatura_objetivo_max') | float (0) }}"
+            st_target: "sensor.temperatura_objetivo_max"
+            st_real: "sensor.temperatura_caldera"
   mode: single
