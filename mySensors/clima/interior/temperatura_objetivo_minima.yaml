@@ -10,20 +10,6 @@
       unit_of_measurement: "°C"
       unique_id: "temperatura_objetivo_minima"
       value_template: >
-        {% set trvs = [
-          'climate.zigbee_sonoff_trvzb_01',
-          'climate.zigbee_sonoff_trvzb_02',
-          'climate.zigbee_sonoff_trvzb_03',
-          'climate.zigbee_sonoff_trvzb_04'
-        ] %}
-
-        {% set temps = namespace(lista=[]) %}
-
-        {% for trv in trvs %}
-          {% if state_attr(trv, 'temperature') is number %}
-            {% set temps.lista = temps.lista + [ state_attr(trv, 'temperature') ] %}
-          {% endif %}
-        {% endfor %}
-
-        {{ temps.lista | min if temps.lista | length > 0 else states('input_number.nivel_sensacion_termica_ideal') }}
+        {% from 'trvs.jinja' import trvs %}
+        {{ trvs('temperature','min') }}
       icon_template: mdi:thermometer

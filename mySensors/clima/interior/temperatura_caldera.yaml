@@ -3,11 +3,11 @@
 #
 - platform: template
   sensors:
-    temperatura_interior:
+    temperatura_caldera:
       friendly_name: "T. termostato caldera"
       device_class: temperature
       unit_of_measurement: "°C"
       unique_id: "temperatura_caldera" ## renombrado en UI !
       value_template: >
-        {{ states('sensor.temperatura_real_max_2') }}
+        {{ states('sensor.temperatura_real_min') }}
       icon_template: mdi:thermometer

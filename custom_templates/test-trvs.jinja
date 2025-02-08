@@ -1,0 +1,35 @@
+{% macro trvs(parametroTemperatura,rango) %}
+        {% set trvs = [
+          'climate.zigbee_sonoff_trvzb_01',
+          'climate.zigbee_sonoff_trvzb_02',
+          'climate.zigbee_sonoff_trvzb_03',
+          'climate.zigbee_sonoff_trvzb_04'
+        ] %}
+
+        {% set temps = namespace(lista=[]) %}
+
+        {% if (parametroTemperatura =='temperature') %}
+          {% for trv in trvs %}
+            {% if state_attr(trv, parametroTemperatura) is number %}
+              {% set temps.lista = temps.lista + [ state_attr(trv, parametroTemperatura) ] %}
+            {% endif %}
+          {% endfor %}
+        {% else %}  
+          {% for trv in trvs %}
+            {% if states(trv) | lower in ['heat', 'auto']  and state_attr(trv, parametroTemperatura) is number %}
+              {% set temps.lista = temps.lista + [ state_attr(trv, parametroTemperatura) ] %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% set sensorTemperatura = 'input_number.nivel_sensacion_termica_ideal'%}
+        {% if parametroTemperatura == 'temperature' %}
+          {% set sensorTemperatura = 'sensor.temperatura_caldera' %}
+        {% endif %}
+        {% if rango=='max' %}
+          {{ temps.lista | max if temps.lista | length > 0 else states(sensorTemperatura) }}
+        {% else %}
+          {{ temps.lista | min if temps.lista | length > 0 else states(sensorTemperatura) }}
+        {% endif %}
+{% endmacro %}
+

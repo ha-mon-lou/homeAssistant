@@ -4,26 +4,12 @@
 
 - platform: template
   sensors:
-    temperatura_real_max:
+    temperatura_real_min:
       friendly_name: "T. real min"
       device_class: temperature
       unit_of_measurement: "°C"
       unique_id: "temperatura_real_minima"
       value_template: >
-        {% set trvs = [
-          'climate.zigbee_sonoff_trvzb_01',
-          'climate.zigbee_sonoff_trvzb_02',
-          'climate.zigbee_sonoff_trvzb_03',
-          'climate.zigbee_sonoff_trvzb_04'
-        ] %}
-
-        {% set temps = namespace(lista=[]) %}
-
-        {% for trv in trvs %}
-          {% if states(trv) | lower in ['heat', 'auto']  and state_attr(trv, 'current_temperature') is number %}
-            {% set temps.lista = temps.lista + [ state_attr(trv, 'current_temperature') ] %}
-          {% endif %}
-        {% endfor %}
-
-        {{ temps.lista | min if temps.lista | length > 0 else states('input_number.nivel_sensacion_termica_ideal') }}
+        {% from 'trvs.jinja' import trvs %}
+        {{ trvs('current_temperature','min') }}
       icon_template: mdi:thermometer
