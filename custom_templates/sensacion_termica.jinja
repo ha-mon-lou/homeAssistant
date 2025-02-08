@@ -1,6 +1,6 @@
-{% macro macro_sensacion_termica(temperatura, humedad) %}
-  {% set T = (temperatura | float * 9 / 5) + 32 %}
-  {% set RH = humedad | float %}
+{% macro macro_sensacion_termica(sensorTemperatura, sensorHumedad) %}
+  {% set T = (( states(sensorTemperatura) | float(0) )  * 9 / 5) + 32 %}
+  {% set RH = states(sensorHumedad) | float(0) %}
   {% set simple_HI = 0.5 * (T + 61.0 + ((T-68.0)*1.2) + (RH*0.094)) %}
 
   {% if simple_HI >= 80.0 %}

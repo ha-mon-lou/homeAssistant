@@ -8,29 +8,25 @@
       unit_of_measurement: "°C"
       value_template: >
         {% from 'sensacion_termica.jinja' import macro_sensacion_termica %}
-        {{ macro_sensacion_termica(states('sensor.temperatura_interior'), states('sensor.humedad_interior')) }}
+        {{ macro_sensacion_termica('sensor.temperatura_interior','sensor.humedad_interior') }}
 
     confort_termico:
       friendly_name: "Confort Térmico"
       unit_of_measurement: "°C"
       value_template: >
-        {% set tempInC  = states('sensor.temperatura_interior') | float %}
-        {% set humValue = states('sensor.humedad_interior') | float %}
-        {% set confort = tempInC - (0.55 * (1 - 0.01 * humValue) * (tempInC - 14.5)) %}
-        {{ confort | round(2) }}
+        {% from 'confort_termico.jinja' import macro_confort_termico %}
+        {{ macro_confort_termico('sensor.temperatura_interior', 'sensor.humedad_interior') }}
 
     sensacion_termica_tuya_wifi_1:
       friendly_name: "Sensación Térmica (Tuya 1)"
       unit_of_measurement: "°C"
       value_template: >
         {% from 'sensacion_termica.jinja' import macro_sensacion_termica %}
-        {{ macro_sensacion_termica(states('sensor.tuya_termometro_wifi_temperature'), states('sensor.tuya_termometro_wifi_humidity')) }}
+        {{ macro_sensacion_termica('sensor.tuya_termometro_wifi_temperature', 'sensor.tuya_termometro_wifi_humidity') }}
 
     confort_termico_tuya_wifi_1:
       friendly_name: "Confort Térmico (Tuya 1)"
       unit_of_measurement: "°C"
       value_template: >
-        {% set tempInC  = states('sensor.tuya_termometro_wifi_temperature') | float %}
-        {% set humValue = states('sensor.tuya_termometro_wifi_humidity') | float %}
-        {% set confort = tempInC - (0.55 * (1 - 0.01 * humValue) * (tempInC - 14.5)) %}
-        {{ confort | round(2) }}
+        {% from 'confort_termico.jinja' import macro_confort_termico %}
+        {{ macro_confort_termico('sensor.tuya_termometro_wifi_temperature','sensor.tuya_termometro_wifi_humidity') }}
