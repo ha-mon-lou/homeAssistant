@@ -10,25 +10,8 @@
       entity_id: device_tracker.sm_a155f
       zone: zone.home
   actions:
-    - action: switch.turn_on
-      metadata: {}
-      data: {}
-      target:
-        device_id: a2f77cddd9878b9d3b8af396fcf240ad
-  mode: single
-
-- id: "1735563455807"
-  alias: Amanecer
-  description: ""
-  triggers:
-    - trigger: sun
-      event: sunrise
-      offset: 0
-  conditions: []
-  actions:
-    - action: switch.turn_off
-      metadata: {}
-      data: {}
-      target:
-        label_id: luz
+    - action: script.secuencia_by_area
+      data:
+        my_area: "Bedroom"
+        my_estado: "turn_on"
   mode: single

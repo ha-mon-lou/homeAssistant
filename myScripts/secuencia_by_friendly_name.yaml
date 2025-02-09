@@ -13,7 +13,7 @@ secuencia_by_friendly_name:
             | map(attribute='entity_id') | list }}
         sequence:
           - delay: 00:00:01
-          - service: switch.{{my_estado}}
+          - action: switch.{{my_estado}}
             target:
               entity_id: "{{ repeat.item }}"
   mode: single

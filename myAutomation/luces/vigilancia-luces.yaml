@@ -3,7 +3,7 @@
   description: "Cada x minutos revisa el enchufe y lo apaga si es de día"
   trigger:
     - platform: time_pattern
-      minutes: "/7"
+      minutes: "/6"
   condition:
     - condition: state
       entity_id: switch.grp_luces_habitacion
@@ -23,7 +23,7 @@
   description: "Cada x minutos revisa el enchufe y lo apaga si es de día"
   trigger:
     - platform: time_pattern
-      minutes: "/8"
+      minutes: "/5"
   condition:
     - condition: state
       entity_id: switch.grp_luces_comedor
