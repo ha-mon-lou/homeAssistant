@@ -29,12 +29,9 @@
       data:
         title: "luces automation off"
         message: "Han pasado {{ states('input_number.temporizador_luces_mm') }} min"
-    - action: script.control_calefaccion
-      data:
-        mode: "off"
-        temperatura: "{{ states('sensor.temperatura_exterior') }}"
     - action: script.secuencia_by_area
       data:
         my_area: "Bedroom"
+        my_excludes: "sonoff_trvzb"
         my_estado: "turn_off"
   mode: single

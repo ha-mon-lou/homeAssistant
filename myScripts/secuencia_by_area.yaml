@@ -2,18 +2,23 @@ secuencia_by_area:
   alias: secuencia by friendly name
   fields:
     my_area:
-      description: "a fiendly name"
+      description: "Nombre del área"
     my_estado:
-      description: "turn_on/turn_off/toggle"
+      description: "Acción (turn_on/turn_off/toggle)"
+    my_excludes:
+      description: "Texto a excluir en entity_id (opcional)"
   sequence:
     - repeat:
         for_each: >
-          {{ expand(area_entities(my_area)) 
-            | selectattr('domain', 'equalto', 'switch') 
-            | map(attribute='entity_id') | list }}
+          {% set entidades = expand(area_entities(my_area)) 
+            | selectattr('domain', 'equalto', 'switch') %}
+          {% if my_excludes | length > 0 %}
+            {% set entidades = entidades | rejectattr('entity_id', 'search', my_excludes) %}
+          {% endif %}
+          {{ entidades | map(attribute='entity_id') | list }}
         sequence:
-          - delay: 00:00:01
-          - action: switch.{{my_estado}}
+          - delay: 00:00:02
+          - action: switch.{{ my_estado }}
             target:
               entity_id: "{{ repeat.item }}"
   mode: single

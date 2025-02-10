@@ -15,6 +15,7 @@
     - action: script.secuencia_by_area
       data:
         my_area: "Bedroom"
+        my_excludes: "sonoff_trvzb"
         my_estado: "turn_off"
   mode: single
 
@@ -35,5 +36,6 @@
     - action: script.secuencia_by_area
       data:
         my_area: "Living room"
+        my_excludes: "sonoff_trvzb"
         my_estado: "turn_off"
   mode: single
