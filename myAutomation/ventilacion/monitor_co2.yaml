@@ -1,0 +1,31 @@
+- id: "control_ventilador_por_co2_on"
+  alias: "Activar ventilador por CO2 alto"
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.zigbee_heiman_hs3aq_co2
+      above: 1000 # Umbral de CO₂ en ppm (ajústalo a tu preferencia)
+      for:
+        minutes: 2 # Evita falsos positivos esperando un poco
+
+  action:
+    - service: switch.turn_on
+      target:
+        entity_id: switch.zigbee_nous_enchufe_01
+
+  mode: single
+
+- id: "control_ventilador_por_co2_off"
+  alias: "Apagar ventilador por CO2 normal"
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.zigbee_heiman_hs3aq_co2
+      below: 800 # Apagar cuando el CO₂ baje (ajusta según tu preferencia)
+      for:
+        minutes: 5 # Espera un tiempo antes de apagar
+
+  action:
+    - service: switch.turn_off
+      target:
+        entity_id: switch.zigbee_nous_enchufe_01
+
+  mode: single

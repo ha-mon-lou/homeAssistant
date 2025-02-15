@@ -22,6 +22,7 @@ switch: !include_dir_merge_list mySwitch
 script: !include_dir_merge_named myScripts
 #script: !include scripts.yaml
 recorder: !include recorder.yaml
+influxdb: !include influxdb.yaml
 
 logger:
   default: info

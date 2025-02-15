@@ -32,7 +32,7 @@ advanced:
     - 77
     - 19
     - 156
-  log_level: warning
+  log_level: error
   log_directory: /config/zigbee2mqtt/log/
   log_file: log_%TIMESTAMP%.log
 mqtt:
@@ -105,5 +105,10 @@ devices:
       name: zigbee_sonoff_trvzb_04
     optimistic: true
     thermostat_unit: celsius
+  '0x38398ffffe565011':
+    friendly_name: zigbee_heiman_hs3aq_01
+    homeassistant:
+      name: zigbee_heiman_hs3aq_01
+    optimistic: true
 availability:
   enabled: true

@@ -1,0 +1,15 @@
+api_version: 2
+host: 192.168.1.191
+port: 8086
+token: !secret influxdb_token
+organization: home_assistant
+bucket: !secret influxdb_bucket
+ssl: false
+verify_ssl: false
+default_measurement: state
+include:
+  domains:
+    - climate
+    - sensor
+    - binary_sensor
+    - switch

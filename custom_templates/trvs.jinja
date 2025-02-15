@@ -4,6 +4,7 @@
         {% set temps = namespace(lista=[]) %}
 
         {% for trv in trvs %}
+          {% set action = state_attr(trv, 'hvac_action') %}
           {% if states(trv) | lower in ['heat', 'auto']  and state_attr(trv, parametroTemperatura) is number %}
             {% set temps.lista = temps.lista + [ state_attr(trv, parametroTemperatura) ] %}
           {% endif %}
