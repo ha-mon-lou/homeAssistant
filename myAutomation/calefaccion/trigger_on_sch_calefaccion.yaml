@@ -9,7 +9,10 @@
       entity_id:
         - schedule.calefaccion_schedule
       to: "on"
-  conditions: []
+  conditions:
+    - condition: state
+      entity_id: input_boolean.invierno
+      state: "on"
   actions:
     - service: climate.set_temperature
       target:

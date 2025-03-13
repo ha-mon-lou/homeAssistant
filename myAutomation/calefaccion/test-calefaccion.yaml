@@ -9,7 +9,10 @@
     - trigger: state
       entity_id:
         - input_boolean.calefaccion_boolean
-  conditions: []
+  conditions:
+    - condition: state
+      entity_id: input_boolean.invierno
+      state: "on"
   actions:
     - sequence:
         - action: script.control_calefaccion

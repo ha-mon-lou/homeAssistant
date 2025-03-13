@@ -9,7 +9,10 @@
       entity_id: sensor.temperatura_objetivo_max
     - trigger: state
       entity_id: sensor.temperatura_caldera
-  conditions: []
+  conditions:
+    - condition: state
+      entity_id: input_boolean.invierno
+      state: "on"
   actions:
     - sequence:
         - action: script.control_calefaccion_advanced

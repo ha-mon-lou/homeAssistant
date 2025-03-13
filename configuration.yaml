@@ -23,6 +23,7 @@ script: !include_dir_merge_named myScripts
 #script: !include scripts.yaml
 recorder: !include recorder.yaml
 influxdb: !include influxdb.yaml
+rest_command: !include rest_commands.yaml
 
 logger:
   default: info

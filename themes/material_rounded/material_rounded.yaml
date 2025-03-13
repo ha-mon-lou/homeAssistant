@@ -13,11 +13,11 @@ Material Rounded:
     "ha-more-info-info$:\n  more-info-content$ more-info-update$ ha-switch$: :host{padding:0!important;position:relative;top:3px;--switch-checked-button-color:var(--md-switch-checked-button-color);--switch-unchecked-button-color:var(--md-switch-unchecked-button-color);--switch-checked-track-color:var(--md-switch-checked-track-color);--switch-unchecked-track-color:var(--md-switch-unchecked-track-color)}.mdc-switch__track{height:32px!important;width:52px!important;border-radius:32px!important;opacity:1!important;border:2px solid gray!important;--border-color:var(--md-switch-unchecked-button-color)}.mdc-switch--checked .mdc-switch__track{border:none!important}.mdc-switch__thumb-underlay{top:-8px!important;left:var(--thumb-left-on,var(--thumb-left-off))!important;--thumb-left-off:-8px}.mdc-switch--checked .mdc-switch__thumb-underlay{--thumb-left-on:-4px}.mdc-switch__thumb{height:var(--thumb-size-active,var(--thumb-size-on,var(--thumb-size-off)))!important;width:var(--thumb-size-active,var(--thumb-size-on,var(--thumb-size-off)))!important;background:var(--switch-unchecked-button-color)!important;border:none!important;--thumb-size-off:16px}.mdc-switch--checked .mdc-switch__thumb{background:var(--switch-checked-button-color)!important;--thumb-size-on:24px}.mdc-switch__thumb:active{transition:width 0.2s cubic-bezier(0.2,0,0,1)!important;--thumb-size-active:28px!important}mwc-ripple{display:none!important}\n  state-card-content$ state-card-toggle$ ha-entity-toggle$ ha-switch$: :host{padding:0!important;position:relative;top:3px;--switch-checked-button-color:var(--md-switch-checked-button-color);--switch-unchecked-button-color:var(--md-switch-unchecked-button-color);--switch-checked-track-color:var(--md-switch-checked-track-color);--switch-unchecked-track-color:var(--md-switch-unchecked-track-color)}.mdc-switch__track{height:32px!important;width:52px!important;border-radius:32px!important;opacity:1!important;border:2px solid gray!important;--border-color:var(--md-switch-unchecked-button-color)}.mdc-switch--checked .mdc-switch__track{border:none!important}.mdc-switch__thumb-underlay{top:-8px!important;left:var(--thumb-left-on,var(--thumb-left-off))!important;--thumb-left-off:-8px}.mdc-switch--checked .mdc-switch__thumb-underlay{--thumb-left-on:-4px}.mdc-switch__thumb{height:var(--thumb-size-active,var(--thumb-size-on,var(--thumb-size-off)))!important;width:var(--thumb-size-active,var(--thumb-size-on,var(--thumb-size-off)))!important;background:var(--switch-unchecked-button-color)!important;border:none!important;--thumb-size-off:16px}.mdc-switch--checked .mdc-switch__thumb{background:var(--switch-checked-button-color)!important;--thumb-size-on:24px}.mdc-switch__thumb:active{transition:width 0.2s cubic-bezier(0.2,0,0,1)!important;--thumb-size-active:28px!important}mwc-ripple{display:none!important}\nha-more-info-settings$:\n  entity-registry-settings$ entity-registry-settings-editor$ ha-switch$: :host{padding:0!important;position:relative;top:3px;--switch-checked-button-color:var(--md-switch-checked-button-color);--switch-unchecked-button-color:var(--md-switch-unchecked-button-color);--switch-checked-track-color:var(--md-switch-checked-track-color);--switch-unchecked-track-color:var(--md-switch-unchecked-track-color)}.mdc-switch__track{height:32px!important;width:52px!important;border-radius:32px!important;opacity:1!important;border:2px solid gray!important;--border-color:var(--md-switch-unchecked-button-color)}.mdc-switch--checked .mdc-switch__track{border:none!important}.mdc-switch__thumb-underlay{top:-8px!important;left:var(--thumb-left-on,var(--thumb-left-off))!important;--thumb-left-off:-8px}.mdc-switch--checked .mdc-switch__thumb-underlay{--thumb-left-on:-4px}.mdc-switch__thumb{height:var(--thumb-size-active,var(--thumb-size-on,var(--thumb-size-off)))!important;width:var(--thumb-size-active,var(--thumb-size-on,var(--thumb-size-off)))!important;background:var(--switch-unchecked-button-color)!important;border:none!important;--thumb-size-off:16px}.mdc-switch--checked .mdc-switch__thumb{background:var(--switch-checked-button-color)!important;--thumb-size-on:24px}.mdc-switch__thumb:active{transition:width
     0.2s cubic-bezier(0.2,0,0,1)!important;--thumb-size-active:28px!important}mwc-ripple{display:none!important}\n  entity-settings-helper-tab$ entity-registry-settings-editor$ ha-switch$: :host{padding:0!important;position:relative;top:3px;--switch-checked-button-color:var(--md-switch-checked-button-color);--switch-unchecked-button-color:var(--md-switch-unchecked-button-color);--switch-checked-track-color:var(--md-switch-checked-track-color);--switch-unchecked-track-color:var(--md-switch-unchecked-track-color)}.mdc-switch__track{height:32px!important;width:52px!important;border-radius:32px!important;opacity:1!important;border:2px solid gray!important;--border-color:var(--md-switch-unchecked-button-color)}.mdc-switch--checked .mdc-switch__track{border:none!important}.mdc-switch__thumb-underlay{top:-8px!important;left:var(--thumb-left-on,var(--thumb-left-off))!important;--thumb-left-off:-8px}.mdc-switch--checked .mdc-switch__thumb-underlay{--thumb-left-on:-4px}.mdc-switch__thumb{height:var(--thumb-size-active,var(--thumb-size-on,var(--thumb-size-off)))!important;width:var(--thumb-size-active,var(--thumb-size-on,var(--thumb-size-off)))!important;background:var(--switch-unchecked-button-color)!important;border:none!important;--thumb-size-off:16px}.mdc-switch--checked .mdc-switch__thumb{background:var(--switch-checked-button-color)!important;--thumb-size-on:24px}.mdc-switch__thumb:active{transition:width 0.2s cubic-bezier(0.2,0,0,1)!important;--thumb-size-active:28px!important}mwc-ripple{display:none!important}\nha-more-info-view-voice-assistants$ entity-voice-settings$ ha-switch$: :host{padding:0!important;position:relative;top:3px;--switch-checked-button-color:var(--md-switch-checked-button-color);--switch-unchecked-button-color:var(--md-switch-unchecked-button-color);--switch-checked-track-color:var(--md-switch-checked-track-color);--switch-unchecked-track-color:var(--md-switch-unchecked-track-color)}.mdc-switch__track{height:32px!important;width:52px!important;border-radius:32px!important;opacity:1!important;border:2px solid gray!important;--border-color:var(--md-switch-unchecked-button-color)}.mdc-switch--checked .mdc-switch__track{border:none!important}.mdc-switch__thumb-underlay{top:-8px!important;left:var(--thumb-left-on,var(--thumb-left-off))!important;--thumb-left-off:-8px}.mdc-switch--checked .mdc-switch__thumb-underlay{--thumb-left-on:-4px}.mdc-switch__thumb{height:var(--thumb-size-active,var(--thumb-size-on,var(--thumb-size-off)))!important;width:var(--thumb-size-active,var(--thumb-size-on,var(--thumb-size-off)))!important;background:var(--switch-unchecked-button-color)!important;border:none!important;--thumb-size-off:16px}.mdc-switch--checked .mdc-switch__thumb{background:var(--switch-checked-button-color)!important;--thumb-size-on:24px}.mdc-switch__thumb:active{transition:width 0.2s cubic-bezier(0.2,0,0,1)!important;--thumb-size-active:28px!important}mwc-ripple{display:none!important}"
   card-mod-root-yaml:
-    ".: \"paper-tabs,ha-tabs{position:fixed;top:unset!important;bottom:0!important;background:var(--navbar-background)!important;height:var(--footer-height)!important;padding-bottom:env(safe-area-inset-bottom)!important;margin:0!important;margin-inline:0!important}.header{background-color:rgb(0,0,0,0)!important;transition:top 100ms ease-in-out 0s}:host([scrolled]) .header{top:-48px!important;transition:top 100ms ease-in-out 0s}.toolbar{padding:0!important}.action-items{position:fixed;right:0px;padding:0 12px;transition:top 20ms ease-in-out 0s}ha-menu-button{padding:0 12px}.hide-tab{display:none!important}paper-tab{padding:8.5px 0 0;flex-direction:column;flex:1;width:var(--tab-width);--tab-width:clamp(min(calc(((100vw - var(--mdc-drawer-width,0px)) / 5) - 3px),72px),((100vw - var(--mdc-drawer-width,0px)) / var(--view-tabs-count)) - 3px,calc(((100vw - var(--mdc-drawer-width,0px))) - 3px))}paper-tab.iron-selected ha-icon{width:min(64px,var(--tab-width));color:var(--md-current-tab-icon-color);background:var(--md-current-tab-icon-background)}ha-icon{min-width:24px;width:24px;height:32px;border-radius:16px;display:inline-flex;justify-content:center;align-items:center;transition:width 0.2s cubic-bezier(0.2,0,0,1);will-change:width,color,background}ha-svg-icon{min-width:24px}paper-tab::after{content:attr(aria-label);text-transform:none;text-wrap:wrap;text-align:center;font-weight:500;font-size:min(3.6vw,13px);padding:0px 1px;overflow:hidden;line-height:12px;height:100%;margin-top:4px;color:var(--md-inactive-tab-text-color)}paper-tab.iron-selected::after{color:var(--md-current-tab-text-color)}paper-tabs{height:50%;width:calc(100% - var(--mdc-drawer-width,0px))}.edit-mode paper-tab{min-width:fit-content!important}.edit-mode paper-tab.iron-selected::after{margin-top:-2px!important}.edit-mode .action-items{position:static!important}#add-view{top:6px;height:100%!important;display:inline-flex;flex-direction:column}#add-view::after{content:'Add View';text-transform:none;text-wrap:wrap;text-align:center;font-weight:500;font-size:min(3.6vw,13px);opacity:0.8;padding:0px 1px;overflow:hidden;line-height:12px;height:100%;margin-top:-6px} {% for i in range(1, 50) %}\\n{# For older devices that do not support the of <selector> syntax #}\\n:is(ha-tabs, paper-tabs):has(> paper-tab:not(.hide-tab):nth-child({{ i }})) {\\n\\t--view-tabs-count: {{ i }};\\n}\\n{# For modern devices, allows for hidden and sub view tabs in the middle of view order #}\\n:is(ha-tabs, paper-tabs):has(> paper-tab:not(.hide-tab):nth-child({{ i }} of paper-tab:not(.hide-tab))) {\\n\\t--view-tabs-count: {{ i }};\\n}\\n{% endfor %}\\n .header:has(ha-tabs,paper-tabs) + #view{padding-bottom:calc(var(--kiosk-header-height,var(--footer-height)) + env(safe-area-inset-bottom))!important}\"\ngrid-layout$:\n  ha-fab$: :host{bottom:calc(var(--footer-height) + 16px)!important;z-index:3!important}.mdc-fab{height:56px!important;border-radius:12px!important}.ripple{border-radius:12px!important}.mdc-fab__label{text-transform:none!important;font-size:11pt}\nhorizontal-layout$:\n  ha-fab$: :host{bottom:calc(var(--footer-height) + 16px)!important;z-index:3!important}.mdc-fab{height:56px!important;border-radius:12px!important}.ripple{border-radius:12px!important}.mdc-fab__label{text-transform:none!important;font-size:11pt}\nhui-masonry-view$:\n  ha-fab$: :host{bottom:calc(var(--footer-height) + 16px)!important;z-index:3!important}.mdc-fab{height:56px!important;border-radius:12px!important}.ripple{border-radius:12px!important}.mdc-fab__label{text-transform:none!important;font-size:11pt}\nhui-panel-view$:\n  ha-fab$: :host{bottom:calc(var(--footer-height) + 16px)!important;z-index:3!important}.mdc-fab{height:56px!important;border-radius:12px!important}.ripple{border-radius:12px!important}.mdc-fab__label{text-transform:none!important;font-size:11pt}\nhui-sidebar-view$:\n  ha-fab$: :host{bottom:calc(var(--footer-height) + 16px)!important;z-index:3!important}.mdc-fab{height:56px!important;border-radius:12px!important}.ripple{border-radius:12px!important}.mdc-fab__label{text-transform:none!important;font-size:11pt}\nmasonry-layout$:\n
-    \ ha-fab$: :host{bottom:calc(var(--footer-height) + 16px)!important;z-index:3!important}.mdc-fab{height:56px!important;border-radius:12px!important}.ripple{border-radius:12px!important}.mdc-fab__label{text-transform:none!important;font-size:11pt}\nvertical-layout$:\n  ha-fab$: :host{bottom:calc(var(--footer-height) + 16px)!important;z-index:3!important}.mdc-fab{height:56px!important;border-radius:12px!important}.ripple{border-radius:12px!important}.mdc-fab__label{text-transform:none!important;font-size:11pt}"
+    ".: \"paper-tabs,ha-tabs{position:fixed;top:unset!important;bottom:0!important;background:var(--navbar-background)!important;height:var(--footer-height)!important;padding-bottom:env(safe-area-inset-bottom)!important;margin:0!important;margin-inline:0!important}.header{background-color:rgb(0,0,0,0)!important;transition:var(--scroll-header-transition)!important;--scroll-header-transition:top 50ms ease-in-out 0s}paper-tab.iron-selected::before{content:attr(aria-label);text-transform:none;position:fixed;top:calc(var(--header-height) / 2);left:calc(50% + (var(--mdc-drawer-width,0px) / 2));transform:translate(-50%,-50%);font-size:22px;font-weight:400;transition:var(--scroll-header-transition)}:host([scrolled]) .header,:host([scrolled]) paper-tab.iron-selected::before{top:calc(-1 * var(--header-height))!important}.toolbar{padding:0!important}.action-items{position:fixed;right:0px;padding:0 12px}ha-menu-button{padding:0 12px}.hide-tab{display:none!important}paper-tab{padding:8.5px 0 0;flex-direction:column;flex:1;width:var(--tab-width);--tab-width:clamp(min(calc(((100vw - var(--mdc-drawer-width,0px)) / 5) - 3px),72px),((100vw - var(--mdc-drawer-width,0px)) / var(--view-tabs-count)) - 3px,calc(((100vw - var(--mdc-drawer-width,0px))) - 3px));--icon-width:min(64px,var(--tab-width))}paper-tab ha-icon::before{content:'';position:absolute;height:32px;width:var(--icon-width);border-radius:16px;background:var(--md-current-tab-icon-background);transition:all 0.2s cubic-bezier(0.2,0,0,1);transform:scaleX(0)}paper-tab.iron-selected ha-icon::before{transform:scaleX(1)}paper-tab.iron-selected ha-icon{color:var(--md-current-tab-icon-color)}ha-svg-icon{min-width:24px}ha-icon{width:var(--icon-width);display:inline-flex;justify-content:center;align-items:center;z-index:1}ha-icon::after{content:'';position:absolute;height:32px;width:var(--icon-width);border-radius:16px;z-index:0;background:var(--md-state-layer-tab-background);opacity:0;transition:opacity 0.1s cubic-bezier(0.4,0,1,1) 0s}@media (hover:hover){paper-tab:hover ha-icon::after{opacity:0.08}}paper-tab:focus-visible ha-icon::after,paper-tab:active ha-icon::after{opacity:0.1}paper-tab::after{content:attr(aria-label);text-transform:none;text-wrap:wrap;text-align:center;font-weight:500;font-size:min(3.6vw,13px);padding:0px 1px;overflow:hidden;line-height:14px;height:100%;color:var(--md-inactive-tab-text-color)}paper-tab.iron-selected::after{color:var(--md-current-tab-text-color);font-weight:700}paper-tabs{height:50%;width:calc(100% - var(--mdc-drawer-width,0px))}.edit-mode paper-tab{min-width:fit-content!important}.edit-mode paper-tab.iron-selected::after{margin-top:-2px!important}.edit-mode .action-items{position:static!important}#add-view{top:6px;height:100%!important;display:inline-flex;flex-direction:column}#add-view::after{content:'Add View';text-transform:none;text-wrap:wrap;text-align:center;font-weight:500;font-size:min(3.6vw,13px);opacity:0.8;padding:0px 1px;overflow:hidden;line-height:12px;height:100%;margin-top:-6px} {% for i in range(1, 50) %}\\n{# For older devices that do not support the of <selector> syntax #}\\n:is(ha-tabs, paper-tabs):has(> paper-tab:not(.hide-tab):nth-child({{ i }})) {\\n\\t--view-tabs-count: {{ i }};\\n}\\n{# For modern devices, allows for hidden and sub view tabs in the middle of view order #}\\n:is(ha-tabs, paper-tabs):has(> paper-tab:not(.hide-tab):nth-child({{ i }} of paper-tab:not(.hide-tab))) {\\n\\t--view-tabs-count: {{ i }};\\n}\\n{% endfor %}\\n .header:has(ha-tabs,paper-tabs) + #view{padding-bottom:calc(var(--kiosk-header-height,var(--footer-height)) + env(safe-area-inset-bottom))!important}\"\ngrid-layout$:\n  ha-fab$: :host{bottom:calc(var(--footer-height) + 16px)!important;z-index:3!important}.mdc-fab{height:56px!important;border-radius:12px!important}.ripple{border-radius:12px!important}.mdc-fab__label{text-transform:none!important;font-size:11pt}\nhorizontal-layout$:\n  ha-fab$: :host{bottom:calc(var(--footer-height) + 16px)!important;z-index:3!important}.mdc-fab{height:56px!important;border-radius:12px!important}.ripple{border-radius:12px!important}.mdc-fab__label{text-transform:none!important;font-size:11pt}\nhui-masonry-view$:\n
+    \ ha-fab$: :host{bottom:calc(var(--footer-height) + 16px)!important;z-index:3!important}.mdc-fab{height:56px!important;border-radius:12px!important}.ripple{border-radius:12px!important}.mdc-fab__label{text-transform:none!important;font-size:11pt}\nhui-panel-view$:\n  ha-fab$: :host{bottom:calc(var(--footer-height) + 16px)!important;z-index:3!important}.mdc-fab{height:56px!important;border-radius:12px!important}.ripple{border-radius:12px!important}.mdc-fab__label{text-transform:none!important;font-size:11pt}\nhui-sidebar-view$:\n  ha-fab$: :host{bottom:calc(var(--footer-height) + 16px)!important;z-index:3!important}.mdc-fab{height:56px!important;border-radius:12px!important}.ripple{border-radius:12px!important}.mdc-fab__label{text-transform:none!important;font-size:11pt}\nmasonry-layout$:\n  ha-fab$: :host{bottom:calc(var(--footer-height) + 16px)!important;z-index:3!important}.mdc-fab{height:56px!important;border-radius:12px!important}.ripple{border-radius:12px!important}.mdc-fab__label{text-transform:none!important;font-size:11pt}\nvertical-layout$:\n  ha-fab$: :host{bottom:calc(var(--footer-height) + 16px)!important;z-index:3!important}.mdc-fab{height:56px!important;border-radius:12px!important}.ripple{border-radius:12px!important}.mdc-fab__label{text-transform:none!important;font-size:11pt}"
   card-mod-row-yaml: "ha-entity-toggle$:\n  ha-switch$: :host{padding:0!important;position:relative;top:3px;--switch-checked-button-color:var(--md-switch-checked-button-color);--switch-unchecked-button-color:var(--md-switch-unchecked-button-color);--switch-checked-track-color:var(--md-switch-checked-track-color);--switch-unchecked-track-color:var(--md-switch-unchecked-track-color)}.mdc-switch__track{height:32px!important;width:52px!important;border-radius:32px!important;opacity:1!important;border:2px solid gray!important;--border-color:var(--md-switch-unchecked-button-color)}.mdc-switch--checked .mdc-switch__track{border:none!important}.mdc-switch__thumb-underlay{top:-8px!important;left:var(--thumb-left-on,var(--thumb-left-off))!important;--thumb-left-off:-8px}.mdc-switch--checked .mdc-switch__thumb-underlay{--thumb-left-on:-4px}.mdc-switch__thumb{height:var(--thumb-size-active,var(--thumb-size-on,var(--thumb-size-off)))!important;width:var(--thumb-size-active,var(--thumb-size-on,var(--thumb-size-off)))!important;background:var(--switch-unchecked-button-color)!important;border:none!important;--thumb-size-off:16px}.mdc-switch--checked .mdc-switch__thumb{background:var(--switch-checked-button-color)!important;--thumb-size-on:24px}.mdc-switch__thumb:active{transition:width 0.2s cubic-bezier(0.2,0,0,1)!important;--thumb-size-active:28px!important}mwc-ripple{display:none!important}"
   card-mod-sidebar-yaml:
-    ".: ha-sidebar{width:56px}:not(.profile)>paper-icon-item{transition:width 0.2s cubic-bezier(0.2,0,0,1);height:48px;margin:0 4px!important;padding:0 12px!important}.item-text{z-index:2;overflow:hidden;white-space:nowrap}paper-icon-item::before{content:'';height:48px;width:100%!important;position:absolute!important;transition:all 0.2s cubic-bezier(0.2,0,0,1)!important;left:0!important;right:0!important;opacity:1!important;background:var(--md-current-tab-icon-background)!important;border-radius:128px!important;transform:scaleX(0)}.iron-selected paper-icon-item::before{will-change:unset!important;transform:scaleX(1)}.configuration-badge,.notification-badge{color:var(--on-error-color)!important;background-color:var(--error-color)!important;font-weight:500!important}:host([expanded]) .configuration-badge,:host([expanded]) .notification-badge{color:var(--sidebar-text-color)!important;background-color:rgb(0,0,0,0)!important}:host([expanded]) .iron-selected .configuration-badge,:host([expanded]) .iron-selected .notification-badge{color:var(--sidebar-selected-text-color)!important}:host(:not([expanded])) .configuration-badge,:host(:not([expanded])) .notification-badge{bottom:24px!important}
+    ".: ha-sidebar{width:56px}:not(.profile)>paper-icon-item{transition:width 0.2s cubic-bezier(0.2,0,0,1);height:48px;margin:0 4px!important;padding:0 12px!important}.item-text{z-index:2;overflow:hidden;white-space:nowrap}ha-icon,ha-svg-icon{z-index:2}paper-icon-item::before{content:'';height:48px;width:100%!important;position:absolute!important;transition:all 0.2s cubic-bezier(0.2,0,0,1)!important;left:0!important;right:0!important;border-radius:128px!important;background:var(--sidebar-selected-background)!important;opacity:1!important;transform:scaleX(0)}.iron-selected paper-icon-item::before{transform:scaleX(1)}paper-icon-item::after{content:'';position:absolute;height:48px;width:100%;border-radius:128px;left:0;right:0;z-index:0;opacity:0;background:var(--md-state-layer-tab-background);transition:opacity 0.1s cubic-bezier(0.4,0,1,1) 0s}@media (hover:hover){paper-icon-item:hover::after{opacity:0.08}}paper-icon-item:focus-visible::after,paper-icon-item:active::after{opacity:0.1}:host([expanded]) paper-icon-item:active::after{background:var(--sidebar-state-pressed-background)}.iron-selected .item-text{font-weight:700}.configuration-badge,.notification-badge{color:var(--on-error-color)!important;background-color:var(--error-color)!important;font-weight:500!important}:host([expanded]) .configuration-badge,:host([expanded]) .notification-badge{color:var(--sidebar-text-color)!important;background-color:rgb(0,0,0,0)!important}:host([expanded]) .iron-selected .configuration-badge,:host([expanded]) .iron-selected .notification-badge{color:var(--sidebar-selected-text-color)!important}:host(:not([expanded])) .configuration-badge,:host(:not([expanded])) .notification-badge{bottom:24px!important}
 
     ha-user-badge$: .initials,.picture{z-index:2;margin:4px 0}"
   card-mod-theme: Material Rounded
@@ -49,7 +49,7 @@ Material Rounded:
   ha-heading-card-title-font-weight: 600
   ha-heading-card-title-line-height: 24px
   ha-view-sections-row-gap: 18px
-  header-height: 48px
+  header-height: 64px
   horizontal-stack-card-margin: 0px 4px
   input-disabled-fill-color: rgba(var(--input-background-color), 0.5)
   input-disabled-ink-color: var(--disabled-text-color)
@@ -63,6 +63,8 @@ Material Rounded:
   light-primary-color: var(--primary-color)
   link-text-color: var(--primary-color)
   md-divider-color: var(--divider-color)
+  mdc-checkbox-unchecked-color: var(--disabled-text-color)
+  mdc-radio-unchecked-color: var(--disabled-text-color)
   mdc-select-fill-color: var(--input-fill-color)
   mdc-select-hover-line-color: var(--input-hover-line-color)
   mdc-select-idle-line-color: var(--input-idle-line-color)
@@ -92,10 +94,13 @@ Material Rounded:
       md-current-tab-icon-color: var(--md-sys-color-on-primary-container-dark, var(--primary-color))
       md-current-tab-text-color: var(--md-sys-color-on-surface-dark, var(--primary-text-color))
       md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
+      md-state-layer-tab-background: var(--md-sys-color-on-surface-dark, var(--primary-text-color))
       md-switch-checked-button-color: var(--md-sys-color-on-primary-dark, var(--accent-color))
       md-switch-checked-track-color: var(--md-sys-color-primary-dark, var(--primary-color))
       md-switch-unchecked-button-color: var(--md-sys-color-outline-dark, rgb(140, 144, 159))
       md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-dark, rgb(65, 71, 83))
+      mdc-checkbox-checked-color: var(--primary-color, var(--md-sys-color-primary-dark))
+      mdc-checkbox-ink-color: var(--accent-color, var(--md-sys-color-on-primary-dark))
       on-error-color: rgb(96, 20, 16)
       primary-background-color: rgb(30, 31, 32)
       primary-color: var(--md-sys-color-primary-dark, rgb(194, 231, 254))
@@ -103,9 +108,11 @@ Material Rounded:
       secondary-background-color: rgb(55, 57, 59)
       secondary-text-color: rgb(187, 188, 196)
       sidebar-icon-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
-      sidebar-selected-icon-background: var(--md-sys-color-primary-container-dark, var(--secondary-color))
+      sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
+      sidebar-selected-background: var(--md-sys-color-primary-container-dark, var(--accent-color))
       sidebar-selected-icon-color: var(--md-sys-color-on-primary-container-dark, var(--primary-color))
       sidebar-selected-text-color: var(--md-sys-color-on-primary-container-dark, var(--primary-color))
+      sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-dark, var(--primary-color))
       sidebar-text-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
       slider-color: rgb(8, 66, 160)
       state-icon-color: rgb(196, 199, 197)
@@ -124,19 +131,24 @@ Material Rounded:
       md-current-tab-icon-color: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
       md-current-tab-text-color: var(--md-sys-color-on-surface-light, var(--primary-text-color))
       md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
+      md-state-layer-tab-background: var(--md-sys-color-on-surface-light, var(--primary-text-color))
       md-switch-checked-button-color: var(--md-sys-color-on-primary-light, rgb(255, 255, 255))
       md-switch-checked-track-color: var(--md-sys-color-primary-light, rgb(0, 91, 191))
       md-switch-unchecked-button-color: var(--md-sys-color-outline-light, rgb(114, 119, 133))
       md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-light, rgb(222, 226, 242))
+      mdc-checkbox-checked-color: var(--primary-color, var(--md-sys-color-primary-light))
+      mdc-checkbox-ink-color: var(--accent-color, var(--md-sys-color-on-primary-light))
       on-error-color: rgb(255, 255, 255)
       primary-background-color: rgb(240, 244, 249)
       primary-color: var(--md-sys-color-primary-light, rgb(0, 29, 53))
       primary-text-color: rgb(31, 31, 31)
       secondary-text-color: rgb(68, 71, 70)
       sidebar-icon-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
-      sidebar-selected-icon-background: var(--md-sys-color-secondary-container-light, var(--secondary-color))
+      sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
+      sidebar-selected-background: var(--md-sys-color-secondary-container-light, var(--accent-color))
       sidebar-selected-icon-color: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
       sidebar-selected-text-color: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
+      sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
       sidebar-text-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
       slider-color: rgb(211, 227, 253)
       state-icon-color: rgb(69, 71, 70)
@@ -216,7 +228,7 @@ Material Rounded Dark:
   ha-heading-card-title-font-weight: 600
   ha-heading-card-title-line-height: 24px
   ha-view-sections-row-gap: 18px
-  header-height: 48px
+  header-height: 64px
   horizontal-stack-card-margin: 0px 4px
   input-background-color: rgb(46, 48, 56)
   input-disabled-fill-color: rgba(var(--input-background-color), 0.5)
@@ -236,10 +248,15 @@ Material Rounded Dark:
   md-current-tab-text-color: var(--md-sys-color-on-surface-dark, var(--primary-text-color))
   md-divider-color: var(--divider-color)
   md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
+  md-state-layer-tab-background: var(--md-sys-color-on-surface-dark, var(--primary-text-color))
   md-switch-checked-button-color: var(--md-sys-color-on-primary-dark, var(--accent-color))
   md-switch-checked-track-color: var(--md-sys-color-primary-dark, var(--primary-color))
   md-switch-unchecked-button-color: var(--md-sys-color-outline-dark, rgb(140, 144, 159))
   md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-dark, rgb(65, 71, 83))
+  mdc-checkbox-checked-color: var(--primary-color, var(--md-sys-color-primary-dark))
+  mdc-checkbox-ink-color: var(--accent-color, var(--md-sys-color-on-primary-dark))
+  mdc-checkbox-unchecked-color: var(--disabled-text-color)
+  mdc-radio-unchecked-color: var(--disabled-text-color)
   mdc-select-fill-color: var(--input-fill-color)
   mdc-select-hover-line-color: var(--input-hover-line-color)
   mdc-select-idle-line-color: var(--input-idle-line-color)
@@ -285,9 +302,11 @@ Material Rounded Dark:
   secondary-text-color: rgb(187, 188, 196)
   sidebar-background-color: var(--primary-background-color)
   sidebar-icon-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
-  sidebar-selected-icon-background: var(--md-sys-color-primary-container-dark, var(--secondary-color))
+  sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
+  sidebar-selected-background: var(--md-sys-color-primary-container-dark, var(--accent-color))
   sidebar-selected-icon-color: var(--md-sys-color-on-primary-container-dark, var(--primary-color))
   sidebar-selected-text-color: var(--md-sys-color-on-primary-container-dark, var(--primary-color))
+  sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-dark, var(--primary-color))
   sidebar-text-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
   slider-color: rgb(8, 66, 160)
   slider-secondary-color: var(--primary-color)
@@ -345,7 +364,7 @@ Material Rounded Light:
   ha-heading-card-title-font-weight: 600
   ha-heading-card-title-line-height: 24px
   ha-view-sections-row-gap: 18px
-  header-height: 48px
+  header-height: 64px
   horizontal-stack-card-margin: 0px 4px
   input-background-color: rgb(234, 234, 235)
   input-disabled-fill-color: rgba(var(--input-background-color), 0.5)
@@ -365,10 +384,15 @@ Material Rounded Light:
   md-current-tab-text-color: var(--md-sys-color-on-surface-light, var(--primary-text-color))
   md-divider-color: var(--divider-color)
   md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
+  md-state-layer-tab-background: var(--md-sys-color-on-surface-light, var(--primary-text-color))
   md-switch-checked-button-color: var(--md-sys-color-on-primary-light, rgb(255, 255, 255))
   md-switch-checked-track-color: var(--md-sys-color-primary-light, rgb(0, 91, 191))
   md-switch-unchecked-button-color: var(--md-sys-color-outline-light, rgb(114, 119, 133))
   md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-light, rgb(222, 226, 242))
+  mdc-checkbox-checked-color: var(--primary-color, var(--md-sys-color-primary-light))
+  mdc-checkbox-ink-color: var(--accent-color, var(--md-sys-color-on-primary-light))
+  mdc-checkbox-unchecked-color: var(--disabled-text-color)
+  mdc-radio-unchecked-color: var(--disabled-text-color)
   mdc-select-fill-color: var(--input-fill-color)
   mdc-select-hover-line-color: var(--input-hover-line-color)
   mdc-select-idle-line-color: var(--input-idle-line-color)
@@ -413,9 +437,11 @@ Material Rounded Light:
   secondary-text-color: rgb(68, 71, 70)
   sidebar-background-color: var(--primary-background-color)
   sidebar-icon-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
-  sidebar-selected-icon-background: var(--md-sys-color-secondary-container-light, var(--secondary-color))
+  sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
+  sidebar-selected-background: var(--md-sys-color-secondary-container-light, var(--accent-color))
   sidebar-selected-icon-color: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
   sidebar-selected-text-color: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
+  sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
   sidebar-text-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
   slider-color: rgb(211, 227, 253)
   slider-secondary-color: var(--primary-color)
@@ -466,7 +492,7 @@ Material Rounded No Mod:
   ha-heading-card-title-font-weight: 600
   ha-heading-card-title-line-height: 24px
   ha-view-sections-row-gap: 18px
-  header-height: 48px
+  header-height: 64px
   horizontal-stack-card-margin: 0px 4px
   input-disabled-fill-color: rgba(var(--input-background-color), 0.5)
   input-disabled-ink-color: var(--disabled-text-color)
@@ -480,6 +506,8 @@ Material Rounded No Mod:
   light-primary-color: var(--primary-color)
   link-text-color: var(--primary-color)
   md-divider-color: var(--divider-color)
+  mdc-checkbox-unchecked-color: var(--disabled-text-color)
+  mdc-radio-unchecked-color: var(--disabled-text-color)
   mdc-select-fill-color: var(--input-fill-color)
   mdc-select-hover-line-color: var(--input-hover-line-color)
   mdc-select-idle-line-color: var(--input-idle-line-color)
@@ -509,10 +537,13 @@ Material Rounded No Mod:
       md-current-tab-icon-color: var(--md-sys-color-on-primary-container-dark, var(--primary-color))
       md-current-tab-text-color: var(--md-sys-color-on-surface-dark, var(--primary-text-color))
       md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
+      md-state-layer-tab-background: var(--md-sys-color-on-surface-dark, var(--primary-text-color))
       md-switch-checked-button-color: var(--md-sys-color-on-primary-dark, var(--accent-color))
       md-switch-checked-track-color: var(--md-sys-color-primary-dark, var(--primary-color))
       md-switch-unchecked-button-color: var(--md-sys-color-outline-dark, rgb(140, 144, 159))
       md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-dark, rgb(65, 71, 83))
+      mdc-checkbox-checked-color: var(--primary-color, var(--md-sys-color-primary-dark))
+      mdc-checkbox-ink-color: var(--accent-color, var(--md-sys-color-on-primary-dark))
       on-error-color: rgb(96, 20, 16)
       primary-background-color: rgb(30, 31, 32)
       primary-color: var(--md-sys-color-primary-dark, rgb(194, 231, 254))
@@ -520,9 +551,11 @@ Material Rounded No Mod:
       secondary-background-color: rgb(55, 57, 59)
       secondary-text-color: rgb(187, 188, 196)
       sidebar-icon-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
-      sidebar-selected-icon-background: var(--md-sys-color-primary-container-dark, var(--secondary-color))
+      sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
+      sidebar-selected-background: var(--md-sys-color-primary-container-dark, var(--accent-color))
       sidebar-selected-icon-color: var(--md-sys-color-on-primary-container-dark, var(--primary-color))
       sidebar-selected-text-color: var(--md-sys-color-on-primary-container-dark, var(--primary-color))
+      sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-dark, var(--primary-color))
       sidebar-text-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
       slider-color: rgb(8, 66, 160)
       state-icon-color: rgb(196, 199, 197)
@@ -541,19 +574,24 @@ Material Rounded No Mod:
       md-current-tab-icon-color: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
       md-current-tab-text-color: var(--md-sys-color-on-surface-light, var(--primary-text-color))
       md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
+      md-state-layer-tab-background: var(--md-sys-color-on-surface-light, var(--primary-text-color))
       md-switch-checked-button-color: var(--md-sys-color-on-primary-light, rgb(255, 255, 255))
       md-switch-checked-track-color: var(--md-sys-color-primary-light, rgb(0, 91, 191))
       md-switch-unchecked-button-color: var(--md-sys-color-outline-light, rgb(114, 119, 133))
       md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-light, rgb(222, 226, 242))
+      mdc-checkbox-checked-color: var(--primary-color, var(--md-sys-color-primary-light))
+      mdc-checkbox-ink-color: var(--accent-color, var(--md-sys-color-on-primary-light))
       on-error-color: rgb(255, 255, 255)
       primary-background-color: rgb(240, 244, 249)
       primary-color: var(--md-sys-color-primary-light, rgb(0, 29, 53))
       primary-text-color: rgb(31, 31, 31)
       secondary-text-color: rgb(68, 71, 70)
       sidebar-icon-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
-      sidebar-selected-icon-background: var(--md-sys-color-secondary-container-light, var(--secondary-color))
+      sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
+      sidebar-selected-background: var(--md-sys-color-secondary-container-light, var(--accent-color))
       sidebar-selected-icon-color: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
       sidebar-selected-text-color: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
+      sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
       sidebar-text-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
       slider-color: rgb(211, 227, 253)
       state-icon-color: rgb(69, 71, 70)
@@ -633,7 +671,7 @@ Material Rounded No Mod Dark:
   ha-heading-card-title-font-weight: 600
   ha-heading-card-title-line-height: 24px
   ha-view-sections-row-gap: 18px
-  header-height: 48px
+  header-height: 64px
   horizontal-stack-card-margin: 0px 4px
   input-background-color: rgb(46, 48, 56)
   input-disabled-fill-color: rgba(var(--input-background-color), 0.5)
@@ -653,10 +691,15 @@ Material Rounded No Mod Dark:
   md-current-tab-text-color: var(--md-sys-color-on-surface-dark, var(--primary-text-color))
   md-divider-color: var(--divider-color)
   md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
+  md-state-layer-tab-background: var(--md-sys-color-on-surface-dark, var(--primary-text-color))
   md-switch-checked-button-color: var(--md-sys-color-on-primary-dark, var(--accent-color))
   md-switch-checked-track-color: var(--md-sys-color-primary-dark, var(--primary-color))
   md-switch-unchecked-button-color: var(--md-sys-color-outline-dark, rgb(140, 144, 159))
   md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-dark, rgb(65, 71, 83))
+  mdc-checkbox-checked-color: var(--primary-color, var(--md-sys-color-primary-dark))
+  mdc-checkbox-ink-color: var(--accent-color, var(--md-sys-color-on-primary-dark))
+  mdc-checkbox-unchecked-color: var(--disabled-text-color)
+  mdc-radio-unchecked-color: var(--disabled-text-color)
   mdc-select-fill-color: var(--input-fill-color)
   mdc-select-hover-line-color: var(--input-hover-line-color)
   mdc-select-idle-line-color: var(--input-idle-line-color)
@@ -702,9 +745,11 @@ Material Rounded No Mod Dark:
   secondary-text-color: rgb(187, 188, 196)
   sidebar-background-color: var(--primary-background-color)
   sidebar-icon-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
-  sidebar-selected-icon-background: var(--md-sys-color-primary-container-dark, var(--secondary-color))
+  sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
+  sidebar-selected-background: var(--md-sys-color-primary-container-dark, var(--accent-color))
   sidebar-selected-icon-color: var(--md-sys-color-on-primary-container-dark, var(--primary-color))
   sidebar-selected-text-color: var(--md-sys-color-on-primary-container-dark, var(--primary-color))
+  sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-dark, var(--primary-color))
   sidebar-text-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
   slider-color: rgb(8, 66, 160)
   slider-secondary-color: var(--primary-color)
@@ -761,7 +806,7 @@ Material Rounded No Mod Light:
   ha-heading-card-title-font-weight: 600
   ha-heading-card-title-line-height: 24px
   ha-view-sections-row-gap: 18px
-  header-height: 48px
+  header-height: 64px
   horizontal-stack-card-margin: 0px 4px
   input-background-color: rgb(234, 234, 235)
   input-disabled-fill-color: rgba(var(--input-background-color), 0.5)
@@ -781,10 +826,15 @@ Material Rounded No Mod Light:
   md-current-tab-text-color: var(--md-sys-color-on-surface-light, var(--primary-text-color))
   md-divider-color: var(--divider-color)
   md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
+  md-state-layer-tab-background: var(--md-sys-color-on-surface-light, var(--primary-text-color))
   md-switch-checked-button-color: var(--md-sys-color-on-primary-light, rgb(255, 255, 255))
   md-switch-checked-track-color: var(--md-sys-color-primary-light, rgb(0, 91, 191))
   md-switch-unchecked-button-color: var(--md-sys-color-outline-light, rgb(114, 119, 133))
   md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-light, rgb(222, 226, 242))
+  mdc-checkbox-checked-color: var(--primary-color, var(--md-sys-color-primary-light))
+  mdc-checkbox-ink-color: var(--accent-color, var(--md-sys-color-on-primary-light))
+  mdc-checkbox-unchecked-color: var(--disabled-text-color)
+  mdc-radio-unchecked-color: var(--disabled-text-color)
   mdc-select-fill-color: var(--input-fill-color)
   mdc-select-hover-line-color: var(--input-hover-line-color)
   mdc-select-idle-line-color: var(--input-idle-line-color)
@@ -829,9 +879,11 @@ Material Rounded No Mod Light:
   secondary-text-color: rgb(68, 71, 70)
   sidebar-background-color: var(--primary-background-color)
   sidebar-icon-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
-  sidebar-selected-icon-background: var(--md-sys-color-secondary-container-light, var(--secondary-color))
+  sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
+  sidebar-selected-background: var(--md-sys-color-secondary-container-light, var(--accent-color))
   sidebar-selected-icon-color: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
   sidebar-selected-text-color: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
+  sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
   sidebar-text-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
   slider-color: rgb(211, 227, 253)
   slider-secondary-color: var(--primary-color)
@@ -882,7 +934,7 @@ Material Rounded Transparent Card:
   ha-heading-card-title-font-weight: 600
   ha-heading-card-title-line-height: 24px
   ha-view-sections-row-gap: 18px
-  header-height: 48px
+  header-height: 64px
   horizontal-stack-card-margin: 0px 4px
   input-disabled-fill-color: rgba(var(--input-background-color), 0.5)
   input-disabled-ink-color: var(--disabled-text-color)
@@ -896,6 +948,8 @@ Material Rounded Transparent Card:
   light-primary-color: var(--primary-color)
   link-text-color: var(--primary-color)
   md-divider-color: var(--divider-color)
+  mdc-checkbox-unchecked-color: var(--disabled-text-color)
+  mdc-radio-unchecked-color: var(--disabled-text-color)
   mdc-select-fill-color: var(--input-fill-color)
   mdc-select-hover-line-color: var(--input-hover-line-color)
   mdc-select-idle-line-color: var(--input-idle-line-color)
@@ -925,10 +979,13 @@ Material Rounded Transparent Card:
       md-current-tab-icon-color: var(--md-sys-color-on-primary-container-dark, var(--primary-color))
       md-current-tab-text-color: var(--md-sys-color-on-surface-dark, var(--primary-text-color))
       md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
+      md-state-layer-tab-background: var(--md-sys-color-on-surface-dark, var(--primary-text-color))
       md-switch-checked-button-color: var(--md-sys-color-on-primary-dark, var(--accent-color))
       md-switch-checked-track-color: var(--md-sys-color-primary-dark, var(--primary-color))
       md-switch-unchecked-button-color: var(--md-sys-color-outline-dark, rgb(140, 144, 159))
       md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-dark, rgb(65, 71, 83))
+      mdc-checkbox-checked-color: var(--primary-color, var(--md-sys-color-primary-dark))
+      mdc-checkbox-ink-color: var(--accent-color, var(--md-sys-color-on-primary-dark))
       on-error-color: rgb(96, 20, 16)
       primary-background-color: rgb(30, 31, 32)
       primary-color: var(--md-sys-color-primary-dark, rgb(194, 231, 254))
@@ -936,9 +993,11 @@ Material Rounded Transparent Card:
       secondary-background-color: rgb(55, 57, 59)
       secondary-text-color: rgb(187, 188, 196)
       sidebar-icon-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
-      sidebar-selected-icon-background: var(--md-sys-color-primary-container-dark, var(--secondary-color))
+      sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
+      sidebar-selected-background: var(--md-sys-color-primary-container-dark, var(--accent-color))
       sidebar-selected-icon-color: var(--md-sys-color-on-primary-container-dark, var(--primary-color))
       sidebar-selected-text-color: var(--md-sys-color-on-primary-container-dark, var(--primary-color))
+      sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-dark, var(--primary-color))
       sidebar-text-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
       slider-color: rgb(8, 66, 160)
       state-icon-color: rgb(196, 199, 197)
@@ -957,19 +1016,24 @@ Material Rounded Transparent Card:
       md-current-tab-icon-color: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
       md-current-tab-text-color: var(--md-sys-color-on-surface-light, var(--primary-text-color))
       md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
+      md-state-layer-tab-background: var(--md-sys-color-on-surface-light, var(--primary-text-color))
       md-switch-checked-button-color: var(--md-sys-color-on-primary-light, rgb(255, 255, 255))
       md-switch-checked-track-color: var(--md-sys-color-primary-light, rgb(0, 91, 191))
       md-switch-unchecked-button-color: var(--md-sys-color-outline-light, rgb(114, 119, 133))
       md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-light, rgb(222, 226, 242))
+      mdc-checkbox-checked-color: var(--primary-color, var(--md-sys-color-primary-light))
+      mdc-checkbox-ink-color: var(--accent-color, var(--md-sys-color-on-primary-light))
       on-error-color: rgb(255, 255, 255)
       primary-background-color: rgb(240, 244, 249)
       primary-color: var(--md-sys-color-primary-light, rgb(0, 29, 53))
       primary-text-color: rgb(31, 31, 31)
       secondary-text-color: rgb(68, 71, 70)
       sidebar-icon-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
-      sidebar-selected-icon-background: var(--md-sys-color-secondary-container-light, var(--secondary-color))
+      sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
+      sidebar-selected-background: var(--md-sys-color-secondary-container-light, var(--accent-color))
       sidebar-selected-icon-color: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
       sidebar-selected-text-color: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
+      sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
       sidebar-text-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
       slider-color: rgb(211, 227, 253)
       state-icon-color: rgb(69, 71, 70)
@@ -1049,7 +1113,7 @@ Material Rounded Transparent Card Dark:
   ha-heading-card-title-font-weight: 600
   ha-heading-card-title-line-height: 24px
   ha-view-sections-row-gap: 18px
-  header-height: 48px
+  header-height: 64px
   horizontal-stack-card-margin: 0px 4px
   input-background-color: rgb(46, 48, 56)
   input-disabled-fill-color: rgba(var(--input-background-color), 0.5)
@@ -1069,10 +1133,15 @@ Material Rounded Transparent Card Dark:
   md-current-tab-text-color: var(--md-sys-color-on-surface-dark, var(--primary-text-color))
   md-divider-color: var(--divider-color)
   md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
+  md-state-layer-tab-background: var(--md-sys-color-on-surface-dark, var(--primary-text-color))
   md-switch-checked-button-color: var(--md-sys-color-on-primary-dark, var(--accent-color))
   md-switch-checked-track-color: var(--md-sys-color-primary-dark, var(--primary-color))
   md-switch-unchecked-button-color: var(--md-sys-color-outline-dark, rgb(140, 144, 159))
   md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-dark, rgb(65, 71, 83))
+  mdc-checkbox-checked-color: var(--primary-color, var(--md-sys-color-primary-dark))
+  mdc-checkbox-ink-color: var(--accent-color, var(--md-sys-color-on-primary-dark))
+  mdc-checkbox-unchecked-color: var(--disabled-text-color)
+  mdc-radio-unchecked-color: var(--disabled-text-color)
   mdc-select-fill-color: var(--input-fill-color)
   mdc-select-hover-line-color: var(--input-hover-line-color)
   mdc-select-idle-line-color: var(--input-idle-line-color)
@@ -1118,9 +1187,11 @@ Material Rounded Transparent Card Dark:
   secondary-text-color: rgb(187, 188, 196)
   sidebar-background-color: var(--primary-background-color)
   sidebar-icon-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
-  sidebar-selected-icon-background: var(--md-sys-color-primary-container-dark, var(--secondary-color))
+  sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
+  sidebar-selected-background: var(--md-sys-color-primary-container-dark, var(--accent-color))
   sidebar-selected-icon-color: var(--md-sys-color-on-primary-container-dark, var(--primary-color))
   sidebar-selected-text-color: var(--md-sys-color-on-primary-container-dark, var(--primary-color))
+  sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-dark, var(--primary-color))
   sidebar-text-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
   slider-color: rgb(8, 66, 160)
   slider-secondary-color: var(--primary-color)
@@ -1178,7 +1249,7 @@ Material Rounded Transparent Card Light:
   ha-heading-card-title-font-weight: 600
   ha-heading-card-title-line-height: 24px
   ha-view-sections-row-gap: 18px
-  header-height: 48px
+  header-height: 64px
   horizontal-stack-card-margin: 0px 4px
   input-background-color: rgb(234, 234, 235)
   input-disabled-fill-color: rgba(var(--input-background-color), 0.5)
@@ -1198,10 +1269,15 @@ Material Rounded Transparent Card Light:
   md-current-tab-text-color: var(--md-sys-color-on-surface-light, var(--primary-text-color))
   md-divider-color: var(--divider-color)
   md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
+  md-state-layer-tab-background: var(--md-sys-color-on-surface-light, var(--primary-text-color))
   md-switch-checked-button-color: var(--md-sys-color-on-primary-light, rgb(255, 255, 255))
   md-switch-checked-track-color: var(--md-sys-color-primary-light, rgb(0, 91, 191))
   md-switch-unchecked-button-color: var(--md-sys-color-outline-light, rgb(114, 119, 133))
   md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-light, rgb(222, 226, 242))
+  mdc-checkbox-checked-color: var(--primary-color, var(--md-sys-color-primary-light))
+  mdc-checkbox-ink-color: var(--accent-color, var(--md-sys-color-on-primary-light))
+  mdc-checkbox-unchecked-color: var(--disabled-text-color)
+  mdc-radio-unchecked-color: var(--disabled-text-color)
   mdc-select-fill-color: var(--input-fill-color)
   mdc-select-hover-line-color: var(--input-hover-line-color)
   mdc-select-idle-line-color: var(--input-idle-line-color)
@@ -1246,9 +1322,11 @@ Material Rounded Transparent Card Light:
   secondary-text-color: rgb(68, 71, 70)
   sidebar-background-color: var(--primary-background-color)
   sidebar-icon-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
-  sidebar-selected-icon-background: var(--md-sys-color-secondary-container-light, var(--secondary-color))
+  sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
+  sidebar-selected-background: var(--md-sys-color-secondary-container-light, var(--accent-color))
   sidebar-selected-icon-color: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
   sidebar-selected-text-color: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
+  sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
   sidebar-text-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
   slider-color: rgb(211, 227, 253)
   slider-secondary-color: var(--primary-color)
@@ -1299,7 +1377,7 @@ Material Rounded Transparent Card No Mod:
   ha-heading-card-title-font-weight: 600
   ha-heading-card-title-line-height: 24px
   ha-view-sections-row-gap: 18px
-  header-height: 48px
+  header-height: 64px
   horizontal-stack-card-margin: 0px 4px
   input-disabled-fill-color: rgba(var(--input-background-color), 0.5)
   input-disabled-ink-color: var(--disabled-text-color)
@@ -1313,6 +1391,8 @@ Material Rounded Transparent Card No Mod:
   light-primary-color: var(--primary-color)
   link-text-color: var(--primary-color)
   md-divider-color: var(--divider-color)
+  mdc-checkbox-unchecked-color: var(--disabled-text-color)
+  mdc-radio-unchecked-color: var(--disabled-text-color)
   mdc-select-fill-color: var(--input-fill-color)
   mdc-select-hover-line-color: var(--input-hover-line-color)
   mdc-select-idle-line-color: var(--input-idle-line-color)
@@ -1342,10 +1422,13 @@ Material Rounded Transparent Card No Mod:
       md-current-tab-icon-color: var(--md-sys-color-on-primary-container-dark, var(--primary-color))
       md-current-tab-text-color: var(--md-sys-color-on-surface-dark, var(--primary-text-color))
       md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
+      md-state-layer-tab-background: var(--md-sys-color-on-surface-dark, var(--primary-text-color))
       md-switch-checked-button-color: var(--md-sys-color-on-primary-dark, var(--accent-color))
       md-switch-checked-track-color: var(--md-sys-color-primary-dark, var(--primary-color))
       md-switch-unchecked-button-color: var(--md-sys-color-outline-dark, rgb(140, 144, 159))
       md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-dark, rgb(65, 71, 83))
+      mdc-checkbox-checked-color: var(--primary-color, var(--md-sys-color-primary-dark))
+      mdc-checkbox-ink-color: var(--accent-color, var(--md-sys-color-on-primary-dark))
       on-error-color: rgb(96, 20, 16)
       primary-background-color: rgb(30, 31, 32)
       primary-color: var(--md-sys-color-primary-dark, rgb(194, 231, 254))
@@ -1353,9 +1436,11 @@ Material Rounded Transparent Card No Mod:
       secondary-background-color: rgb(55, 57, 59)
       secondary-text-color: rgb(187, 188, 196)
       sidebar-icon-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
-      sidebar-selected-icon-background: var(--md-sys-color-primary-container-dark, var(--secondary-color))
+      sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
+      sidebar-selected-background: var(--md-sys-color-primary-container-dark, var(--accent-color))
       sidebar-selected-icon-color: var(--md-sys-color-on-primary-container-dark, var(--primary-color))
       sidebar-selected-text-color: var(--md-sys-color-on-primary-container-dark, var(--primary-color))
+      sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-dark, var(--primary-color))
       sidebar-text-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
       slider-color: rgb(8, 66, 160)
       state-icon-color: rgb(196, 199, 197)
@@ -1374,19 +1459,24 @@ Material Rounded Transparent Card No Mod:
       md-current-tab-icon-color: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
       md-current-tab-text-color: var(--md-sys-color-on-surface-light, var(--primary-text-color))
       md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
+      md-state-layer-tab-background: var(--md-sys-color-on-surface-light, var(--primary-text-color))
       md-switch-checked-button-color: var(--md-sys-color-on-primary-light, rgb(255, 255, 255))
       md-switch-checked-track-color: var(--md-sys-color-primary-light, rgb(0, 91, 191))
       md-switch-unchecked-button-color: var(--md-sys-color-outline-light, rgb(114, 119, 133))
       md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-light, rgb(222, 226, 242))
+      mdc-checkbox-checked-color: var(--primary-color, var(--md-sys-color-primary-light))
+      mdc-checkbox-ink-color: var(--accent-color, var(--md-sys-color-on-primary-light))
       on-error-color: rgb(255, 255, 255)
       primary-background-color: rgb(240, 244, 249)
       primary-color: var(--md-sys-color-primary-light, rgb(0, 29, 53))
       primary-text-color: rgb(31, 31, 31)
       secondary-text-color: rgb(68, 71, 70)
       sidebar-icon-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
-      sidebar-selected-icon-background: var(--md-sys-color-secondary-container-light, var(--secondary-color))
+      sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
+      sidebar-selected-background: var(--md-sys-color-secondary-container-light, var(--accent-color))
       sidebar-selected-icon-color: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
       sidebar-selected-text-color: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
+      sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
       sidebar-text-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
       slider-color: rgb(211, 227, 253)
       state-icon-color: rgb(69, 71, 70)
@@ -1466,7 +1556,7 @@ Material Rounded Transparent Card No Mod Dark:
   ha-heading-card-title-font-weight: 600
   ha-heading-card-title-line-height: 24px
   ha-view-sections-row-gap: 18px
-  header-height: 48px
+  header-height: 64px
   horizontal-stack-card-margin: 0px 4px
   input-background-color: rgb(46, 48, 56)
   input-disabled-fill-color: rgba(var(--input-background-color), 0.5)
@@ -1486,10 +1576,15 @@ Material Rounded Transparent Card No Mod Dark:
   md-current-tab-text-color: var(--md-sys-color-on-surface-dark, var(--primary-text-color))
   md-divider-color: var(--divider-color)
   md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
+  md-state-layer-tab-background: var(--md-sys-color-on-surface-dark, var(--primary-text-color))
   md-switch-checked-button-color: var(--md-sys-color-on-primary-dark, var(--accent-color))
   md-switch-checked-track-color: var(--md-sys-color-primary-dark, var(--primary-color))
   md-switch-unchecked-button-color: var(--md-sys-color-outline-dark, rgb(140, 144, 159))
   md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-dark, rgb(65, 71, 83))
+  mdc-checkbox-checked-color: var(--primary-color, var(--md-sys-color-primary-dark))
+  mdc-checkbox-ink-color: var(--accent-color, var(--md-sys-color-on-primary-dark))
+  mdc-checkbox-unchecked-color: var(--disabled-text-color)
+  mdc-radio-unchecked-color: var(--disabled-text-color)
   mdc-select-fill-color: var(--input-fill-color)
   mdc-select-hover-line-color: var(--input-hover-line-color)
   mdc-select-idle-line-color: var(--input-idle-line-color)
@@ -1535,9 +1630,11 @@ Material Rounded Transparent Card No Mod Dark:
   secondary-text-color: rgb(187, 188, 196)
   sidebar-background-color: var(--primary-background-color)
   sidebar-icon-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
-  sidebar-selected-icon-background: var(--md-sys-color-primary-container-dark, var(--secondary-color))
+  sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
+  sidebar-selected-background: var(--md-sys-color-primary-container-dark, var(--accent-color))
   sidebar-selected-icon-color: var(--md-sys-color-on-primary-container-dark, var(--primary-color))
   sidebar-selected-text-color: var(--md-sys-color-on-primary-container-dark, var(--primary-color))
+  sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-dark, var(--primary-color))
   sidebar-text-color: var(--md-sys-color-on-surface-variant-dark, var(--secondary-text-color))
   slider-color: rgb(8, 66, 160)
   slider-secondary-color: var(--primary-color)
@@ -1594,7 +1691,7 @@ Material Rounded Transparent Card No Mod Light:
   ha-heading-card-title-font-weight: 600
   ha-heading-card-title-line-height: 24px
   ha-view-sections-row-gap: 18px
-  header-height: 48px
+  header-height: 64px
   horizontal-stack-card-margin: 0px 4px
   input-background-color: rgb(234, 234, 235)
   input-disabled-fill-color: rgba(var(--input-background-color), 0.5)
@@ -1614,10 +1711,15 @@ Material Rounded Transparent Card No Mod Light:
   md-current-tab-text-color: var(--md-sys-color-on-surface-light, var(--primary-text-color))
   md-divider-color: var(--divider-color)
   md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
+  md-state-layer-tab-background: var(--md-sys-color-on-surface-light, var(--primary-text-color))
   md-switch-checked-button-color: var(--md-sys-color-on-primary-light, rgb(255, 255, 255))
   md-switch-checked-track-color: var(--md-sys-color-primary-light, rgb(0, 91, 191))
   md-switch-unchecked-button-color: var(--md-sys-color-outline-light, rgb(114, 119, 133))
   md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-light, rgb(222, 226, 242))
+  mdc-checkbox-checked-color: var(--primary-color, var(--md-sys-color-primary-light))
+  mdc-checkbox-ink-color: var(--accent-color, var(--md-sys-color-on-primary-light))
+  mdc-checkbox-unchecked-color: var(--disabled-text-color)
+  mdc-radio-unchecked-color: var(--disabled-text-color)
   mdc-select-fill-color: var(--input-fill-color)
   mdc-select-hover-line-color: var(--input-hover-line-color)
   mdc-select-idle-line-color: var(--input-idle-line-color)
@@ -1662,9 +1764,11 @@ Material Rounded Transparent Card No Mod Light:
   secondary-text-color: rgb(68, 71, 70)
   sidebar-background-color: var(--primary-background-color)
   sidebar-icon-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
-  sidebar-selected-icon-background: var(--md-sys-color-secondary-container-light, var(--secondary-color))
+  sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
+  sidebar-selected-background: var(--md-sys-color-secondary-container-light, var(--accent-color))
   sidebar-selected-icon-color: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
   sidebar-selected-text-color: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
+  sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-light, var(--primary-color))
   sidebar-text-color: var(--md-sys-color-on-surface-variant-light, var(--secondary-text-color))
   slider-color: rgb(211, 227, 253)
   slider-secondary-color: var(--primary-color)
@@ -1714,7 +1818,7 @@ Material You:
   ha-heading-card-title-font-weight: 600
   ha-heading-card-title-line-height: 24px
   ha-view-sections-row-gap: 18px
-  header-height: 48px
+  header-height: 64px
   horizontal-stack-card-margin: 0px 4px
   input-disabled-fill-color: rgba(var(--input-background-color), 0.5)
   input-disabled-ink-color: var(--disabled-text-color)
@@ -1726,7 +1830,6 @@ Material You:
   input-ink-color: var(--primary-text-color)
   light-primary-color: var(--primary-color)
   link-text-color: var(--primary-color)
-  mdc-radio-unchecked-color: var(--mdc-checkbox-unchecked-color)
   mdc-select-fill-color: var(--input-fill-color)
   mdc-select-hover-line-color: var(--input-hover-line-color)
   mdc-select-idle-line-color: var(--input-idle-line-color)
@@ -1813,10 +1916,15 @@ Material You:
       md-current-tab-text-color: var(--md-sys-color-on-surface-dark, var(--default-md-sys-color-on-surface-dark))
       md-divider-color: var(--md-sys-color-outline-variant-dark, var(--default-md-sys-color-outline-variant-dark))
       md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
+      md-state-layer-tab-background: var(--md-sys-color-on-surface-dark, var(--default-md-sys-color-on-surface-dark))
       md-switch-checked-button-color: var(--md-sys-color-on-primary-dark, var(--default-md-sys-color-on-primary-dark))
       md-switch-checked-track-color: var(--md-sys-color-primary-dark, var(--default-md-sys-color-primary-dark))
       md-switch-unchecked-button-color: var(--md-sys-color-outline-dark, var(--default-md-sys-color-outline-dark))
       md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-dark, var(--default-md-sys-color-surface-variant-dark))
+      mdc-checkbox-checked-color: var(--md-sys-color-primary-dark, var(--default-md-sys-color-primary-dark))
+      mdc-checkbox-ink-color: var(--md-sys-color-on-primary-dark, var(--default-md-sys-color-on-primary-dark))
+      mdc-checkbox-unchecked-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
+      mdc-radio-unchecked-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
       mdc-theme-error: var(--md-sys-color-error-dark, var(--default-md-sys-color-error-dark))
       mdc-theme-on-primary: var(--md-sys-color-on-primary-dark, var(--default-md-sys-color-on-primary-dark))
       mdc-theme-on-secondary: var(--md-sys-color-on-secondary-dark, var(--default-md-sys-color-on-secondary-dark))
@@ -1831,9 +1939,11 @@ Material You:
       secondary-background-color: var(--md-sys-color-secondary-container-dark, var(--default-md-sys-color-secondary-container-dark))
       secondary-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
       sidebar-icon-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
-      sidebar-selected-icon-background: var(--md-sys-color-secondary-container-dark, var(--default-md-sys-color-secondary-container-dark))
+      sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
+      sidebar-selected-background: var(--md-sys-color-secondary-container-dark, var(--default-md-sys-color-secondary-container-dark))
       sidebar-selected-icon-color: var(--md-sys-color-on-secondary-container-dark, var(--default-md-sys-color-on-secondary-container-dark))
       sidebar-selected-text-color: var(--md-sys-color-on-secondary-container-dark, var(--default-md-sys-color-on-secondary-container-dark))
+      sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-dark, var(--default-md-sys-color-on-secondary-container-dark))
       sidebar-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
       slider-color: var(--md-sys-color-inverse-primary-dark, var(--default-md-sys-color-inverse-primary-dark))
       state-icon-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
@@ -1907,10 +2017,15 @@ Material You:
       md-current-tab-text-color: var(--md-sys-color-on-surface-light, var(--default-md-sys-color-on-surface-light))
       md-divider-color: var(--md-sys-color-outline-variant-light, var(--default-md-sys-color-outline-variant-light))
       md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
+      md-state-layer-tab-background: var(--md-sys-color-on-surface-light, var(--default-md-sys-color-on-surface-light))
       md-switch-checked-button-color: var(--md-sys-color-on-primary-light, var(--default-md-sys-color-on-primary-light))
       md-switch-checked-track-color: var(--md-sys-color-primary-light, var(--default-md-sys-color-primary-light))
       md-switch-unchecked-button-color: var(--md-sys-color-outline-light, var(--default-md-sys-color-outline-light))
       md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-light, var(--default-md-sys-color-surface-variant-light))
+      mdc-checkbox-checked-color: var(--md-sys-color-primary-light, var(--default-md-sys-color-primary-light))
+      mdc-checkbox-ink-color: var(--md-sys-color-on-primary-light, var(--default-md-sys-color-on-primary-light))
+      mdc-checkbox-unchecked-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
+      mdc-radio-unchecked-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
       mdc-theme-error: var(--md-sys-color-error-light, var(--default-md-sys-color-error-light))
       mdc-theme-on-primary: var(--md-sys-color-on-primary-light, var(--default-md-sys-color-on-primary-light))
       mdc-theme-on-secondary: var(--md-sys-color-on-secondary-light, var(--default-md-sys-color-on-secondary-light))
@@ -1925,9 +2040,11 @@ Material You:
       secondary-background-color: var(--md-sys-color-secondary-container-light, var(--default-md-sys-color-secondary-container-light))
       secondary-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
       sidebar-icon-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
-      sidebar-selected-icon-background: var(--md-sys-color-secondary-container-light, var(--default-md-sys-color-secondary-container-light))
+      sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
+      sidebar-selected-background: var(--md-sys-color-secondary-container-light, var(--default-md-sys-color-secondary-container-light))
       sidebar-selected-icon-color: var(--md-sys-color-on-secondary-container-light, var(--default-md-sys-color-on-secondary-container-light))
       sidebar-selected-text-color: var(--md-sys-color-on-secondary-container-light, var(--default-md-sys-color-on-secondary-container-light))
+      sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-light, var(--default-md-sys-color-on-secondary-container-light))
       sidebar-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
       slider-color: var(--md-sys-color-inverse-primary-light, var(--default-md-sys-color-inverse-primary-light))
       state-icon-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
@@ -2058,7 +2175,7 @@ Material You Dark:
   ha-heading-card-title-font-weight: 600
   ha-heading-card-title-line-height: 24px
   ha-view-sections-row-gap: 18px
-  header-height: 48px
+  header-height: 64px
   horizontal-stack-card-margin: 0px 4px
   input-background-color: var(--md-sys-color-surface-container-highest-dark, var(--default-md-sys-color-surface-container-highest-dark))
   input-disabled-fill-color: rgba(var(--input-background-color), 0.5)
@@ -2078,11 +2195,15 @@ Material You Dark:
   md-current-tab-text-color: var(--md-sys-color-on-surface-dark, var(--default-md-sys-color-on-surface-dark))
   md-divider-color: var(--md-sys-color-outline-variant-dark, var(--default-md-sys-color-outline-variant-dark))
   md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
+  md-state-layer-tab-background: var(--md-sys-color-on-surface-dark, var(--default-md-sys-color-on-surface-dark))
   md-switch-checked-button-color: var(--md-sys-color-on-primary-dark, var(--default-md-sys-color-on-primary-dark))
   md-switch-checked-track-color: var(--md-sys-color-primary-dark, var(--default-md-sys-color-primary-dark))
   md-switch-unchecked-button-color: var(--md-sys-color-outline-dark, var(--default-md-sys-color-outline-dark))
   md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-dark, var(--default-md-sys-color-surface-variant-dark))
-  mdc-radio-unchecked-color: var(--mdc-checkbox-unchecked-color)
+  mdc-checkbox-checked-color: var(--md-sys-color-primary-dark, var(--default-md-sys-color-primary-dark))
+  mdc-checkbox-ink-color: var(--md-sys-color-on-primary-dark, var(--default-md-sys-color-on-primary-dark))
+  mdc-checkbox-unchecked-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
+  mdc-radio-unchecked-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
   mdc-select-fill-color: var(--input-fill-color)
   mdc-select-hover-line-color: var(--input-hover-line-color)
   mdc-select-idle-line-color: var(--input-idle-line-color)
@@ -2137,9 +2258,11 @@ Material You Dark:
   secondary-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
   sidebar-background-color: var(--primary-background-color)
   sidebar-icon-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
-  sidebar-selected-icon-background: var(--md-sys-color-secondary-container-dark, var(--default-md-sys-color-secondary-container-dark))
+  sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
+  sidebar-selected-background: var(--md-sys-color-secondary-container-dark, var(--default-md-sys-color-secondary-container-dark))
   sidebar-selected-icon-color: var(--md-sys-color-on-secondary-container-dark, var(--default-md-sys-color-on-secondary-container-dark))
   sidebar-selected-text-color: var(--md-sys-color-on-secondary-container-dark, var(--default-md-sys-color-on-secondary-container-dark))
+  sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-dark, var(--default-md-sys-color-on-secondary-container-dark))
   sidebar-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
   slider-color: var(--md-sys-color-inverse-primary-dark, var(--default-md-sys-color-inverse-primary-dark))
   slider-secondary-color: var(--primary-color)
@@ -2248,7 +2371,7 @@ Material You Light:
   ha-heading-card-title-font-weight: 600
   ha-heading-card-title-line-height: 24px
   ha-view-sections-row-gap: 18px
-  header-height: 48px
+  header-height: 64px
   horizontal-stack-card-margin: 0px 4px
   input-background-color: var(--md-sys-color-surface-container-highest-light, var(--default-md-sys-color-surface-container-highest-light))
   input-disabled-fill-color: rgba(var(--input-background-color), 0.5)
@@ -2268,11 +2391,15 @@ Material You Light:
   md-current-tab-text-color: var(--md-sys-color-on-surface-light, var(--default-md-sys-color-on-surface-light))
   md-divider-color: var(--md-sys-color-outline-variant-light, var(--default-md-sys-color-outline-variant-light))
   md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
+  md-state-layer-tab-background: var(--md-sys-color-on-surface-light, var(--default-md-sys-color-on-surface-light))
   md-switch-checked-button-color: var(--md-sys-color-on-primary-light, var(--default-md-sys-color-on-primary-light))
   md-switch-checked-track-color: var(--md-sys-color-primary-light, var(--default-md-sys-color-primary-light))
   md-switch-unchecked-button-color: var(--md-sys-color-outline-light, var(--default-md-sys-color-outline-light))
   md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-light, var(--default-md-sys-color-surface-variant-light))
-  mdc-radio-unchecked-color: var(--mdc-checkbox-unchecked-color)
+  mdc-checkbox-checked-color: var(--md-sys-color-primary-light, var(--default-md-sys-color-primary-light))
+  mdc-checkbox-ink-color: var(--md-sys-color-on-primary-light, var(--default-md-sys-color-on-primary-light))
+  mdc-checkbox-unchecked-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
+  mdc-radio-unchecked-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
   mdc-select-fill-color: var(--input-fill-color)
   mdc-select-hover-line-color: var(--input-hover-line-color)
   mdc-select-idle-line-color: var(--input-idle-line-color)
@@ -2327,9 +2454,11 @@ Material You Light:
   secondary-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
   sidebar-background-color: var(--primary-background-color)
   sidebar-icon-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
-  sidebar-selected-icon-background: var(--md-sys-color-secondary-container-light, var(--default-md-sys-color-secondary-container-light))
+  sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
+  sidebar-selected-background: var(--md-sys-color-secondary-container-light, var(--default-md-sys-color-secondary-container-light))
   sidebar-selected-icon-color: var(--md-sys-color-on-secondary-container-light, var(--default-md-sys-color-on-secondary-container-light))
   sidebar-selected-text-color: var(--md-sys-color-on-secondary-container-light, var(--default-md-sys-color-on-secondary-container-light))
+  sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-light, var(--default-md-sys-color-on-secondary-container-light))
   sidebar-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
   slider-color: var(--md-sys-color-inverse-primary-light, var(--default-md-sys-color-inverse-primary-light))
   slider-secondary-color: var(--primary-color)
@@ -2378,7 +2507,7 @@ Material You No Mod:
   ha-heading-card-title-font-weight: 600
   ha-heading-card-title-line-height: 24px
   ha-view-sections-row-gap: 18px
-  header-height: 48px
+  header-height: 64px
   horizontal-stack-card-margin: 0px 4px
   input-disabled-fill-color: rgba(var(--input-background-color), 0.5)
   input-disabled-ink-color: var(--disabled-text-color)
@@ -2390,7 +2519,6 @@ Material You No Mod:
   input-ink-color: var(--primary-text-color)
   light-primary-color: var(--primary-color)
   link-text-color: var(--primary-color)
-  mdc-radio-unchecked-color: var(--mdc-checkbox-unchecked-color)
   mdc-select-fill-color: var(--input-fill-color)
   mdc-select-hover-line-color: var(--input-hover-line-color)
   mdc-select-idle-line-color: var(--input-idle-line-color)
@@ -2477,10 +2605,15 @@ Material You No Mod:
       md-current-tab-text-color: var(--md-sys-color-on-surface-dark, var(--default-md-sys-color-on-surface-dark))
       md-divider-color: var(--md-sys-color-outline-variant-dark, var(--default-md-sys-color-outline-variant-dark))
       md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
+      md-state-layer-tab-background: var(--md-sys-color-on-surface-dark, var(--default-md-sys-color-on-surface-dark))
       md-switch-checked-button-color: var(--md-sys-color-on-primary-dark, var(--default-md-sys-color-on-primary-dark))
       md-switch-checked-track-color: var(--md-sys-color-primary-dark, var(--default-md-sys-color-primary-dark))
       md-switch-unchecked-button-color: var(--md-sys-color-outline-dark, var(--default-md-sys-color-outline-dark))
       md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-dark, var(--default-md-sys-color-surface-variant-dark))
+      mdc-checkbox-checked-color: var(--md-sys-color-primary-dark, var(--default-md-sys-color-primary-dark))
+      mdc-checkbox-ink-color: var(--md-sys-color-on-primary-dark, var(--default-md-sys-color-on-primary-dark))
+      mdc-checkbox-unchecked-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
+      mdc-radio-unchecked-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
       mdc-theme-error: var(--md-sys-color-error-dark, var(--default-md-sys-color-error-dark))
       mdc-theme-on-primary: var(--md-sys-color-on-primary-dark, var(--default-md-sys-color-on-primary-dark))
       mdc-theme-on-secondary: var(--md-sys-color-on-secondary-dark, var(--default-md-sys-color-on-secondary-dark))
@@ -2495,9 +2628,11 @@ Material You No Mod:
       secondary-background-color: var(--md-sys-color-secondary-container-dark, var(--default-md-sys-color-secondary-container-dark))
       secondary-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
       sidebar-icon-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
-      sidebar-selected-icon-background: var(--md-sys-color-secondary-container-dark, var(--default-md-sys-color-secondary-container-dark))
+      sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
+      sidebar-selected-background: var(--md-sys-color-secondary-container-dark, var(--default-md-sys-color-secondary-container-dark))
       sidebar-selected-icon-color: var(--md-sys-color-on-secondary-container-dark, var(--default-md-sys-color-on-secondary-container-dark))
       sidebar-selected-text-color: var(--md-sys-color-on-secondary-container-dark, var(--default-md-sys-color-on-secondary-container-dark))
+      sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-dark, var(--default-md-sys-color-on-secondary-container-dark))
       sidebar-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
       slider-color: var(--md-sys-color-inverse-primary-dark, var(--default-md-sys-color-inverse-primary-dark))
       state-icon-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
@@ -2571,10 +2706,15 @@ Material You No Mod:
       md-current-tab-text-color: var(--md-sys-color-on-surface-light, var(--default-md-sys-color-on-surface-light))
       md-divider-color: var(--md-sys-color-outline-variant-light, var(--default-md-sys-color-outline-variant-light))
       md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
+      md-state-layer-tab-background: var(--md-sys-color-on-surface-light, var(--default-md-sys-color-on-surface-light))
       md-switch-checked-button-color: var(--md-sys-color-on-primary-light, var(--default-md-sys-color-on-primary-light))
       md-switch-checked-track-color: var(--md-sys-color-primary-light, var(--default-md-sys-color-primary-light))
       md-switch-unchecked-button-color: var(--md-sys-color-outline-light, var(--default-md-sys-color-outline-light))
       md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-light, var(--default-md-sys-color-surface-variant-light))
+      mdc-checkbox-checked-color: var(--md-sys-color-primary-light, var(--default-md-sys-color-primary-light))
+      mdc-checkbox-ink-color: var(--md-sys-color-on-primary-light, var(--default-md-sys-color-on-primary-light))
+      mdc-checkbox-unchecked-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
+      mdc-radio-unchecked-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
       mdc-theme-error: var(--md-sys-color-error-light, var(--default-md-sys-color-error-light))
       mdc-theme-on-primary: var(--md-sys-color-on-primary-light, var(--default-md-sys-color-on-primary-light))
       mdc-theme-on-secondary: var(--md-sys-color-on-secondary-light, var(--default-md-sys-color-on-secondary-light))
@@ -2589,9 +2729,11 @@ Material You No Mod:
       secondary-background-color: var(--md-sys-color-secondary-container-light, var(--default-md-sys-color-secondary-container-light))
       secondary-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
       sidebar-icon-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
-      sidebar-selected-icon-background: var(--md-sys-color-secondary-container-light, var(--default-md-sys-color-secondary-container-light))
+      sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
+      sidebar-selected-background: var(--md-sys-color-secondary-container-light, var(--default-md-sys-color-secondary-container-light))
       sidebar-selected-icon-color: var(--md-sys-color-on-secondary-container-light, var(--default-md-sys-color-on-secondary-container-light))
       sidebar-selected-text-color: var(--md-sys-color-on-secondary-container-light, var(--default-md-sys-color-on-secondary-container-light))
+      sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-light, var(--default-md-sys-color-on-secondary-container-light))
       sidebar-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
       slider-color: var(--md-sys-color-inverse-primary-light, var(--default-md-sys-color-inverse-primary-light))
       state-icon-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
@@ -2722,7 +2864,7 @@ Material You No Mod Dark:
   ha-heading-card-title-font-weight: 600
   ha-heading-card-title-line-height: 24px
   ha-view-sections-row-gap: 18px
-  header-height: 48px
+  header-height: 64px
   horizontal-stack-card-margin: 0px 4px
   input-background-color: var(--md-sys-color-surface-container-highest-dark, var(--default-md-sys-color-surface-container-highest-dark))
   input-disabled-fill-color: rgba(var(--input-background-color), 0.5)
@@ -2742,11 +2884,15 @@ Material You No Mod Dark:
   md-current-tab-text-color: var(--md-sys-color-on-surface-dark, var(--default-md-sys-color-on-surface-dark))
   md-divider-color: var(--md-sys-color-outline-variant-dark, var(--default-md-sys-color-outline-variant-dark))
   md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
+  md-state-layer-tab-background: var(--md-sys-color-on-surface-dark, var(--default-md-sys-color-on-surface-dark))
   md-switch-checked-button-color: var(--md-sys-color-on-primary-dark, var(--default-md-sys-color-on-primary-dark))
   md-switch-checked-track-color: var(--md-sys-color-primary-dark, var(--default-md-sys-color-primary-dark))
   md-switch-unchecked-button-color: var(--md-sys-color-outline-dark, var(--default-md-sys-color-outline-dark))
   md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-dark, var(--default-md-sys-color-surface-variant-dark))
-  mdc-radio-unchecked-color: var(--mdc-checkbox-unchecked-color)
+  mdc-checkbox-checked-color: var(--md-sys-color-primary-dark, var(--default-md-sys-color-primary-dark))
+  mdc-checkbox-ink-color: var(--md-sys-color-on-primary-dark, var(--default-md-sys-color-on-primary-dark))
+  mdc-checkbox-unchecked-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
+  mdc-radio-unchecked-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
   mdc-select-fill-color: var(--input-fill-color)
   mdc-select-hover-line-color: var(--input-hover-line-color)
   mdc-select-idle-line-color: var(--input-idle-line-color)
@@ -2801,9 +2947,11 @@ Material You No Mod Dark:
   secondary-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
   sidebar-background-color: var(--primary-background-color)
   sidebar-icon-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
-  sidebar-selected-icon-background: var(--md-sys-color-secondary-container-dark, var(--default-md-sys-color-secondary-container-dark))
+  sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
+  sidebar-selected-background: var(--md-sys-color-secondary-container-dark, var(--default-md-sys-color-secondary-container-dark))
   sidebar-selected-icon-color: var(--md-sys-color-on-secondary-container-dark, var(--default-md-sys-color-on-secondary-container-dark))
   sidebar-selected-text-color: var(--md-sys-color-on-secondary-container-dark, var(--default-md-sys-color-on-secondary-container-dark))
+  sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-dark, var(--default-md-sys-color-on-secondary-container-dark))
   sidebar-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
   slider-color: var(--md-sys-color-inverse-primary-dark, var(--default-md-sys-color-inverse-primary-dark))
   slider-secondary-color: var(--primary-color)
@@ -2911,7 +3059,7 @@ Material You No Mod Light:
   ha-heading-card-title-font-weight: 600
   ha-heading-card-title-line-height: 24px
   ha-view-sections-row-gap: 18px
-  header-height: 48px
+  header-height: 64px
   horizontal-stack-card-margin: 0px 4px
   input-background-color: var(--md-sys-color-surface-container-highest-light, var(--default-md-sys-color-surface-container-highest-light))
   input-disabled-fill-color: rgba(var(--input-background-color), 0.5)
@@ -2931,11 +3079,15 @@ Material You No Mod Light:
   md-current-tab-text-color: var(--md-sys-color-on-surface-light, var(--default-md-sys-color-on-surface-light))
   md-divider-color: var(--md-sys-color-outline-variant-light, var(--default-md-sys-color-outline-variant-light))
   md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
+  md-state-layer-tab-background: var(--md-sys-color-on-surface-light, var(--default-md-sys-color-on-surface-light))
   md-switch-checked-button-color: var(--md-sys-color-on-primary-light, var(--default-md-sys-color-on-primary-light))
   md-switch-checked-track-color: var(--md-sys-color-primary-light, var(--default-md-sys-color-primary-light))
   md-switch-unchecked-button-color: var(--md-sys-color-outline-light, var(--default-md-sys-color-outline-light))
   md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-light, var(--default-md-sys-color-surface-variant-light))
-  mdc-radio-unchecked-color: var(--mdc-checkbox-unchecked-color)
+  mdc-checkbox-checked-color: var(--md-sys-color-primary-light, var(--default-md-sys-color-primary-light))
+  mdc-checkbox-ink-color: var(--md-sys-color-on-primary-light, var(--default-md-sys-color-on-primary-light))
+  mdc-checkbox-unchecked-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
+  mdc-radio-unchecked-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
   mdc-select-fill-color: var(--input-fill-color)
   mdc-select-hover-line-color: var(--input-hover-line-color)
   mdc-select-idle-line-color: var(--input-idle-line-color)
@@ -2990,9 +3142,11 @@ Material You No Mod Light:
   secondary-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
   sidebar-background-color: var(--primary-background-color)
   sidebar-icon-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
-  sidebar-selected-icon-background: var(--md-sys-color-secondary-container-light, var(--default-md-sys-color-secondary-container-light))
+  sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
+  sidebar-selected-background: var(--md-sys-color-secondary-container-light, var(--default-md-sys-color-secondary-container-light))
   sidebar-selected-icon-color: var(--md-sys-color-on-secondary-container-light, var(--default-md-sys-color-on-secondary-container-light))
   sidebar-selected-text-color: var(--md-sys-color-on-secondary-container-light, var(--default-md-sys-color-on-secondary-container-light))
+  sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-light, var(--default-md-sys-color-on-secondary-container-light))
   sidebar-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
   slider-color: var(--md-sys-color-inverse-primary-light, var(--default-md-sys-color-inverse-primary-light))
   slider-secondary-color: var(--primary-color)
@@ -3041,7 +3195,7 @@ Material You Transparent Card:
   ha-heading-card-title-font-weight: 600
   ha-heading-card-title-line-height: 24px
   ha-view-sections-row-gap: 18px
-  header-height: 48px
+  header-height: 64px
   horizontal-stack-card-margin: 0px 4px
   input-disabled-fill-color: rgba(var(--input-background-color), 0.5)
   input-disabled-ink-color: var(--disabled-text-color)
@@ -3053,7 +3207,6 @@ Material You Transparent Card:
   input-ink-color: var(--primary-text-color)
   light-primary-color: var(--primary-color)
   link-text-color: var(--primary-color)
-  mdc-radio-unchecked-color: var(--mdc-checkbox-unchecked-color)
   mdc-select-fill-color: var(--input-fill-color)
   mdc-select-hover-line-color: var(--input-hover-line-color)
   mdc-select-idle-line-color: var(--input-idle-line-color)
@@ -3140,10 +3293,15 @@ Material You Transparent Card:
       md-current-tab-text-color: var(--md-sys-color-on-surface-dark, var(--default-md-sys-color-on-surface-dark))
       md-divider-color: var(--md-sys-color-outline-variant-dark, var(--default-md-sys-color-outline-variant-dark))
       md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
+      md-state-layer-tab-background: var(--md-sys-color-on-surface-dark, var(--default-md-sys-color-on-surface-dark))
       md-switch-checked-button-color: var(--md-sys-color-on-primary-dark, var(--default-md-sys-color-on-primary-dark))
       md-switch-checked-track-color: var(--md-sys-color-primary-dark, var(--default-md-sys-color-primary-dark))
       md-switch-unchecked-button-color: var(--md-sys-color-outline-dark, var(--default-md-sys-color-outline-dark))
       md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-dark, var(--default-md-sys-color-surface-variant-dark))
+      mdc-checkbox-checked-color: var(--md-sys-color-primary-dark, var(--default-md-sys-color-primary-dark))
+      mdc-checkbox-ink-color: var(--md-sys-color-on-primary-dark, var(--default-md-sys-color-on-primary-dark))
+      mdc-checkbox-unchecked-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
+      mdc-radio-unchecked-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
       mdc-theme-error: var(--md-sys-color-error-dark, var(--default-md-sys-color-error-dark))
       mdc-theme-on-primary: var(--md-sys-color-on-primary-dark, var(--default-md-sys-color-on-primary-dark))
       mdc-theme-on-secondary: var(--md-sys-color-on-secondary-dark, var(--default-md-sys-color-on-secondary-dark))
@@ -3158,9 +3316,11 @@ Material You Transparent Card:
       secondary-background-color: var(--md-sys-color-secondary-container-dark, var(--default-md-sys-color-secondary-container-dark))
       secondary-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
       sidebar-icon-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
-      sidebar-selected-icon-background: var(--md-sys-color-secondary-container-dark, var(--default-md-sys-color-secondary-container-dark))
+      sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
+      sidebar-selected-background: var(--md-sys-color-secondary-container-dark, var(--default-md-sys-color-secondary-container-dark))
       sidebar-selected-icon-color: var(--md-sys-color-on-secondary-container-dark, var(--default-md-sys-color-on-secondary-container-dark))
       sidebar-selected-text-color: var(--md-sys-color-on-secondary-container-dark, var(--default-md-sys-color-on-secondary-container-dark))
+      sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-dark, var(--default-md-sys-color-on-secondary-container-dark))
       sidebar-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
       slider-color: var(--md-sys-color-inverse-primary-dark, var(--default-md-sys-color-inverse-primary-dark))
       state-icon-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
@@ -3234,10 +3394,15 @@ Material You Transparent Card:
       md-current-tab-text-color: var(--md-sys-color-on-surface-light, var(--default-md-sys-color-on-surface-light))
       md-divider-color: var(--md-sys-color-outline-variant-light, var(--default-md-sys-color-outline-variant-light))
       md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
+      md-state-layer-tab-background: var(--md-sys-color-on-surface-light, var(--default-md-sys-color-on-surface-light))
       md-switch-checked-button-color: var(--md-sys-color-on-primary-light, var(--default-md-sys-color-on-primary-light))
       md-switch-checked-track-color: var(--md-sys-color-primary-light, var(--default-md-sys-color-primary-light))
       md-switch-unchecked-button-color: var(--md-sys-color-outline-light, var(--default-md-sys-color-outline-light))
       md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-light, var(--default-md-sys-color-surface-variant-light))
+      mdc-checkbox-checked-color: var(--md-sys-color-primary-light, var(--default-md-sys-color-primary-light))
+      mdc-checkbox-ink-color: var(--md-sys-color-on-primary-light, var(--default-md-sys-color-on-primary-light))
+      mdc-checkbox-unchecked-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
+      mdc-radio-unchecked-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
       mdc-theme-error: var(--md-sys-color-error-light, var(--default-md-sys-color-error-light))
       mdc-theme-on-primary: var(--md-sys-color-on-primary-light, var(--default-md-sys-color-on-primary-light))
       mdc-theme-on-secondary: var(--md-sys-color-on-secondary-light, var(--default-md-sys-color-on-secondary-light))
@@ -3252,9 +3417,11 @@ Material You Transparent Card:
       secondary-background-color: var(--md-sys-color-secondary-container-light, var(--default-md-sys-color-secondary-container-light))
       secondary-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
       sidebar-icon-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
-      sidebar-selected-icon-background: var(--md-sys-color-secondary-container-light, var(--default-md-sys-color-secondary-container-light))
+      sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
+      sidebar-selected-background: var(--md-sys-color-secondary-container-light, var(--default-md-sys-color-secondary-container-light))
       sidebar-selected-icon-color: var(--md-sys-color-on-secondary-container-light, var(--default-md-sys-color-on-secondary-container-light))
       sidebar-selected-text-color: var(--md-sys-color-on-secondary-container-light, var(--default-md-sys-color-on-secondary-container-light))
+      sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-light, var(--default-md-sys-color-on-secondary-container-light))
       sidebar-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
       slider-color: var(--md-sys-color-inverse-primary-light, var(--default-md-sys-color-inverse-primary-light))
       state-icon-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
@@ -3385,7 +3552,7 @@ Material You Transparent Card Dark:
   ha-heading-card-title-font-weight: 600
   ha-heading-card-title-line-height: 24px
   ha-view-sections-row-gap: 18px
-  header-height: 48px
+  header-height: 64px
   horizontal-stack-card-margin: 0px 4px
   input-background-color: var(--md-sys-color-surface-container-highest-dark, var(--default-md-sys-color-surface-container-highest-dark))
   input-disabled-fill-color: rgba(var(--input-background-color), 0.5)
@@ -3405,11 +3572,15 @@ Material You Transparent Card Dark:
   md-current-tab-text-color: var(--md-sys-color-on-surface-dark, var(--default-md-sys-color-on-surface-dark))
   md-divider-color: var(--md-sys-color-outline-variant-dark, var(--default-md-sys-color-outline-variant-dark))
   md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
+  md-state-layer-tab-background: var(--md-sys-color-on-surface-dark, var(--default-md-sys-color-on-surface-dark))
   md-switch-checked-button-color: var(--md-sys-color-on-primary-dark, var(--default-md-sys-color-on-primary-dark))
   md-switch-checked-track-color: var(--md-sys-color-primary-dark, var(--default-md-sys-color-primary-dark))
   md-switch-unchecked-button-color: var(--md-sys-color-outline-dark, var(--default-md-sys-color-outline-dark))
   md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-dark, var(--default-md-sys-color-surface-variant-dark))
-  mdc-radio-unchecked-color: var(--mdc-checkbox-unchecked-color)
+  mdc-checkbox-checked-color: var(--md-sys-color-primary-dark, var(--default-md-sys-color-primary-dark))
+  mdc-checkbox-ink-color: var(--md-sys-color-on-primary-dark, var(--default-md-sys-color-on-primary-dark))
+  mdc-checkbox-unchecked-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
+  mdc-radio-unchecked-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
   mdc-select-fill-color: var(--input-fill-color)
   mdc-select-hover-line-color: var(--input-hover-line-color)
   mdc-select-idle-line-color: var(--input-idle-line-color)
@@ -3464,9 +3635,11 @@ Material You Transparent Card Dark:
   secondary-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
   sidebar-background-color: var(--primary-background-color)
   sidebar-icon-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
-  sidebar-selected-icon-background: var(--md-sys-color-secondary-container-dark, var(--default-md-sys-color-secondary-container-dark))
+  sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
+  sidebar-selected-background: var(--md-sys-color-secondary-container-dark, var(--default-md-sys-color-secondary-container-dark))
   sidebar-selected-icon-color: var(--md-sys-color-on-secondary-container-dark, var(--default-md-sys-color-on-secondary-container-dark))
   sidebar-selected-text-color: var(--md-sys-color-on-secondary-container-dark, var(--default-md-sys-color-on-secondary-container-dark))
+  sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-dark, var(--default-md-sys-color-on-secondary-container-dark))
   sidebar-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
   slider-color: var(--md-sys-color-inverse-primary-dark, var(--default-md-sys-color-inverse-primary-dark))
   slider-secondary-color: var(--primary-color)
@@ -3575,7 +3748,7 @@ Material You Transparent Card Light:
   ha-heading-card-title-font-weight: 600
   ha-heading-card-title-line-height: 24px
   ha-view-sections-row-gap: 18px
-  header-height: 48px
+  header-height: 64px
   horizontal-stack-card-margin: 0px 4px
   input-background-color: var(--md-sys-color-surface-container-highest-light, var(--default-md-sys-color-surface-container-highest-light))
   input-disabled-fill-color: rgba(var(--input-background-color), 0.5)
@@ -3595,11 +3768,15 @@ Material You Transparent Card Light:
   md-current-tab-text-color: var(--md-sys-color-on-surface-light, var(--default-md-sys-color-on-surface-light))
   md-divider-color: var(--md-sys-color-outline-variant-light, var(--default-md-sys-color-outline-variant-light))
   md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
+  md-state-layer-tab-background: var(--md-sys-color-on-surface-light, var(--default-md-sys-color-on-surface-light))
   md-switch-checked-button-color: var(--md-sys-color-on-primary-light, var(--default-md-sys-color-on-primary-light))
   md-switch-checked-track-color: var(--md-sys-color-primary-light, var(--default-md-sys-color-primary-light))
   md-switch-unchecked-button-color: var(--md-sys-color-outline-light, var(--default-md-sys-color-outline-light))
   md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-light, var(--default-md-sys-color-surface-variant-light))
-  mdc-radio-unchecked-color: var(--mdc-checkbox-unchecked-color)
+  mdc-checkbox-checked-color: var(--md-sys-color-primary-light, var(--default-md-sys-color-primary-light))
+  mdc-checkbox-ink-color: var(--md-sys-color-on-primary-light, var(--default-md-sys-color-on-primary-light))
+  mdc-checkbox-unchecked-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
+  mdc-radio-unchecked-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
   mdc-select-fill-color: var(--input-fill-color)
   mdc-select-hover-line-color: var(--input-hover-line-color)
   mdc-select-idle-line-color: var(--input-idle-line-color)
@@ -3654,9 +3831,11 @@ Material You Transparent Card Light:
   secondary-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
   sidebar-background-color: var(--primary-background-color)
   sidebar-icon-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
-  sidebar-selected-icon-background: var(--md-sys-color-secondary-container-light, var(--default-md-sys-color-secondary-container-light))
+  sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
+  sidebar-selected-background: var(--md-sys-color-secondary-container-light, var(--default-md-sys-color-secondary-container-light))
   sidebar-selected-icon-color: var(--md-sys-color-on-secondary-container-light, var(--default-md-sys-color-on-secondary-container-light))
   sidebar-selected-text-color: var(--md-sys-color-on-secondary-container-light, var(--default-md-sys-color-on-secondary-container-light))
+  sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-light, var(--default-md-sys-color-on-secondary-container-light))
   sidebar-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
   slider-color: var(--md-sys-color-inverse-primary-light, var(--default-md-sys-color-inverse-primary-light))
   slider-secondary-color: var(--primary-color)
@@ -3705,7 +3884,7 @@ Material You Transparent Card No Mod:
   ha-heading-card-title-font-weight: 600
   ha-heading-card-title-line-height: 24px
   ha-view-sections-row-gap: 18px
-  header-height: 48px
+  header-height: 64px
   horizontal-stack-card-margin: 0px 4px
   input-disabled-fill-color: rgba(var(--input-background-color), 0.5)
   input-disabled-ink-color: var(--disabled-text-color)
@@ -3717,7 +3896,6 @@ Material You Transparent Card No Mod:
   input-ink-color: var(--primary-text-color)
   light-primary-color: var(--primary-color)
   link-text-color: var(--primary-color)
-  mdc-radio-unchecked-color: var(--mdc-checkbox-unchecked-color)
   mdc-select-fill-color: var(--input-fill-color)
   mdc-select-hover-line-color: var(--input-hover-line-color)
   mdc-select-idle-line-color: var(--input-idle-line-color)
@@ -3804,10 +3982,15 @@ Material You Transparent Card No Mod:
       md-current-tab-text-color: var(--md-sys-color-on-surface-dark, var(--default-md-sys-color-on-surface-dark))
       md-divider-color: var(--md-sys-color-outline-variant-dark, var(--default-md-sys-color-outline-variant-dark))
       md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
+      md-state-layer-tab-background: var(--md-sys-color-on-surface-dark, var(--default-md-sys-color-on-surface-dark))
       md-switch-checked-button-color: var(--md-sys-color-on-primary-dark, var(--default-md-sys-color-on-primary-dark))
       md-switch-checked-track-color: var(--md-sys-color-primary-dark, var(--default-md-sys-color-primary-dark))
       md-switch-unchecked-button-color: var(--md-sys-color-outline-dark, var(--default-md-sys-color-outline-dark))
       md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-dark, var(--default-md-sys-color-surface-variant-dark))
+      mdc-checkbox-checked-color: var(--md-sys-color-primary-dark, var(--default-md-sys-color-primary-dark))
+      mdc-checkbox-ink-color: var(--md-sys-color-on-primary-dark, var(--default-md-sys-color-on-primary-dark))
+      mdc-checkbox-unchecked-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
+      mdc-radio-unchecked-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
       mdc-theme-error: var(--md-sys-color-error-dark, var(--default-md-sys-color-error-dark))
       mdc-theme-on-primary: var(--md-sys-color-on-primary-dark, var(--default-md-sys-color-on-primary-dark))
       mdc-theme-on-secondary: var(--md-sys-color-on-secondary-dark, var(--default-md-sys-color-on-secondary-dark))
@@ -3822,9 +4005,11 @@ Material You Transparent Card No Mod:
       secondary-background-color: var(--md-sys-color-secondary-container-dark, var(--default-md-sys-color-secondary-container-dark))
       secondary-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
       sidebar-icon-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
-      sidebar-selected-icon-background: var(--md-sys-color-secondary-container-dark, var(--default-md-sys-color-secondary-container-dark))
+      sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
+      sidebar-selected-background: var(--md-sys-color-secondary-container-dark, var(--default-md-sys-color-secondary-container-dark))
       sidebar-selected-icon-color: var(--md-sys-color-on-secondary-container-dark, var(--default-md-sys-color-on-secondary-container-dark))
       sidebar-selected-text-color: var(--md-sys-color-on-secondary-container-dark, var(--default-md-sys-color-on-secondary-container-dark))
+      sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-dark, var(--default-md-sys-color-on-secondary-container-dark))
       sidebar-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
       slider-color: var(--md-sys-color-inverse-primary-dark, var(--default-md-sys-color-inverse-primary-dark))
       state-icon-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
@@ -3898,10 +4083,15 @@ Material You Transparent Card No Mod:
       md-current-tab-text-color: var(--md-sys-color-on-surface-light, var(--default-md-sys-color-on-surface-light))
       md-divider-color: var(--md-sys-color-outline-variant-light, var(--default-md-sys-color-outline-variant-light))
       md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
+      md-state-layer-tab-background: var(--md-sys-color-on-surface-light, var(--default-md-sys-color-on-surface-light))
       md-switch-checked-button-color: var(--md-sys-color-on-primary-light, var(--default-md-sys-color-on-primary-light))
       md-switch-checked-track-color: var(--md-sys-color-primary-light, var(--default-md-sys-color-primary-light))
       md-switch-unchecked-button-color: var(--md-sys-color-outline-light, var(--default-md-sys-color-outline-light))
       md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-light, var(--default-md-sys-color-surface-variant-light))
+      mdc-checkbox-checked-color: var(--md-sys-color-primary-light, var(--default-md-sys-color-primary-light))
+      mdc-checkbox-ink-color: var(--md-sys-color-on-primary-light, var(--default-md-sys-color-on-primary-light))
+      mdc-checkbox-unchecked-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
+      mdc-radio-unchecked-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
       mdc-theme-error: var(--md-sys-color-error-light, var(--default-md-sys-color-error-light))
       mdc-theme-on-primary: var(--md-sys-color-on-primary-light, var(--default-md-sys-color-on-primary-light))
       mdc-theme-on-secondary: var(--md-sys-color-on-secondary-light, var(--default-md-sys-color-on-secondary-light))
@@ -3916,9 +4106,11 @@ Material You Transparent Card No Mod:
       secondary-background-color: var(--md-sys-color-secondary-container-light, var(--default-md-sys-color-secondary-container-light))
       secondary-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
       sidebar-icon-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
-      sidebar-selected-icon-background: var(--md-sys-color-secondary-container-light, var(--default-md-sys-color-secondary-container-light))
+      sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
+      sidebar-selected-background: var(--md-sys-color-secondary-container-light, var(--default-md-sys-color-secondary-container-light))
       sidebar-selected-icon-color: var(--md-sys-color-on-secondary-container-light, var(--default-md-sys-color-on-secondary-container-light))
       sidebar-selected-text-color: var(--md-sys-color-on-secondary-container-light, var(--default-md-sys-color-on-secondary-container-light))
+      sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-light, var(--default-md-sys-color-on-secondary-container-light))
       sidebar-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
       slider-color: var(--md-sys-color-inverse-primary-light, var(--default-md-sys-color-inverse-primary-light))
       state-icon-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
@@ -4049,7 +4241,7 @@ Material You Transparent Card No Mod Dark:
   ha-heading-card-title-font-weight: 600
   ha-heading-card-title-line-height: 24px
   ha-view-sections-row-gap: 18px
-  header-height: 48px
+  header-height: 64px
   horizontal-stack-card-margin: 0px 4px
   input-background-color: var(--md-sys-color-surface-container-highest-dark, var(--default-md-sys-color-surface-container-highest-dark))
   input-disabled-fill-color: rgba(var(--input-background-color), 0.5)
@@ -4069,11 +4261,15 @@ Material You Transparent Card No Mod Dark:
   md-current-tab-text-color: var(--md-sys-color-on-surface-dark, var(--default-md-sys-color-on-surface-dark))
   md-divider-color: var(--md-sys-color-outline-variant-dark, var(--default-md-sys-color-outline-variant-dark))
   md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
+  md-state-layer-tab-background: var(--md-sys-color-on-surface-dark, var(--default-md-sys-color-on-surface-dark))
   md-switch-checked-button-color: var(--md-sys-color-on-primary-dark, var(--default-md-sys-color-on-primary-dark))
   md-switch-checked-track-color: var(--md-sys-color-primary-dark, var(--default-md-sys-color-primary-dark))
   md-switch-unchecked-button-color: var(--md-sys-color-outline-dark, var(--default-md-sys-color-outline-dark))
   md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-dark, var(--default-md-sys-color-surface-variant-dark))
-  mdc-radio-unchecked-color: var(--mdc-checkbox-unchecked-color)
+  mdc-checkbox-checked-color: var(--md-sys-color-primary-dark, var(--default-md-sys-color-primary-dark))
+  mdc-checkbox-ink-color: var(--md-sys-color-on-primary-dark, var(--default-md-sys-color-on-primary-dark))
+  mdc-checkbox-unchecked-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
+  mdc-radio-unchecked-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
   mdc-select-fill-color: var(--input-fill-color)
   mdc-select-hover-line-color: var(--input-hover-line-color)
   mdc-select-idle-line-color: var(--input-idle-line-color)
@@ -4128,9 +4324,11 @@ Material You Transparent Card No Mod Dark:
   secondary-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
   sidebar-background-color: var(--primary-background-color)
   sidebar-icon-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
-  sidebar-selected-icon-background: var(--md-sys-color-secondary-container-dark, var(--default-md-sys-color-secondary-container-dark))
+  sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
+  sidebar-selected-background: var(--md-sys-color-secondary-container-dark, var(--default-md-sys-color-secondary-container-dark))
   sidebar-selected-icon-color: var(--md-sys-color-on-secondary-container-dark, var(--default-md-sys-color-on-secondary-container-dark))
   sidebar-selected-text-color: var(--md-sys-color-on-secondary-container-dark, var(--default-md-sys-color-on-secondary-container-dark))
+  sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-dark, var(--default-md-sys-color-on-secondary-container-dark))
   sidebar-text-color: var(--md-sys-color-on-surface-variant-dark, var(--default-md-sys-color-on-surface-variant-dark))
   slider-color: var(--md-sys-color-inverse-primary-dark, var(--default-md-sys-color-inverse-primary-dark))
   slider-secondary-color: var(--primary-color)
@@ -4238,7 +4436,7 @@ Material You Transparent Card No Mod Light:
   ha-heading-card-title-font-weight: 600
   ha-heading-card-title-line-height: 24px
   ha-view-sections-row-gap: 18px
-  header-height: 48px
+  header-height: 64px
   horizontal-stack-card-margin: 0px 4px
   input-background-color: var(--md-sys-color-surface-container-highest-light, var(--default-md-sys-color-surface-container-highest-light))
   input-disabled-fill-color: rgba(var(--input-background-color), 0.5)
@@ -4258,11 +4456,15 @@ Material You Transparent Card No Mod Light:
   md-current-tab-text-color: var(--md-sys-color-on-surface-light, var(--default-md-sys-color-on-surface-light))
   md-divider-color: var(--md-sys-color-outline-variant-light, var(--default-md-sys-color-outline-variant-light))
   md-inactive-tab-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
+  md-state-layer-tab-background: var(--md-sys-color-on-surface-light, var(--default-md-sys-color-on-surface-light))
   md-switch-checked-button-color: var(--md-sys-color-on-primary-light, var(--default-md-sys-color-on-primary-light))
   md-switch-checked-track-color: var(--md-sys-color-primary-light, var(--default-md-sys-color-primary-light))
   md-switch-unchecked-button-color: var(--md-sys-color-outline-light, var(--default-md-sys-color-outline-light))
   md-switch-unchecked-track-color: var(--md-sys-color-surface-variant-light, var(--default-md-sys-color-surface-variant-light))
-  mdc-radio-unchecked-color: var(--mdc-checkbox-unchecked-color)
+  mdc-checkbox-checked-color: var(--md-sys-color-primary-light, var(--default-md-sys-color-primary-light))
+  mdc-checkbox-ink-color: var(--md-sys-color-on-primary-light, var(--default-md-sys-color-on-primary-light))
+  mdc-checkbox-unchecked-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
+  mdc-radio-unchecked-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
   mdc-select-fill-color: var(--input-fill-color)
   mdc-select-hover-line-color: var(--input-hover-line-color)
   mdc-select-idle-line-color: var(--input-idle-line-color)
@@ -4317,9 +4519,11 @@ Material You Transparent Card No Mod Light:
   secondary-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
   sidebar-background-color: var(--primary-background-color)
   sidebar-icon-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
-  sidebar-selected-icon-background: var(--md-sys-color-secondary-container-light, var(--default-md-sys-color-secondary-container-light))
+  sidebar-menu-button-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
+  sidebar-selected-background: var(--md-sys-color-secondary-container-light, var(--default-md-sys-color-secondary-container-light))
   sidebar-selected-icon-color: var(--md-sys-color-on-secondary-container-light, var(--default-md-sys-color-on-secondary-container-light))
   sidebar-selected-text-color: var(--md-sys-color-on-secondary-container-light, var(--default-md-sys-color-on-secondary-container-light))
+  sidebar-state-pressed-background: var(--md-sys-color-on-secondary-container-light, var(--default-md-sys-color-on-secondary-container-light))
   sidebar-text-color: var(--md-sys-color-on-surface-variant-light, var(--default-md-sys-color-on-surface-variant-light))
   slider-color: var(--md-sys-color-inverse-primary-light, var(--default-md-sys-color-inverse-primary-light))
   slider-secondary-color: var(--primary-color)

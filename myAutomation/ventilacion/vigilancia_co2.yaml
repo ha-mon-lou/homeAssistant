@@ -11,7 +11,7 @@
     # Cuando el CO₂ baje del umbral
     - platform: numeric_state
       entity_id: sensor.zigbee_heiman_hs3aq_co2
-      below: 850
+      below: 800
       for:
         minutes: 2
 
@@ -35,7 +35,7 @@
         - conditions:
             - condition: numeric_state
               entity_id: sensor.zigbee_heiman_hs3aq_co2
-              below: 850
+              below: 800
           sequence:
             - service: switch.turn_off
               target:

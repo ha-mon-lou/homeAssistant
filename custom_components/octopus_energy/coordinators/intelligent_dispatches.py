@@ -2,6 +2,7 @@ import logging
 from datetime import datetime, timedelta
 from typing import Awaitable, Callable
 
+from custom_components.octopus_energy.storage.intelligent_dispatches import async_save_cached_intelligent_dispatches
 from homeassistant.util.dt import (utcnow)
 from homeassistant.helpers.update_coordinator import (
   DataUpdateCoordinator
@@ -24,7 +25,7 @@ from ..const import (
 )
 
 from ..api_client import ApiException, OctopusEnergyApiClient
-from ..api_client.intelligent_dispatches import IntelligentDispatches
+from ..api_client.intelligent_dispatches import IntelligentDispatchItem, IntelligentDispatches
 from . import BaseCoordinatorResult
 from ..api_client.intelligent_device import IntelligentDevice
 
@@ -95,6 +96,28 @@ async def async_merge_dispatch_data(hass, account_id: str, completed_dispatches)
   await store.async_save(dispatches_to_dictionary_list(new_data))
   return new_data
 
+def has_dispatches_changed(existing_dispatches: IntelligentDispatches, new_dispatches: IntelligentDispatches):
+  return (
+    existing_dispatches.current_state != new_dispatches.current_state or
+    len(existing_dispatches.completed) != len(new_dispatches.completed) or
+    (
+      len(existing_dispatches.completed) > 0 and
+      (
+        existing_dispatches.completed[0].start != new_dispatches.completed[0].start or
+        existing_dispatches.completed[-1].start != new_dispatches.completed[-1].start
+      )
+    ) 
+    or
+    len(existing_dispatches.planned) != len(new_dispatches.planned) or
+    (
+      len(existing_dispatches.planned) > 0 and
+      (
+        existing_dispatches.planned[0].start != new_dispatches.planned[0].start or
+        existing_dispatches.planned[-1].start != new_dispatches.planned[-1].start
+      )
+    )
+  )
+
 async def async_refresh_intelligent_dispatches(
   current: datetime,
   client: OctopusEnergyApiClient,
@@ -103,7 +126,8 @@ async def async_refresh_intelligent_dispatches(
   existing_intelligent_dispatches_result: IntelligentDispatchesCoordinatorResult,
   is_data_mocked: bool,
   is_manual_refresh: bool,
-  async_merge_dispatch_data: Callable[[str, list], Awaitable[list]]
+  async_merge_dispatch_data: Callable[[str, list], Awaitable[list]],
+  async_save_dispatches: Callable[[str, IntelligentDispatches], Awaitable[list]],
 ):
   requests_current_hour = existing_intelligent_dispatches_result.requests_current_hour if existing_intelligent_dispatches_result is not None else 0
   requests_last_reset = existing_intelligent_dispatches_result.requests_current_hour_last_reset if existing_intelligent_dispatches_result is not None else current
@@ -161,6 +185,12 @@ async def async_refresh_intelligent_dispatches(
 
       if dispatches is not None:
         dispatches.completed = await async_merge_dispatch_data(account_id, dispatches.completed)
+
+        if (existing_intelligent_dispatches_result is None or
+            existing_intelligent_dispatches_result.dispatches is None or
+            has_dispatches_changed(existing_intelligent_dispatches_result.dispatches, dispatches)):
+          await async_save_dispatches(account_id, dispatches)
+
         return IntelligentDispatchesCoordinatorResult(current, 1, dispatches, requests_current_hour + 1, requests_last_reset)
       
       result = None
@@ -186,9 +216,6 @@ async def async_refresh_intelligent_dispatches(
   return existing_intelligent_dispatches_result
 
 async def async_setup_intelligent_dispatches_coordinator(hass, account_id: str, mock_intelligent_data: bool, manual_dispatch_refreshes: bool):
-  # Reset data rates as we might have new information
-  hass.data[DOMAIN][account_id][DATA_INTELLIGENT_DISPATCHES] = None
-  
   async def async_update_intelligent_dispatches_data(is_manual_refresh = False):
     """Fetch data from API endpoint."""
     # Request our account data to be refreshed
@@ -209,7 +236,8 @@ async def async_setup_intelligent_dispatches_coordinator(hass, account_id: str, 
       hass.data[DOMAIN][account_id][DATA_INTELLIGENT_DISPATCHES] if DATA_INTELLIGENT_DISPATCHES in hass.data[DOMAIN][account_id] else None,
       mock_intelligent_data,
       is_manual_refresh,
-      lambda account_id, completed_dispatches: async_merge_dispatch_data(hass, account_id, completed_dispatches) 
+      lambda account_id, completed_dispatches: async_merge_dispatch_data(hass, account_id, completed_dispatches),
+      lambda account_id, dispatches: async_save_cached_intelligent_dispatches(hass, account_id, dispatches)
     )
     
     return hass.data[DOMAIN][account_id][DATA_INTELLIGENT_DISPATCHES]
