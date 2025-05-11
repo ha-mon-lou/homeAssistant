@@ -1,0 +1,9 @@
+ventilador_habitacion_modo_brisa:
+  name: Modo Brisa Habitación
+ventilador_habitacion_modo_invierno:
+  name: Modo Invierno Habitación
+
+ventilador_despacho_modo_brisa:
+  name: Modo Brisa Despacho
+ventilador_despacho_modo_invierno:
+  name: Modo Invierno Despacho

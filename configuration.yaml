@@ -25,6 +25,12 @@ recorder: !include recorder.yaml
 influxdb: !include influxdb.yaml
 rest_command: !include rest_commands.yaml
 
+input_select: !include myInput/input_selects.yaml
+input_boolean: !include myInput/input_booleans.yaml
+input_text: !include myInput/input_texts.yaml
+input_number: !include myInput/input_numbers.yaml
+# shell_command: !include myShellCommands/shell_commands.yaml
+
 logger:
   default: info
   logs:

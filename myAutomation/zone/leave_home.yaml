@@ -1,0 +1,15 @@
+- id: "leave_home ha_beelink"
+  alias: leave home ha_beelink
+  description: ""
+  triggers:
+    - trigger: zone
+      entity_id: person.ha_beelink
+      zone: zone.home
+      event: leave
+  conditions: []
+  actions:
+    - type: turn_off
+      device_id: 4212ed74edbdc7e8bd7b75f3ae1a9c4c
+      entity_id: 8c098c4f5799ff0d519ed64b05a880e1
+      domain: remote
+  mode: single

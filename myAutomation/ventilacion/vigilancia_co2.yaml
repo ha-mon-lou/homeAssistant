@@ -11,13 +11,13 @@
     # Cuando el CO₂ baje del umbral
     - platform: numeric_state
       entity_id: sensor.zigbee_heiman_hs3aq_co2
-      below: 800
+      below: 750
       for:
         minutes: 2
 
     # Cada 5 minutos verifica el estado
     - platform: time_pattern
-      minutes: "/5"
+      minutes: "/4"
 
   action:
     - choose:
@@ -29,16 +29,16 @@
           sequence:
             - service: switch.turn_on
               target:
-                entity_id: switch.zigbee_nous_enchufe_01
+                entity_id: switch.alias_pinguino
 
         # Si el CO₂ está bajo, apaga el ventilador
         - conditions:
             - condition: numeric_state
               entity_id: sensor.zigbee_heiman_hs3aq_co2
-              below: 800
+              below: 750
           sequence:
             - service: switch.turn_off
               target:
-                entity_id: switch.zigbee_nous_enchufe_01
+                entity_id: switch.alias_pinguino
 
   mode: single

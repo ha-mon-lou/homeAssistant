@@ -3,14 +3,14 @@
   trigger:
     - platform: numeric_state
       entity_id: sensor.zigbee_heiman_hs3aq_co2
-      above: 1000 # Umbral de CO₂ en ppm (ajústalo a tu preferencia)
+      above: 1000 # Umbral de CO₂ en ppm
       for:
         minutes: 2 # Evita falsos positivos esperando un poco
 
   action:
     - service: switch.turn_on
       target:
-        entity_id: switch.zigbee_nous_enchufe_01
+        entity_id: switch.alias_pinguino
 
   mode: single
 
@@ -19,13 +19,13 @@
   trigger:
     - platform: numeric_state
       entity_id: sensor.zigbee_heiman_hs3aq_co2
-      below: 800 # Apagar cuando el CO₂ baje (ajusta según tu preferencia)
+      below: 750 # Apagar cuando el CO₂ baje
       for:
         minutes: 5 # Espera un tiempo antes de apagar
 
   action:
     - service: switch.turn_off
       target:
-        entity_id: switch.zigbee_nous_enchufe_01
+        entity_id: switch.alias_pinguino
 
   mode: single

@@ -1,0 +1,41 @@
+selector_ventilador:
+  alias: Selector y comando para ventilador
+  description: Cambia el selector y envía comando según dispositivo
+  mode: queued
+  fields:
+    dispositivo:
+      description: "Nombre del ventilador (ej: ventilador_habitacion)"
+      example: ventilador_habitacion
+    valor:
+      description: "Comando y valor del selector (ej: Velocidad 1, Apagar)"
+      example: velocidad 1
+    modo:
+      description: "Modo auto o manual"
+      example: auto
+  sequence:
+    - if: "{{ modo is defined and modo | string | trim != '' }}"
+      then:
+        - service: input_select.select_option
+          data:
+            entity_id: "input_select.{{ dispositivo }}_modo_auto"
+            option: "{{ modo }}"
+
+    - if: "{{ valor is defined and valor | string | trim != '' }}"
+      then:
+        - service: input_select.select_option
+          data:
+            entity_id: "input_select.{{ dispositivo }}_botonera"
+            option: "{{ valor }}"
+        - service: script.envia_comando_broadlink
+          data:
+            dispositivo: "{{ dispositivo }}"
+            comando: "{{ valor }}"
+        - if: "{{ valor | lower == 'apagar' }}"
+          then:
+            - service: input_boolean.turn_off
+              target:
+                entity_id: "input_boolean.{{ dispositivo }}"
+          else:
+            - service: input_boolean.turn_on
+              target:
+                entity_id: "input_boolean.{{ dispositivo }}"

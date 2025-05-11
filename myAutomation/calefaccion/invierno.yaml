@@ -9,6 +9,6 @@
         - action: script.control_calefaccion
           data:
             mode: "off"
-            temperatura: "{{ states('input_number.nivel_sensacion_termica_ideal') }}"
+            temperatura: "{{ states('sensor.temperatura_interior') }}"
 
   mode: single

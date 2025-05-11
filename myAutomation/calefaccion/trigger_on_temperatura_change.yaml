@@ -13,6 +13,9 @@
     - condition: state
       entity_id: input_boolean.invierno
       state: "on"
+    - condition: state
+      entity_id: sensor.demanda_calefaccion
+      state: "on"
   actions:
     - sequence:
         - action: script.control_calefaccion_advanced

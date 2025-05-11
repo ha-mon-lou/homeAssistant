@@ -76,7 +76,6 @@ class HeatPump(BaseModel):
     serialNumber: Any
     model: str
     hardwareVersion: str
-    faultCodes: List
     maxWaterSetpoint: int
     minWaterSetpoint: int
     heatingFlowTemperature: HeatingFlowTemperature
@@ -123,7 +122,7 @@ class OctoHeatPumpControllerConfiguration(BaseModel):
 
 
 class OctoHeatPumpLivePerformance(BaseModel):
-    coefficientOfPerformance: str 
+    coefficientOfPerformance: str | None
     heatOutput: ValueAndUnit
     powerInput: ValueAndUnit
     outdoorTemperature: ValueAndUnit
@@ -131,7 +130,7 @@ class OctoHeatPumpLivePerformance(BaseModel):
 
 
 class OctoHeatPumpLifetimePerformance(BaseModel):
-    seasonalCoefficientOfPerformance: str
+    seasonalCoefficientOfPerformance: str | None
     heatOutput: ValueAndUnit
     energyInput: ValueAndUnit
     readAt: str
