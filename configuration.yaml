@@ -29,7 +29,9 @@ input_select: !include myInput/input_selects.yaml
 input_boolean: !include myInput/input_booleans.yaml
 input_text: !include myInput/input_texts.yaml
 input_number: !include myInput/input_numbers.yaml
+input_button: !include myInput/input_buttons.yaml
 # shell_command: !include myShellCommands/shell_commands.yaml
+timer: !include_dir_merge_named myTimers
 
 logger:
   default: info
@@ -40,3 +42,8 @@ lovelace:
   resources:
     - url: /local/tailwindcss-template-card/dist/tailwindcss-template-card.js
       type: module
+    - url: /hacsfiles/decluttering-card/decluttering-card.js
+      type: module
+# /local/ → apunta a /config/www/
+#
+# /hacsfiles/ → apunta a /config/www/community/ (creado por HACS automáticamente)

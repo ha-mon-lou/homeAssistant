@@ -12,6 +12,7 @@
         - service: script.selector_ventilador
           data:
             dispositivo: ventilador_habitacion
+            desde: apagar_Script            
             valor: Apagar
 
         - delay: 00:00:01
@@ -19,5 +20,6 @@
         - service: script.selector_ventilador
           data:
             dispositivo: ventilador_despacho
+            desde: apagar_Script            
             valor: Apagar
   mode: single

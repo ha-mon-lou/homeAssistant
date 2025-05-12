@@ -1,13 +1,13 @@
 {
     "0xa4c1387fe2e7effc": {
-        "voltage": 228,
+        "voltage": 230,
         "state": "OFF",
         "countdown": 0,
         "power_outage_memory": "restore",
         "indicator_mode": "off/on",
         "child_lock": "UNLOCK",
         "power": 0,
-        "energy": 3.02,
+        "energy": 3.08,
         "current": 0,
         "linkquality": 196,
         "update": {
@@ -17,20 +17,20 @@
         }
     },
     "0xa4c13819d046464f": {
-        "voltage": 227,
+        "voltage": 231,
         "state": "ON",
         "countdown": 0,
         "power_outage_memory": "restore",
         "indicator_mode": "off/on",
         "child_lock": "UNLOCK",
         "linkquality": 76,
-        "power": 42,
-        "energy": 73.01,
-        "current": 0.3
+        "power": 0,
+        "energy": 73.76,
+        "current": 0.02
     },
     "0xa4c138b8caa59009": {
-        "voltage": 228,
-        "state": "ON",
+        "voltage": 230,
+        "state": "OFF",
         "countdown": 0,
         "power_outage_memory": "restore",
         "indicator_mode": "off/on",
@@ -43,19 +43,19 @@
     "0x00124b002a565fae": {
         "voltage": 3000,
         "battery": 100,
-        "temperature": 20.8,
-        "humidity": 69.62,
+        "temperature": 20.72,
+        "humidity": 67.95,
         "linkquality": 252
     },
     "0xa4c138b7c1781a47": {
-        "voltage": 228,
+        "voltage": 231,
         "state": "OFF",
         "countdown": 0,
         "power_outage_memory": "restore",
         "indicator_mode": "off/on",
         "child_lock": "UNLOCK",
         "power": 0,
-        "energy": 2.99,
+        "energy": 3.36,
         "current": 0,
         "linkquality": 196,
         "update": {
@@ -107,13 +107,13 @@
         "valve_opening_limit_voltage": 1785,
         "valve_closing_limit_voltage": 2972,
         "valve_motor_running_voltage": 0,
-        "local_temperature": 20.7,
+        "local_temperature": 19.7,
         "occupied_heating_setpoint": 7,
         "system_mode": "off",
         "running_state": "idle",
         "valve_opening_degree": 100,
         "valve_closing_degree": 100,
-        "battery": 74,
+        "battery": 70,
         "weekly_schedule": {
             "monday": "00:00/16 07:00/19 10:00/19 10:00/19 17:00/19 23:00/16",
             "tuesday": "00:00/16 07:00/19 10:00/19 10:00/19 17:00/19 23:00/16",
@@ -168,9 +168,9 @@
     },
     "0x38398ffffe565011": {
         "battery": 100,
-        "temperature": 20.99,
-        "humidity": 71.15,
-        "co2": 799,
+        "temperature": 18.95,
+        "humidity": 68.92,
+        "co2": 523,
         "linkquality": 248
     }
 }

@@ -1,0 +1,43 @@
+- id: "ventilador_despacho_timer_on"
+  alias: Iniciar temporizador del ventilador del despacho
+  trigger:
+    - platform: state
+      entity_id: input_select.ventilador_despacho_temporizador
+  action:
+    - service: timer.start
+      data:
+        entity_id: timer.ventilador_despacho_file_timer
+        duration: >
+          {% set opt = trigger.to_state.state %}
+          {% if opt == "1h" %}
+            01:00:00
+          {% elif opt == "2h" %}
+            02:00:00
+          {% elif opt == "4h" %}
+            04:00:00
+          {% elif opt == "8h" %}
+            08:00:00
+          {% else %}
+            01:00:00
+          {% endif %}
+
+- id: "ventilador_despacho_timer_off"
+  alias: timer despacho off
+  description: ""
+  trigger:
+    - platform: state
+      entity_id: timer.ventilador_despacho_file_timer
+      to: idle
+  condition: []
+  actions:
+    - service: input_select.select_option
+      data:
+        entity_id: input_select.ventilador_despacho_temporizador
+        option: idle
+
+    - service: script.selector_ventilador
+      data:
+        dispositivo: ventilador_despacho
+        desde: timerScript
+        valor: Apagar
+  mode: single

@@ -5,3 +5,19 @@ ventilador_margen_calor:
   step: 0.5
   unit_of_measurement: "°C"
   mode: slider
+
+ventilador_despacho_temporizador:
+  name: Temporizador ventilador despacho
+  min: 0
+  max: 480
+  step: 5
+  unit_of_measurement: "min"
+  mode: slider
+
+ventilador_habitacion_temporizador:
+  name: Temporizador ventilador habitación
+  min: 0
+  max: 480
+  step: 5
+  unit_of_measurement: "min"
+  mode: slider

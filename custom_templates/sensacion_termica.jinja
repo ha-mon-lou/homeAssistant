@@ -15,5 +15,5 @@
     {% set HI = simple_HI %}
   {% endif %}
 
-  {{ ((HI - 32) * 5 / 9) | round(1) }}
+  {{ ((HI - 32) * 5 / 9) | round(2) }}
 {% endmacro %}

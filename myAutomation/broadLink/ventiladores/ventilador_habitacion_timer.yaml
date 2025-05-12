@@ -1,0 +1,41 @@
+- id: "ventilador_habitacion_timer_on"
+  alias: Iniciar temporizador del ventilador del habitacion
+  trigger:
+    - platform: state
+      entity_id: input_select.ventilador_habitacion_temporizador
+  action:
+    - service: timer.start
+      data:
+        entity_id: timer.ventilador_habitacion_file_timer
+        duration: >
+          {% set opt = trigger.to_state.state %}
+          {% if opt == "1h" %}
+            01:00:00
+          {% elif opt == "2h" %}
+            02:00:00
+          {% elif opt == "4h" %}
+            04:00:00
+          {% elif opt == "8h" %}
+            08:00:00
+          {% else %}
+            01:00:00
+          {% endif %}
+
+- id: "ventilador_habitacion_timer_off"
+  alias: timer habitacion off
+  description: ""
+  trigger:
+    - platform: state
+      entity_id: timer.ventilador_habitacion_file_timer
+      to: idle
+  condition: []
+  actions:
+    - service: input_select.select_option
+      data:
+        entity_id: input_select.ventilador_habitacion_temporizador
+        option: idle
+    - service: script.selector_ventilador
+      data:
+        dispositivo: ventilador_habitacion
+        valor: Apagar
+  mode: single

@@ -12,6 +12,7 @@
         - service: script.selector_ventilador
           data:
             dispositivo: ventilador_despacho
+            desde: speed_1_Script            
             valor: velocidad 1
   mode: single
 
@@ -31,5 +32,6 @@
     - service: script.selector_ventilador
       data:
         dispositivo: ventilador_despacho
+        desde: speed_1_Script            
         valor: Apagar
   mode: single

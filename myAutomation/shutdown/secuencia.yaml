@@ -12,6 +12,7 @@
       entity_id: person.ha_beelink
       zone: zone.home
       event: leave
+
   action:
     - service: input_text.set_value
       data:
@@ -30,7 +31,7 @@
       data:
         entity_id: input_text.resumen_shutdown
         value: >
-          {{ states('input_text.resumen_shutdown') ~ "\n· Calefacción apagada (" ~ states('sensor.temperatura_interior') ~ "°C)" }}
+          {{ "\n· Calefacción apagada (" ~ states('sensor.temperatura_interior') ~ "°C)" }}
 
     - action: script.secuencia_by_area
       data:
@@ -57,6 +58,7 @@
     - action: script.selector_ventilador
       data:
         dispositivo: ventilador_habitacion
+        desde: secuencia
         modo: manual
         valor: Apagar
     - service: input_text.set_value
@@ -70,6 +72,7 @@
     - action: script.selector_ventilador
       data:
         dispositivo: ventilador_despacho
+        desde: secuencia
         modo: manual
         valor: Apagar
     - service: input_text.set_value

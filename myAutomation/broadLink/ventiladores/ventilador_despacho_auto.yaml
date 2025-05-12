@@ -27,6 +27,7 @@
             - service: script.selector_ventilador
               data:
                 dispositivo: ventilador_despacho
+                desde: autoScript
                 modo: auto
                 valor: Apagar
 
@@ -39,6 +40,7 @@
             - service: script.selector_ventilador
               data:
                 dispositivo: ventilador_despacho
+                desde: autoScript
                 modo: auto
                 valor: velocidad 1
 
@@ -51,6 +53,7 @@
             - service: script.selector_ventilador
               data:
                 dispositivo: ventilador_despacho
+                desde: autoScript
                 modo: auto
                 valor: velocidad 2
 
@@ -63,6 +66,7 @@
             - service: script.selector_ventilador
               data:
                 dispositivo: ventilador_despacho
+                desde: autoScript
                 modo: auto
                 valor: velocidad 3
         - conditions:
@@ -74,6 +78,7 @@
             - service: script.selector_ventilador
               data:
                 dispositivo: ventilador_despacho
+                desde: autoScript
                 modo: auto
                 valor: brisa
   mode: single
