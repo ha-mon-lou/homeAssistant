@@ -9,6 +9,11 @@
         - climate.zigbee_sonoff_trvzb_04
       for:
         seconds: 10
+  condition:
+    - condition: state
+      entity_id: input_boolean.invierno
+      state: "on"
+
   action:
     - choose:
         # Si alguna TRV está en "heat" o "cool" → Encender calefacción
