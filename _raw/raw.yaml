@@ -281,9 +281,9 @@ decluttering_templates:
                 service: input_select.select_option
                 data:
                   entity_id: input_select.ventilador_[[id]]_temporizador
-                  option: 1h
+                  option: t1
               state:
-                - value: 1h
+                - value: t1
                   styles:
                     card:
                       - background-color: "#2e2e2e"
@@ -297,9 +297,9 @@ decluttering_templates:
                 service: input_select.select_option
                 data:
                   entity_id: input_select.ventilador_[[id]]_temporizador
-                  option: 2h
+                  option: t2
               state:
-                - value: 2h
+                - value: t2
                   styles:
                     card:
                       - background-color: "#1b5e20"
@@ -313,9 +313,9 @@ decluttering_templates:
                 service: input_select.select_option
                 data:
                   entity_id: input_select.ventilador_[[id]]_temporizador
-                  option: 4h
+                  option: t3
               state:
-                - value: 4h
+                - value: t3
                   styles:
                     card:
                       - background-color: "#1b5e20"
@@ -329,9 +329,9 @@ decluttering_templates:
                 service: input_select.select_option
                 data:
                   entity_id: input_select.ventilador_[[id]]_temporizador
-                  option: 8h
+                  option: t4
               state:
-                - value: 8h
+                - value: t4
                   styles:
                     card:
                       - background-color: "#1b5e20"
@@ -874,9 +874,9 @@ views:
                   service: input_select.select_option
                   data:
                     entity_id: input_select.ventilador_despacho_temporizador
-                    option: 1h
+                    option: t1
                 state:
-                  - value: 1h
+                  - value: t1
                     styles:
                       card:
                         - background-color: "#2e2e2e"
@@ -890,9 +890,9 @@ views:
                   service: input_select.select_option
                   data:
                     entity_id: input_select.ventilador_despacho_temporizador
-                    option: 2h
+                    option: t2
                 state:
-                  - value: 2h
+                  - value: t2
                     styles:
                       card:
                         - background-color: "#1b5e20"
@@ -906,9 +906,9 @@ views:
                   service: input_select.select_option
                   data:
                     entity_id: input_select.ventilador_despacho_temporizador
-                    option: 4h
+                    option: t3
                 state:
-                  - value: 4h
+                  - value: t3
                     styles:
                       card:
                         - background-color: "#1b5e20"
@@ -922,9 +922,9 @@ views:
                   service: input_select.select_option
                   data:
                     entity_id: input_select.ventilador_despacho_temporizador
-                    option: 8h
+                    option: t4
                 state:
-                  - value: 8h
+                  - value: t4
                     styles:
                       card:
                         - background-color: "#1b5e20"
@@ -1099,9 +1099,9 @@ views:
                   service: input_select.select_option
                   data:
                     entity_id: input_select.ventilador_habitacion_temporizador
-                    option: 1h
+                    option: t1
                 state:
-                  - value: 1h
+                  - value: t1
                     styles:
                       card:
                         - background-color: "#2e2e2e"
@@ -1115,9 +1115,9 @@ views:
                   service: input_select.select_option
                   data:
                     entity_id: input_select.ventilador_habitacion_temporizador
-                    option: 2h
+                    option: t2
                 state:
-                  - value: 2h
+                  - value: t2
                     styles:
                       card:
                         - background-color: "#1b5e20"
@@ -1131,9 +1131,9 @@ views:
                   service: input_select.select_option
                   data:
                     entity_id: input_select.ventilador_habitacion_temporizador
-                    option: 4h
+                    option: t3
                 state:
-                  - value: 4h
+                  - value: t3
                     styles:
                       card:
                         - background-color: "#1b5e20"
@@ -1147,9 +1147,9 @@ views:
                   service: input_select.select_option
                   data:
                     entity_id: input_select.ventilador_habitacion_temporizador
-                    option: 8h
+                    option: t4
                 state:
-                  - value: 8h
+                  - value: t4
                     styles:
                       card:
                         - background-color: "#1b5e20"

@@ -14,3 +14,21 @@
         {{ macro_1oo2('sensor.aemet_humidity','sensor.st_quirze_del_v_vallsuau_barcelona_humidity') }}
 
       icon_template: mdi:calculator
+
+- platform: statistics
+  name: "humedad exterior máxima en 24h"
+  entity_id: sensor.humedad_exterior
+  state_characteristic: value_max
+  max_age:
+    hours: 24
+  sampling_size: 200
+  unique_id: humedad_exterior_maxima_24h
+
+- platform: statistics
+  name: "humedad exterior mínima en 24h"
+  entity_id: sensor.humedad_exterior
+  state_characteristic: value_min
+  max_age:
+    hours: 24
+  sampling_size: 200
+  unique_id: humedad_exterior_minima_24h

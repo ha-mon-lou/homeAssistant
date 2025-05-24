@@ -1,12 +1,24 @@
-ventilador_habitacion_modo_brisa:
-  name: Modo Brisa Habitación
-ventilador_habitacion_modo_invierno:
-  name: Modo Invierno Habitación
-
-ventilador_despacho_modo_brisa:
-  name: Modo Brisa Despacho
-ventilador_despacho_modo_invierno:
-  name: Modo Invierno Despacho
-
 alerta_co2:
   name: Alerta CO2
+
+scene_switch_01_1:
+  name: Scene Switch 01 (1)
+
+scene_switch_01_2:
+  name: Scene Switch 01 (2)
+
+verano:
+  name: modo verano
+
+persona_1:
+  name: Persona 1
+  icon: mdi:account
+persona_2:
+  name: Persona 2
+  icon: mdi:account
+persona_3:
+  name: Persona 3
+  icon: mdi:account
+persona_4:
+  name: Persona 4
+  icon: mdi:account

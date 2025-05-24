@@ -33,15 +33,6 @@
         {% from 'confort_termico.jinja' import macro_confort_termico %}
         {{ macro_confort_termico('sensor.tuya_termometro_wifi_temperature','sensor.tuya_termometro_wifi_humidity') }}
 
-    sensacion_termica_despacho:
-      friendly_name: "Sensacion termica despacho"
-      device_class: temperature
-      unit_of_measurement: "°C"
-      unique_id: "sensacion_termica_despacho"
-      value_template: >
-        {{ states('sensor.sensacion_termica_tuya_wifi_1') }}
-      icon_template: mdi:thermometer
-
     #
     #   zigbee_sonoff_snzb02_01
     #
@@ -60,11 +51,16 @@
         {% from 'confort_termico.jinja' import macro_confort_termico %}
         {{ macro_confort_termico('sensor.zigbee_sonoff_snzb02_01_temperature','sensor.zigbee_sonoff_snzb02_01_humidity') }}
 
-    sensacion_termica_habitacion:
-      friendly_name: "Sensacion termica habitacion"
-      device_class: temperature
+    sensacion_termica_shelly_blu_5480:
+      friendly_name: "Sensación Térmica (Shelly Blue)"
       unit_of_measurement: "°C"
-      unique_id: "sensacion_termica_habitacion"
       value_template: >
-        {{ states('sensor.sensacion_termica_zigbee_sonoff_snzb02_01') }}
-      icon_template: mdi:thermometer
+        {% from 'sensacion_termica.jinja' import macro_sensacion_termica %}
+        {{ macro_sensacion_termica('sensor.shelly_blu_5480_temperature', 'sensor.shelly_blu_5480_humidity') }}
+
+    confort_termico_shelly_blu_5480:
+      friendly_name: "Confort Térmico (Shelly Blue)"
+      unit_of_measurement: "°C"
+      value_template: >
+        {% from 'confort_termico.jinja' import macro_confort_termico %}
+        {{ macro_confort_termico('sensor.shelly_blu_5480_temperature','sensor.shelly_blu_5480_humidity') }}

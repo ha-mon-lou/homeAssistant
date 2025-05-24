@@ -13,3 +13,21 @@
         {% from '1oo2.jinja' import macro_1oo2 %}
         {{ macro_1oo2('sensor.shelly_blu_5480_temperature','sensor.zigbee_sonoff_snzb02_01_temperature') }}
       icon_template: mdi:thermometer
+
+- platform: statistics
+  name: "Temperatura interior máxima en 24h"
+  entity_id: sensor.temperatura_interior
+  state_characteristic: value_max
+  max_age:
+    hours: 24
+  sampling_size: 200
+  unique_id: temperatura_interior_maxima_24h
+
+- platform: statistics
+  name: "Temperatura interior mínima en 24h"
+  entity_id: sensor.temperatura_interior
+  state_characteristic: value_min
+  max_age:
+    hours: 24
+  sampling_size: 200
+  unique_id: temperatura_interior_minima_24h

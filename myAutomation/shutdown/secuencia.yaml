@@ -8,11 +8,13 @@
       tag_id: !secret nfc_tag_ha_door
     - platform: state
       entity_id: input_button.shutdown
-    - platform: zone
-      entity_id: person.ha_beelink
-      zone: zone.home
-      event: leave
-
+    - platform: state
+      entity_id: group.simulador_personas
+      from: "on"
+      to: "off"
+    - platform: state
+      entity_id: input_boolean.presencia
+      to: "off"
   action:
     - service: input_text.set_value
       data:
@@ -20,7 +22,7 @@
         value: "🛑 Inicio desconexión total..."
     - service: script.notifica_movil
       data:
-        title: "Shutdown"
+        title: "Shut down"
         message: "{{ states('input_text.resumen_shutdown') }}"
 
     - action: script.control_calefaccion
@@ -32,6 +34,13 @@
         entity_id: input_text.resumen_shutdown
         value: >
           {{ "\n· Calefacción apagada (" ~ states('sensor.temperatura_interior') ~ "°C)" }}
+
+    - action: script.ac_panasonic_control_refrigeracion_away
+    - service: input_text.set_value
+      data:
+        entity_id: input_text.resumen_shutdown
+        value: >
+          {{ "\n· Aire acondicionado apagado (" ~ states('sensor.temperatura_interior') ~ "°C)" }}
 
     - action: script.secuencia_by_area
       data:

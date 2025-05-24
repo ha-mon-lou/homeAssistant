@@ -1,7 +1,0 @@
-ventilador_despacho_file_timer:
-  name: Timer Vent. despacho
-  restore: true
-
-ventilador_habitacion_file_timer:
-  name: Timer Vent. habitacion
-  restore: true

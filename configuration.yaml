@@ -25,11 +25,9 @@ recorder: !include recorder.yaml
 influxdb: !include influxdb.yaml
 rest_command: !include rest_commands.yaml
 
-input_select: !include myInput/input_selects.yaml
 input_boolean: !include myInput/input_booleans.yaml
 input_text: !include myInput/input_texts.yaml
 input_number: !include myInput/input_numbers.yaml
-input_button: !include myInput/input_buttons.yaml
 # shell_command: !include myShellCommands/shell_commands.yaml
 timer: !include_dir_merge_named myTimers
 
@@ -38,6 +36,8 @@ logger:
   logs:
     homeassistant.components.rest: info
 
+homeassistant:
+  packages: !include_dir_named myPackages
 lovelace:
   resources:
     - url: /local/tailwindcss-template-card/dist/tailwindcss-template-card.js

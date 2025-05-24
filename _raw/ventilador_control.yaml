@@ -3,7 +3,7 @@ decluttering_templates:
     variables:
       - nombre
       - id
-      - fondo: '#1e1e2f'  # Color por defecto si no se especifica
+      - fondo: "#1e1e2f" # Color por defecto si no se especifica
     card:
       type: vertical-stack
       cards:
@@ -14,7 +14,7 @@ decluttering_templates:
               show_icon: false
               show_state: true
               entity: input_boolean.ventilador_[[id]]
-              name: '[[nombre]]'
+              name: "[[nombre]]"
             - type: custom:mushroom-entity-card
               entity: sensor.sensacion_termica_[[id]]
               name: Tuya
@@ -28,7 +28,7 @@ decluttering_templates:
             - type: custom:button-card
               entity: input_select.ventilador_[[id]]_botonera
               show-name: false
-              name: ' '
+              name: " "
               icon: mdi:fan-off
               tap_action:
                 action: call-service
@@ -42,13 +42,13 @@ decluttering_templates:
                 - value: Apagar
                   styles:
                     card:
-                      - background-color: '#2e2e2e'
+                      - background-color: "#2e2e2e"
                     icon:
-                      - color: '#f44336'
+                      - color: "#f44336"
             - type: custom:button-card
               entity: input_select.ventilador_[[id]]_botonera
               show-name: false
-              name: ' '
+              name: " "
               icon: mdi:fan-speed-1
               tap_action:
                 action: call-service
@@ -62,13 +62,13 @@ decluttering_templates:
                 - value: velocidad 1
                   styles:
                     card:
-                      - background-color: '#1b5e20'
+                      - background-color: "#1b5e20"
                     icon:
-                      - color: '#81c784'
+                      - color: "#81c784"
             - type: custom:button-card
               entity: input_select.ventilador_[[id]]_botonera
               show-name: false
-              name: ' '
+              name: " "
               icon: mdi:fan-speed-2
               tap_action:
                 action: call-service
@@ -82,13 +82,13 @@ decluttering_templates:
                 - value: velocidad 2
                   styles:
                     card:
-                      - background-color: '#1b5e20'
+                      - background-color: "#1b5e20"
                     icon:
-                      - color: '#81c784'
+                      - color: "#81c784"
             - type: custom:button-card
               entity: input_select.ventilador_[[id]]_botonera
               show-name: false
-              name: ' '
+              name: " "
               icon: mdi:fan-speed-3
               tap_action:
                 action: call-service
@@ -102,9 +102,9 @@ decluttering_templates:
                 - value: velocidad 3
                   styles:
                     card:
-                      - background-color: '#1b5e20'
+                      - background-color: "#1b5e20"
                     icon:
-                      - color: '#81c784'
+                      - color: "#81c784"
         - type: horizontal-stack
           cards:
             - type: button
@@ -120,7 +120,7 @@ decluttering_templates:
                   comando: reverse
             - type: custom:button-card
               entity: input_select.ventilador_[[id]]_modo_auto
-              name: ' '
+              name: " "
               show-name: false
               icon: mdi:fan-auto
               tap_action:
@@ -133,12 +133,12 @@ decluttering_templates:
                 - value: auto
                   styles:
                     card:
-                      - background-color: '#2b5e90'
+                      - background-color: "#2b5e90"
                     icon:
-                      - color: '#FFFFFF'
+                      - color: "#FFFFFF"
             - type: custom:button-card
               entity: input_select.ventilador_[[id]]_botonera
-              name: ' '
+              name: " "
               show-name: false
               icon: mdi:wind-power
               tap_action:
@@ -152,9 +152,9 @@ decluttering_templates:
                 - value: brisa
                   styles:
                     card:
-                      - background-color: '#1b5e20'
+                      - background-color: "#1b5e20"
                     icon:
-                      - color: '#81c784'
+                      - color: "#81c784"
         - type: horizontal-stack
           cards:
             - type: custom:button-card
@@ -177,14 +177,14 @@ decluttering_templates:
                 service: input_select.select_option
                 data:
                   entity_id: input_select.ventilador_[[id]]_temporizador
-                  option: 1h
+                  option: t1
               state:
-                - value: 1h
+                - value: t1
                   styles:
                     card:
-                      - background-color: '#2e2e2e'
+                      - background-color: "#2e2e2e"
                     icon:
-                      - color: '#f44336'
+                      - color: "#f44336"
             - type: custom:button-card
               entity_id: input_select.ventilador_[[id]]_temporizador
               icon: mdi:numeric-2-circle
@@ -193,14 +193,14 @@ decluttering_templates:
                 service: input_select.select_option
                 data:
                   entity_id: input_select.ventilador_[[id]]_temporizador
-                  option: 2h
+                  option: t2
               state:
-                - value: 2h
+                - value: t2
                   styles:
                     card:
-                      - background-color: '#1b5e20'
+                      - background-color: "#1b5e20"
                     icon:
-                      - color: '#81c784'
+                      - color: "#81c784"
             - type: custom:button-card
               entity_id: input_select.ventilador_[[id]]_temporizador
               icon: mdi:numeric-4-circle
@@ -209,14 +209,14 @@ decluttering_templates:
                 service: input_select.select_option
                 data:
                   entity_id: input_select.ventilador_[[id]]_temporizador
-                  option: 4h
+                  option: t3
               state:
-                - value: 4h
+                - value: t3
                   styles:
                     card:
-                      - background-color: '#1b5e20'
+                      - background-color: "#1b5e20"
                     icon:
-                      - color: '#81c784'
+                      - color: "#81c784"
             - type: custom:button-card
               entity_id: input_select.ventilador_[[id]]_temporizador
               icon: mdi:numeric-8-circle
@@ -225,14 +225,14 @@ decluttering_templates:
                 service: input_select.select_option
                 data:
                   entity_id: input_select.ventilador_[[id]]_temporizador
-                  option: 8h
+                  option: t4
               state:
-                - value: 8h
+                - value: t4
                   styles:
                     card:
-                      - background-color: '#1b5e20'
+                      - background-color: "#1b5e20"
                     icon:
-                      - color: '#81c784'
+                      - color: "#81c784"
       style: |
         ha-card {
           background: [[fondo]];

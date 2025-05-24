@@ -17,7 +17,7 @@
           sequence:
             - service: switch.turn_on
               target:
-                entity_id: switch.zigbee_nous_enchufe_01
+                entity_id: switch.alias_antimosquitos
   mode: single
 
 - id: alerta_co2_desactivada
@@ -31,5 +31,5 @@
       target:
         entity_id:
           - switch.alias_pinguino
-          - switch.zigbee_nous_enchufe_01
+          - switch.alias_antimosquitos
   mode: single

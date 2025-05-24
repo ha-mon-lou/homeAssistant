@@ -1,0 +1,49 @@
+input_boolean:
+  presencia:
+    name: Presencia en casa
+    icon: mdi:home-account
+
+automation:
+  - alias: "[Presencia] Activar si alguien llega a casa"
+    trigger:
+      - platform: state
+        entity_id: group.all_persons
+        to: "home"
+    action:
+      - service: input_boolean.turn_on
+        target:
+          entity_id: input_boolean.presencia
+
+  - alias: "[Presencia] Desactivar si todos se van (con FOR)"
+    trigger:
+      - platform: state
+        entity_id: group.all_persons
+        to: "not_home"
+        for: "00:01:00"
+    action:
+      - service: input_boolean.turn_off
+        target:
+          entity_id: input_boolean.presencia
+
+  - alias: "[Presencia] Sincronizar al iniciar Home Assistant"
+    trigger:
+      - platform: homeassistant
+        event: start
+    action:
+      - choose:
+          - conditions:
+              - condition: state
+                entity_id: group.all_persons
+                state: "home"
+            sequence:
+              - service: input_boolean.turn_on
+                target:
+                  entity_id: input_boolean.presencia
+          - conditions:
+              - condition: state
+                entity_id: group.all_persons
+                state: "not_home"
+            sequence:
+              - service: input_boolean.turn_off
+                target:
+                  entity_id: input_boolean.presencia

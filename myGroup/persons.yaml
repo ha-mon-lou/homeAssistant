@@ -1,0 +1,14 @@
+simulador_personas:
+  name: Simulador Personas
+  entities:
+    - input_boolean.persona_1
+    - input_boolean.persona_2
+    - input_boolean.persona_3
+    - input_boolean.persona_4
+
+all_persons:
+  name: Todos
+  entities:
+    - person.ramon
+    - person.pau
+    - person.ha_beelink

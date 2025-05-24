@@ -22,3 +22,20 @@
       "
       icon_template: mdi:water-percent-alert
 
+- platform: statistics
+  name: "Humedad interior máxima en 24h"
+  entity_id: sensor.humedad_interior
+  state_characteristic: value_max
+  max_age:
+    hours: 24
+  sampling_size: 200
+  unique_id: humedad_interior_maxima_24h
+
+- platform: statistics
+  name: "Humedad interior mínima en 24h"
+  entity_id: sensor.humedad_interior
+  state_characteristic: value_min
+  max_age:
+    hours: 24
+  sampling_size: 200
+  unique_id: humedad_interior_minima_24h

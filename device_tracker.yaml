@@ -4,6 +4,7 @@
   new_device_defaults:
   track_new_devices: true
 
+
 - platform: nmap_tracker
   name: Tracked Object
   latitude: "{{ state_attr('sensor.fgc_sqv', 'latitude') }}"
