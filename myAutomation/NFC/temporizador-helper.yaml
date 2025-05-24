@@ -3,7 +3,7 @@
   description: ""
   triggers:
     - trigger: tag
-      tag_id: 37fcba90-6c4b-41cf-abef-1dea0f1c85b6
+      tag_id: !secret nfc_tag_ha_37
   conditions: []
   actions:
     - entity_id: timer.cocina_10m

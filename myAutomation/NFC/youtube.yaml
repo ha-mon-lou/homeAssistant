@@ -3,7 +3,7 @@
   description: ""
   triggers:
     - trigger: tag
-      tag_id: 37fcba90-6c4b-41cf-abef-1dea0f1c85b6
+      tag_id: !secret nfc_tag_ha_37
     - platform: conversation
       command: play youtube
 
@@ -13,6 +13,7 @@
       device_id: 4212ed74edbdc7e8bd7b75f3ae1a9c4c
       entity_id: 8c098c4f5799ff0d519ed64b05a880e1
       domain: remote
+    - delay: 00:00:05
     - action: media_player.play_media
       target:
         entity_id: media_player.you_box

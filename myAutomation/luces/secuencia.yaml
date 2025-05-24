@@ -3,7 +3,7 @@
   description: ""
   triggers:
     - trigger: tag
-      tag_id: 37fcba90-6c4b-41cf-abef-1dea0f1c85b6
+      tag_id: !secret nfc_tag_ha_37
     - trigger: state
       entity_id:
         - input_button.a_dormir
